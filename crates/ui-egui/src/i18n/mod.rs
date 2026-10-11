@@ -304,6 +304,12 @@ pub fn chinese_font_available() -> bool {
     crate::cjk::available()
 }
 
+/// A label in capitals for interface chrome (the header's workspace name). Georgian Mkhedruli is
+/// left as it is: its capital forms (Mtavruli) are not used for interface text.
+pub fn ui_caps(text: &str) -> String {
+    text.chars().map(|c| if matches!(c, '\u{10D0}'..='\u{10FF}') { c.to_string() } else { c.to_uppercase().collect() }).collect()
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -980,6 +986,15 @@ mod tests {
         assert!(matches_query("Gaussian Blur", "flou"));
         assert!(matches_query("Gaussian Blur", "gaussian"));
         set_current(Language::En);
+    }
+
+    /// Interface capitals leave Georgian as it is (no Mtavruli) and still capitalise other scripts.
+    #[test]
+    fn ui_caps_keeps_georgian_lowercase() {
+        assert_eq!(ui_caps("Editing"), "EDITING");
+        assert_eq!(ui_caps("მონტაჟი"), "მონტაჟი");
+        assert_eq!(ui_caps("ფერი Lumetri"), "ფერი LUMETRI");
+        assert_eq!(ui_caps("Монтаж"), "МОНТАЖ");
     }
 
     #[test]
