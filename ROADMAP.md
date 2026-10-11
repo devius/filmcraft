@@ -89,7 +89,7 @@ Premiere ships 10 interface languages. Measured from our catalogs (3,498 strings
 | Korean | none | 0% |
 | Vietnamese | none | 0% |
 
-Also shipped: Ukrainian (menus only, 10%). Detail: [docs/localization-parity.md](docs/localization-parity.md).
+Also shipped: Ukrainian (menus only, 10%), Georgian (whole interface, ~100%; needs an installed Georgian font). Detail: [docs/localization-parity.md](docs/localization-parity.md).
 
 ## Upcoming
 
