@@ -414,7 +414,8 @@ pub fn font_families() -> Vec<FontFamily> {
     vec![FontFamily::Proportional, FontFamily::Monospace, FontFamily::Name("semibold".into()), FontFamily::Name("medium".into())]
 }
 
-/// Install the Latin UI fonts, Chinese fallback (craft-fonts or an installed face), Japanese
+/// Install the Latin UI fonts, Chinese fallback (craft-fonts or an installed face), the Georgian
+/// system fallback, Japanese
 /// craft-fonts and egui visuals. Document names keep their glyphs in every interface language.
 pub fn install(ctx: &egui::Context, t: &Tokens) {
     let mut fonts = FontDefinitions::default();
@@ -430,6 +431,7 @@ pub fn install(ctx: &egui::Context, t: &Tokens) {
     // glyph forms; Chinese faces still cover the hanzi Japanese fonts lack
     add_craft_fonts(&mut fonts);
     crate::cjk::install(&mut fonts);
+    crate::georgian::install(&mut fonts);
     ctx.set_fonts(fonts);
     apply_visuals(ctx, t);
 }

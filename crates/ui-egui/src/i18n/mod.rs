@@ -45,6 +45,7 @@ pub enum Language {
     De,
     Ru,
     Fr,
+    Ka,
 }
 
 static JAPANESE: OnceLock<Catalog> = OnceLock::new();
@@ -55,9 +56,10 @@ static CHINESE: OnceLock<Catalog> = OnceLock::new();
 static GERMAN: OnceLock<Catalog> = OnceLock::new();
 static RUSSIAN: OnceLock<Catalog> = OnceLock::new();
 static FRENCH: OnceLock<Catalog> = OnceLock::new();
+static GEORGIAN: OnceLock<Catalog> = OnceLock::new();
 
 impl Language {
-    pub const ALL: [Self; 9] = [Self::En, Self::Ja, Self::Es, Self::PtBr, Self::Uk, Self::ZhCn, Self::De, Self::Ru, Self::Fr];
+    pub const ALL: [Self; 10] = [Self::En, Self::Ja, Self::Es, Self::PtBr, Self::Uk, Self::ZhCn, Self::De, Self::Ru, Self::Fr, Self::Ka];
 
     pub fn name(self) -> &'static str {
         match self {
@@ -70,6 +72,7 @@ impl Language {
             Self::De => "Deutsch",
             Self::Ru => "Русский",
             Self::Fr => "Français",
+            Self::Ka => "ქართული",
         }
     }
 
@@ -84,6 +87,7 @@ impl Language {
             "de" => Some(Self::De),
             "ru" => Some(Self::Ru),
             "fr" => Some(Self::Fr),
+            "ka" => Some(Self::Ka),
             _ => None,
         }
     }
@@ -92,11 +96,11 @@ impl Language {
     /// (BCP 47 or POSIX locale tags such as `es-419`, `pt_BR.UTF-8`, most preferred first) that the
     /// interface has, else English. Any Portuguese gets the Brazilian catalog, the only one there is;
     /// any German (`de-AT`, `de_CH.UTF-8`…) gets the German one and any French (`fr-CA`, `fr_BE.UTF-8`…)
-    /// the French one. Chinese gets the Simplified catalog
+    /// the French one; any Georgian (`ka-GE`, `ka_GE.UTF-8`) the Georgian one. Chinese gets the Simplified catalog
     /// only for Simplified locales (`zh`, `zh-CN`, `zh-SG`, `zh-Hans…`); Traditional ones (`zh-TW`,
     /// `zh-HK`, `zh-MO`, `zh-Hant…`) are skipped.
     pub fn from_locales(tags: &[String]) -> Self {
-        const PRIMARY: [(&str, Language); 8] = [
+        const PRIMARY: [(&str, Language); 9] = [
             ("en", Language::En),
             ("ja", Language::Ja),
             ("es", Language::Es),
@@ -105,6 +109,7 @@ impl Language {
             ("de", Language::De),
             ("ru", Language::Ru),
             ("fr", Language::Fr),
+            ("ka", Language::Ka),
         ];
         tags.iter()
             .find_map(|tag| {
@@ -134,6 +139,7 @@ impl Language {
             Self::De => "de",
             Self::Ru => "ru",
             Self::Fr => "fr",
+            Self::Ka => "ka",
         }
     }
 
@@ -149,6 +155,7 @@ impl Language {
             Self::De => Some(GERMAN.get_or_init(|| Catalog::parse(include_str!("de.tsv")))),
             Self::Ru => Some(RUSSIAN.get_or_init(|| Catalog::parse(include_str!("ru.tsv")))),
             Self::Fr => Some(FRENCH.get_or_init(|| Catalog::parse(include_str!("fr.tsv")))),
+            Self::Ka => Some(GEORGIAN.get_or_init(|| Catalog::parse(include_str!("ka.tsv")))),
         }
     }
 
@@ -304,6 +311,12 @@ pub fn chinese_font_available() -> bool {
     crate::cjk::available()
 }
 
+/// Whether the interface can show Georgian: the bundled Latin fonts have no Georgian letters, so
+/// `theme::install` adds an installed system face (see `georgian.rs`). False without one (the web).
+pub fn georgian_font_available() -> bool {
+    crate::georgian::available()
+}
+
 /// A label in capitals for interface chrome (the header's workspace name). Georgian Mkhedruli is
 /// left as it is: its capital forms (Mtavruli) are not used for interface text.
 pub fn ui_caps(text: &str) -> String {
@@ -325,6 +338,7 @@ mod tests {
             ("de", include_str!("de.tsv")),
             ("ru", include_str!("ru.tsv")),
             ("fr", include_str!("fr.tsv")),
+            ("ka", include_str!("ka.tsv")),
         ] {
             let (entries, errors) = catalog::parse_entries(text);
             assert!(errors.is_empty(), "{code}: {errors:?}");
@@ -372,6 +386,12 @@ mod tests {
         assert_eq!(Language::Fr.tr("An untranslated label"), "An untranslated label");
         assert_eq!(Language::parse("fr"), Some(Language::Fr));
         assert_eq!(Language::parse("fr-FR"), None, "the preference stores the bare code");
+        assert_eq!(Language::Ka.name(), "ქართული");
+        assert_eq!(Language::Ka.tr("File"), "ფაილი");
+        assert_eq!(Language::Ka.tr("Save As…"), "შენახვა სხვა სახელით…");
+        assert_eq!(Language::Ka.tr("ჩემი კლიპი.mp4"), "ჩემი კლიპი.mp4");
+        assert_eq!(Language::parse("ka"), Some(Language::Ka));
+        assert_eq!(Language::parse("ka-GE"), None, "the preference stores the bare code");
         for l in Language::ALL {
             assert_eq!(Language::parse(l.code()), Some(l));
             let json = serde_json::to_string(&l).unwrap();
@@ -871,12 +891,33 @@ mod tests {
         for tag in ["fr", "FR", "fr-FR", "fr-CA", "fr-BE", "fr-CH", "fr_FR.UTF-8", "fr_BE.UTF-8@euro", "fr_CA"] {
             assert_eq!(l(&[tag]), Language::Fr, "{tag}");
         }
+        for tag in ["ka", "KA", "ka-GE", "ka_GE", "ka_GE.UTF-8", "ka_GE.UTF-8@x"] {
+            assert_eq!(l(&[tag]), Language::Ka, "{tag}");
+        }
         assert_eq!(l(&["it-IT", "nl", "es-MX", "ja"]), Language::Es, "the first one the interface has");
         assert_eq!(l(&["it-CH", "de-CH", "fr-CH", "en"]), Language::De);
         assert_eq!(l(&["it-CH", "fr-CH", "de-CH", "en"]), Language::Fr);
         assert_eq!(l(&["en-GB", "es"]), Language::En);
         assert_eq!(l(&["en-US", "de"]), Language::En);
-        for none in [&[][..], &["it"], &["C"], &["POSIX"], &[""], &["e"], &["esp"], &["-es"], &["deu"], &["d"], &["-de"], &["fra"], &["f"], &["-fr"]] {
+        for none in [
+            &[][..],
+            &["it"],
+            &["C"],
+            &["POSIX"],
+            &[""],
+            &["e"],
+            &["esp"],
+            &["-es"],
+            &["deu"],
+            &["d"],
+            &["-de"],
+            &["fra"],
+            &["f"],
+            &["-fr"],
+            &["kat"],
+            &["k"],
+            &["-ka"],
+        ] {
             assert_eq!(l(none), Language::En, "{none:?}");
         }
         assert_eq!(l(&[&"x".repeat(1 << 20), "es"]), Language::Es);
@@ -985,6 +1026,74 @@ mod tests {
         set_current(Language::Fr);
         assert!(matches_query("Gaussian Blur", "flou"));
         assert!(matches_query("Gaussian Blur", "gaussian"));
+        set_current(Language::En);
+    }
+
+    /// Georgian is complete like Chinese (every menu label and `tl!` literal) and keeps no entry
+    /// without a Spanish one (the native macOS Settings item aside).
+    #[test]
+    fn georgian_translates_everything_and_has_no_dead_entries() {
+        let (entries, errors) = catalog::parse_entries(include_str!("ka.tsv"));
+        assert!(errors.is_empty(), "{errors:?}");
+        for (ctx, en, ka) in &entries {
+            assert!(ctx.is_empty() && (Language::Es.has(en) || en == "Settings"), "Georgian entry without a Spanish one: {ctx:?} {en:?}");
+            // Mtavruli (Georgian capitals) is not used in interface text
+            assert!(!ka.chars().any(|c| matches!(c, '\u{1C90}'..='\u{1CBF}' | '\u{10A0}'..='\u{10CF}')), "Mtavruli in {en:?} → {ka:?}");
+        }
+        let (spanish, _) = catalog::parse_entries(include_str!("es.tsv"));
+        let mut missing: Vec<String> = spanish.iter().filter(|(c, en, _)| c.is_empty() && !Language::Ka.has(en)).map(|(_, en, _)| en.clone()).collect();
+        let app = crate::FilmcraftApp::new(filmcraft_engine::Session::default());
+        let items = crate::menus::menu_items(&app);
+        let menu =
+            crate::menus::MENUS.into_iter().chain(items.iter().flat_map(|it| std::iter::once(it.label.as_str()).chain(it.path.iter().map(String::as_str))));
+        let literals: Vec<String> = sources().into_iter().flat_map(|(_, text)| tl_literals(&text)).collect();
+        for text in menu.chain(literals.iter().map(String::as_str)).chain(["Settings"]) {
+            if translatable(text) && !Language::Ka.has(text) && !missing.iter().any(|m| m == text) {
+                missing.push(text.to_string());
+            }
+        }
+        missing.sort();
+        assert!(missing.is_empty(), "untranslated Georgian strings: {missing:#?}");
+        for (en, ka) in [("Settings", "პარამეტრები"), ("Sequence", "სეკვენცია"), ("Timeline", "დროის ხაზი")]
+        {
+            assert_eq!(Language::Ka.tr(en), ka);
+        }
+        set_current(Language::Ka);
+        assert!(matches_query("Sequence", "სეკვ"));
+        assert!(matches_query("Sequence", "seq"));
+        set_current(Language::En);
+    }
+
+    /// Georgian switches and persists with an installed Georgian face, and is refused without one.
+    #[test]
+    fn georgian_switches_and_persists_or_is_refused_without_a_font() {
+        let mut app = crate::FilmcraftApp::new(filmcraft_engine::Session::default());
+        let ctx = egui::Context::default();
+        let r = crate::menus::invoke(&mut app, &ctx, "app.language.georgian", serde_json::json!({}));
+        if !georgian_font_available() {
+            assert!(r.is_err(), "{r:?}");
+            assert_eq!(app.ui.language, Language::En);
+            app.session.execute("prefs.set", serde_json::json!({"key": "general.interfaceLanguage", "value": "ka"})).unwrap();
+            app.apply_prefs(&ctx);
+            assert_eq!(app.ui.language, Language::En);
+            set_current(Language::En);
+            return;
+        }
+        assert_eq!(r.unwrap(), serde_json::json!("ka"));
+        assert_eq!((app.ui.language, current()), (Language::Ka, Language::Ka));
+        assert_eq!(app.session.prefs.general.interface_language, "ka");
+        for it in crate::menus::menu_items(&app).iter().filter(|it| it.id.starts_with("app.language.")) {
+            assert_eq!(it.checked, Some(it.id == "app.language.georgian"), "{}", it.id);
+        }
+        let prefs = serde_json::to_string(&app.session.prefs).unwrap();
+        let mut restarted = filmcraft_engine::Session::default();
+        restarted.prefs = serde_json::from_str(&prefs).unwrap();
+        assert_eq!(crate::FilmcraftApp::new(restarted).ui.language, Language::Ka);
+        // every Georgian letter (and the catalog's other letters) renders with the installed fallback
+        let (entries, _) = catalog::parse_entries(include_str!("ka.tsv"));
+        let alphabet = "აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ„“";
+        assert_bundled_fonts_cover(alphabet.chars().chain(entries.iter().flat_map(|(_, _, ka)| ka.chars()).filter(|c| c.is_alphabetic())));
+        crate::menus::invoke(&mut app, &ctx, "app.language.english", serde_json::json!({})).unwrap();
         set_current(Language::En);
     }
 
