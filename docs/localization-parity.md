@@ -27,7 +27,7 @@ official releases) or an installed system face; without one, switching to Japane
 refused with a message. Georgian uses an installed system face (SF Georgian, Sylfaen, Noto Sans
 Georgian, DejaVu Sans), as the bundled Latin fonts have no Georgian letters; without one (the web)
 it is refused the same way, and the header's capitalised workspace name leaves Georgian
-lowercase (no Mtavruli). Simplified Chinese is picked for `zh`, `zh-CN`, `zh-SG`, `zh-Hans`, not
+lowercase (no Mtavruli); notes and terminology in [localization-ka.md](localization-ka.md). Simplified Chinese is picked for `zh`, `zh-CN`, `zh-SG`, `zh-Hans`, not
 Traditional locales. Ukrainian uses the bundled Cyrillic interface fonts. Vertical text in titles
 is supported. The interface (egui) shapes each font run with harfrust and has Arabic and Hebrew
 fallback fonts (`crates/ui-egui/src/rtl.rs`), but it has no bidi pass: only captions (timeline
@@ -57,7 +57,7 @@ whole interface, one PR) at ~4–8 h per language for the catalog plus tests.
 | Korean | ko | 0 (0%) | — | needs Hangul fonts in craft-fonts and IME testing | — | none (requested #508) | 10–20 h + review |
 | Vietnamese | vi | 0 (0%) | — | Latin with stacked diacritics (font coverage to check) | — | none | 6–12 h + review |
 | *Other shipped:* Ukrainian | uk | 351 (10.0%) | menus only | Cyrillic (bundled) | not recorded | menus only | 5–9 h |
-| *Other shipped:* Georgian | ka | 3,546 (every Spanish entry, plus the macOS Settings item) | as Spanish | Georgian (installed system face) | native speaker review in progress | partial | review |
+| *Other shipped:* Georgian | ka | 3,574 (every Spanish entry, plus the macOS Settings item) | as Spanish | Georgian (installed system face) | native speaker review in progress | partial | review |
 
 Premiere also ships Italian and Russian, which we don't (6–10 h each).
 
