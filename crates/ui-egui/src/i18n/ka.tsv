@@ -14,14 +14,14 @@
 	Add Edit to All Tracks	ყველა ტრეკზე გაჭრა
 	Add Flash Cue Marker…	Flash-სიგნალის მარკერის დამატება…
 	Add Frame Hold	კადრის გაყინვის დამატება
-	Add Guide…	გიდის დამატება…
+	Add Guide…	დამხმარე ხაზის დამატება…
 	Add Marker	მარკერის დამატება
 	Add New Caption Track…	სუბტიტრების ახალი ტრეკის დამატება…
 	Add Range Marker	დიაპაზონის მარკერის დამატება
 	Add Range Marker to In and Out	დიაპაზონის მარკერის დამატება შესვლიდან გამოსვლამდე
 	Add Tracks…	ტრეკების დამატება…
 	Adjustment Layer…	კორექციის ფენა…
-	Align to Selection	მონიშნულთან სწორება
+	Align to Selection	მონიშნულზე სწორება
 	Align to Video Frame	ვიდეოკადრთან სწორება
 	Align to Video Frame as Group	ვიდეოკადრთან სწორება ჯგუფად
 	All Panels	ყველა პანელი
@@ -65,7 +65,7 @@
 	Center Vertically	ვერტიკალურად ცენტრირება
 	Cerulean	ცისფერი
 	Clear	გასუფთავება
-	Clear Guides	გიდების გასუფთავება
+	Clear Guides	დამხმარე ხაზების გასუფთავება
 	Clear In	შესვლის მოხსნა
 	Clear In and Out	შესვლისა და გამოსვლის მოხსნა
 	Clear Markers	მარკერების გასუფთავება
@@ -94,7 +94,7 @@
 	Delete Transcript	ტრანსკრიპტის წაშლა
 	Demo Footage	სადემონსტრაციო ვიდეომასალა
 	Demo Project	სადემონსტრაციო პროექტი
-	Deselect All	მონიშვნის მოხსნა
+	Deselect All	ყველაფრის მონიშვნის მოხსნა
 	Detach Proxies	პროქსების მოხსნა
 	Display Mode	ჩვენების რეჟიმი
 	Distribute	განაწილება
@@ -156,13 +156,13 @@
 	Graphics…	გრაფიკა…
 	Green	მწვანე
 	Group	დაჯგუფება
-	Guide Templates	გიდების შაბლონები
+	Guide Templates	დამხმარე ხაზების შაბლონები
 	Help	დახმარება
 	Hide All Caption Tracks	სუბტიტრების ყველა ტრეკის დამალვა
 	High Quality Playback	მაღალი ხარისხის დაკვრა
 	History	ისტორია
 	Import From	იმპორტი:
-	Import Image Sequence…	გამოსახულებების მიმდევრობის იმპორტი…
+	Import Image Sequence…	გამოსახულებების თანმიმდევრობის იმპორტი…
 	Import from Media Browser	იმპორტი მედიის ბრაუზერიდან
 	Import…	იმპორტი…
 	Info	ინფორმაცია
@@ -186,14 +186,14 @@
 	Link Media…	მედიის დაკავშირება…
 	Refresh Changed Media	შეცვლილი მედიის განახლება
 	Linked Selection	დაკავშირებული მონიშვნა
-	Lock Guides	გიდების ჩაკეტვა
+	Lock Guides	დამხმარე ხაზების ჩაკეტვა
 	Lumetri Color	Lumetri Color
 	Lumetri Scopes	Lumetri Scopes
 	Magnification	გადიდების ხარისხი
 	Make Offline…	მიუწვდომლად გადაქცევა…
 	Make Subclip…	ქვეკლიპის შექმნა…
 	Make Subsequence	ქვესეკვენციის შექმნა
-	Manage Guides…	გიდების მართვა…
+	Manage Guides…	დამხმარე ხაზების მართვა…
 	Mark Clip	კლიპის მონიშვნა
 	Mark In	შესვლის დასმა
 	Mark Out	გამოსვლის დასმა
@@ -262,7 +262,7 @@
 	Render Selection	მონიშნულის რენდერი
 	Replace Fonts in Projects…	შრიფტების ჩანაცვლება პროექტებში…
 	Replace With Clip	კლიპით ჩანაცვლება
-	Report an Issue…	შეცდომის შეტყობინება…
+	Report an Issue…	ხარვეზის შეტყობინება…
 	Reset All Parameters	ყველა პარამეტრის გადაყენება
 	Reset Duration	ხანგრძლივობის გადაყენება
 	Reset to Saved Layout	შენახულ განლაგებაზე დაბრუნება
@@ -280,12 +280,12 @@
 	Save	შენახვა
 	Save All	ყველაფრის შენახვა
 	Save As…	შენახვა სხვა სახელით…
-	Save Guides as Template…	გიდების შენახვა შაბლონად…
+	Save Guides as Template…	დამხმარე ხაზების შენახვა შაბლონად…
 	Save a Copy…	ასლის შენახვა…
 	Save as Template…	შაბლონად შენახვა…
 	Scale to Frame Size	კადრის ზომაზე მასშტაბირება
 	Scene Edit Detection…	სცენების ჭრილების ამოცნობა…
-	Scratch Disks…	სამუშაო დისკები…
+	Scratch Disks…	დროებითი დისკები…
 	Search Bin	ბინში ძებნა
 	Select	მონიშვნა
 	Select All	ყველაფრის მონიშვნა
@@ -307,7 +307,7 @@
 	Show Active Caption Tracks Only	მხოლოდ აქტიური სუბტიტრების ტრეკების ჩვენება
 	Show All Caption Tracks	სუბტიტრების ყველა ტრეკის ჩვენება
 	Show All Marker Colors	მარკერების ყველა ფერის ჩვენება
-	Show Guides	გიდების ჩვენება
+	Show Guides	დამხმარე ხაზების ჩვენება
 	Show Rulers	სახაზავების ჩვენება
 	Show Through Edits	გამჭოლი ჭრილების ჩვენება
 	Simplify Sequence…	სეკვენციის გამარტივება…
@@ -408,7 +408,7 @@
 	A clean-room, pure-Rust non-linear video editor. Part of the ArtCraft family.	სუფთა ოთახის მეთოდით შექმნილი, სუფთა Rust-ზე დაწერილი არაწრფივი ვიდეორედაქტორი. ArtCraft-ის ოჯახის ნაწილი.
 	Join the ArtCraft Discord	შემოუერთდით ArtCraft-ის Discord-ს
 	Source code on GitHub	საწყისი კოდი GitHub-ზე
-	Report an issue	შეცდომის შეტყობინება
+	Report an issue	ხარვეზის შეტყობინება
 	MIT OR Apache-2.0. Fonts: Inter, Noto Serif and JetBrains Mono (SIL OFL 1.1).	MIT OR Apache-2.0. შრიფტები: Inter, Noto Serif და JetBrains Mono (SIL OFL 1.1).
 	just now	ახლახან
 	{n} s ago	{n} წმ-ის წინ
@@ -542,7 +542,7 @@
 	Saves the view, columns, sort, thumbnail and font size.	ინახავს ხედს, სვეტებს, სორტირებას, მინიატურებისა და შრიფტის ზომას.
 	Grid spacing:	ბადის ბიჯი:
 	Default clip size:	კლიპის ნაგულისხმევი ზომა:
-	Snap to grid	ბადეზე მიკვრა
+	Snap to grid	ბადეზე მიბმა
 	Show clip names	კლიპების სახელების ჩვენება
 	Show durations	ხანგრძლივობების ჩვენება
 	Show:	ჩვენება:
@@ -884,7 +884,7 @@
 	Saturation	გაჯერება
 	Exposure	ექსპოზიცია
 	Contrast	კონტრასტი
-	Highlights	ნათელი ტონები
+	Highlights	ღია ტონები
 	Shadows	ჩრდილები
 	Whites	თეთრები
 	Blacks	შავები
@@ -894,10 +894,10 @@
 	Look	იერი
 	Look LUT	იერის LUT
 	Intensity	ინტენსივობა
-	Adjustments	კორექციები
-	Faded Film	გაცრეცილი ფირი
+	Adjustments	კორექცია
+	Faded Film	გახუნებული ფირი
 	Sharpen	სიმკვეთრე
-	Vibrance	ცოცხალი ფერები
+	Vibrance	სიხალასე
 	RGB Curves	RGB მრუდები
 	HDR Range	HDR დიაპაზონი
 	Hue Saturation Curves	ელფერისა და გაჯერების მრუდები
@@ -906,7 +906,7 @@
 	Hue vs Luma	ელფერი / ლუმა
 	Luma vs Sat	ლუმა / გაჯერება
 	Sat vs Sat	გაჯერება / გაჯერება
-	Midtones	შუა ტონები
+	Midtones	შუალედური ტონები
 	Key	გასაღები
 	Hue	ელფერი
 	Hue Range	ელფერის დიაპაზონი
@@ -1017,7 +1017,7 @@
 	Right Align Text	ტექსტის მარჯვნივ სწორება
 	Justify	სიგანეზე
 	Tracking	ასოთა შორის ინტერვალი
-	Leading	სტრიქონთა ინტერვალი
+	Leading	სტრიქონთაშორისი ინტერვალი
 	Baseline Shift	საბაზისო ხაზის წანაცვლება
 	Text Box Width	ტექსტური ბლოკის სიგანე
 	Style	სტილი
@@ -1137,7 +1137,7 @@
 	Allow Duplicate Media During Project Import	მედიის დუბლიკატების დაშვება პროექტის იმპორტისას
 	Refresh	განახლება
 	Edit Columns	სვეტების რედაქტირება
-	Guides	გიდები
+	Guides	დამხმარე ხაზები
 	(no audio)	(აუდიო არ არის)
 	Generating waveform…	ტალღის ფორმის გენერირება…
 	Reference  {tc}	ეტალონი  {tc}
@@ -1146,14 +1146,14 @@
 	Reference: next frame	ეტალონი: შემდეგი კადრი
 	Reference: previous frame	ეტალონი: წინა კადრი
 	RGBA Channels	RGBA არხები
-	Add Guide	გიდის დამატება
-	Save Guides as Template	გიდების შაბლონად შენახვა
-	Manage Guides	გიდების მართვა
+	Add Guide	დამხმარე ხაზის დამატება
+	Save Guides as Template	დამხმარე ხაზების შაბლონად შენახვა
+	Manage Guides	დამხმარე ხაზების მართვა
 	Orientation:	ორიენტაცია:
 	Vertical	ვერტიკალური
 	Horizontal	ჰორიზონტალური
 	Position:	მდებარეობა:
-	No saved guide templates.	გიდების შენახული შაბლონები არ არის.
+	No saved guide templates.	დამხმარე ხაზების შენახული შაბლონები არ არის.
 	Project: {name}	პროექტი: {name}
 	Bin: {name}	ბინი: {name}
 	Up one level	ერთი დონით ზემოთ
@@ -1350,14 +1350,14 @@
 	Band Stop	ზოლური ჩამხშობი
 	Bandpass	ზოლური ფილტრი
 	Barn Doors	ფარდები
-	Basic	საბაზისო
+	Basic	საბაზო
 	Basic 3D	საბაზისო 3D
 	Basic Correction	საბაზისო კორექცია
 	Bass	ბასი
 	Behind	უკან
 	Bessel	ბესელი
 	Bevel Alpha	ალფას ფასკა
-	Bevel join	ფასკისებური შეერთება
+	Bevel join	წაკვეთილი შეერთება
 	Binauralizer - Ambisonics	ბინაურალიზატორი - Ambisonics
 	Bins	ბინები
 	Black	შავი
@@ -1365,7 +1365,7 @@
 	Black Input Level	შავის შემავალი დონე
 	Black and white	შავ-თეთრი
 	Black and white with crushed blacks and strong contrast	შავ-თეთრი, ჩახშობილი შავებით და ძლიერი კონტრასტით
-	Bleach Bypass	გათეთრების გამოტოვება
+	Bleach Bypass	გაუთეთრებელი დამუშავება
 	Bleach-bypass style: desaturated with hard contrast	გათეთრების გამოტოვების სტილი: გაუფერულებული, მკვეთრი კონტრასტით
 	Blend	შერევა
 	Blend Mode	შერევის რეჟიმი
@@ -1417,13 +1417,13 @@
 	Brush Spacing (secs)	ფუნჯის ინტერვალი (წმ)
 	Brush Strokes	ფუნჯის მონასმები
 	Bubbles	ბუშტები
-	Bulge	გამობერვა
+	Bulge	გამობერილობა
 	Bulge Smoother	გამობერვის დამრბილებელი
 	Bump Height	რელიეფის სიმაღლე
 	Burn Alpha	ალფა-არხის ჩაწვა
 	Burn Chroma	ქრომას ჩაწვა
 	Burn Color	ფერის ჩაწვა
-	Butt cap	ბრტყელი დაბოლოება
+	Butt cap	ბლაგვი დაბოლოება
 	Butterworth	ბატერვორთი
 	CEA-608	CEA-608
 	CEA-708	CEA-708
@@ -1482,12 +1482,12 @@
 	Color 2	ფერი 2
 	Color 3	ფერი 3
 	Color 4	ფერი 4
-	Color Balance	ფერების ბალანსი
-	Color Burn	ფერის ჩაწვა
+	Color Balance	ფერთა ბალანსი
+	Color Burn	ფერით ჩამუქება
 	Color Channel	ფერის არხი
 	Color Correction	ფერის კორექცია
 	Color Distortion	ფერის დამახინჯება
-	Color Dodge	ფერის გაღიავება
+	Color Dodge	ფერით გაღიავება
 	Color Emboss	ფერადი რელიეფი
 	Color Key	ფერის გასაღები
 	Color Pass	ფერის შენარჩუნება
@@ -1532,7 +1532,7 @@
 	Cross Zoom (Legacy)	ჯვარედინი მასშტაბირება (მოძველებული)
 	Crossfade	ჯვარედინი მიქრობა
 	Crossovers	გამყოფი სიხშირეები
-	Crystallize	კრისტალიზება
+	Crystallize	კრისტალიზაცია
 	Crystals	კრისტალები
 	Cube Spin	კუბის ბრუნვა
 	Curl Radius	დახვევის რადიუსი
@@ -1544,14 +1544,14 @@
 	Custom	მორგებული
 	Custom Color	მორგებული ფერი
 	Cutoff	ზღვრული სიხშირე
-	Cyan-teal shadows and warm highlights with a little more contrast	ცისფერ-ფირუზისფერი ჩრდილები და თბილი ნათელი ტონები ოდნავ მეტი კონტრასტით
+	Cyan-teal shadows and warm highlights with a little more contrast	ცისფერ-ფირუზისფერი ჩრდილები და თბილი ღია ტონები ოდნავ მეტი კონტრასტით
 	Cycle (in Revolutions)	ციკლი (ბრუნებში)
 	Cycle Evolution	ევოლუციის ციკლი
 	Damping	ჩაქრობა
 	Damping HF	მაღალი სიხშირეების ჩაქრობა
 	Damping LF	დაბალი სიხშირეების ჩაქრობა
 	Dark	ბნელი
-	Darken	გამუქება
+	Darken	ჩამუქება
 	Darker Color	უფრო მუქი ფერი
 	Date Created	შექმნის თარიღი
 	Date Modified	შეცვლის თარიღი
@@ -1621,7 +1621,7 @@
 	Double-click	ორმაგი დაწკაპუნება
 	Draft decoding at reduced playback resolution (H.264: faster, some frames less filtered)	გამარტივებული დეკოდირება დაკვრის შემცირებულ გარჩევადობაზე (H.264: უფრო სწრაფი, ზოგი კადრი ნაკლებად ფილტრირებული)
 	Drive	დრაივი
-	Drop Shadow	დაცემული ჩრდილი
+	Drop Shadow	ჩრდილი
 	Dry	მშრალი
 	Dry Out	მშრალი გამოსავალი
 	Dry Up a Roomy Voice	ოთახის ექოს მოცილება ხმიდან
@@ -1815,7 +1815,7 @@
 	Hard Clip	მყარი კლიპინგი
 	Hard Light	მკვეთრი სინათლე
 	Hard Limiter	მყარი ლიმიტერი
-	Hard Mix	მკაცრი შერევა
+	Hard Mix	მკვეთრი შერევა
 	Hardware decoding	აპარატული დეკოდირება
 	Hardware decoding: Auto uses the system's video decoder (VideoToolbox on macOS, Media Foundation on Windows, VA-API or NVDEC for H.264 and HEVC on Linux) for the streams it supports, and FilmCraft's own decoder for everything else or if the hardware fails. Media that is already open keeps its decoder until it is reopened.	აპარატული დეკოდირება: „ავტომატური“ რეჟიმი იყენებს სისტემის ვიდეოდეკოდერს (VideoToolbox macOS-ზე, Media Foundation Windows-ზე, VA-API ან NVDEC H.264-ისა და HEVC-ისთვის Linux-ზე) მის მიერ მხარდაჭერილი ნაკადებისთვის, ხოლო FilmCraft-ის საკუთარ დეკოდერს — დანარჩენი ყველაფრისთვის ან აპარატურის შეფერხებისას. უკვე გახსნილი მედია ინარჩუნებს თავის დეკოდერს, სანამ ხელახლა არ გაიხსნება.
 	Head Size	თავის ზომა
@@ -1830,17 +1830,17 @@
 	High Pass	მაღალსიხშირული ფილტრი
 	High Shelf	მაღალი თარო
 	High Shelf Gain	მაღალი თაროს გაძლიერება
-	High contrast with held highlights and deep shadows	მაღალი კონტრასტი შენარჩუნებული ნათელი ტონებითა და ღრმა ჩრდილებით
+	High contrast with held highlights and deep shadows	მაღალი კონტრასტი შენარჩუნებული ღია ტონებითა და ღრმა ჩრდილებით
 	Highlight	ნათელი უბნები
-	Highlight Blue Balance	ნათელი ტონების ლურჯის ბალანსი
-	Highlight Brightness	ნათელი ტონების სიკაშკაშე
-	Highlight Color	ნათელი ტონების ფერი
-	Highlight Green Balance	ნათელი ტონების მწვანის ბალანსი
-	Highlight Red Balance	ნათელი ტონების წითლის ბალანსი
-	Highlight Rolloff	ნათელი ტონების რბილი შეზღუდვა
-	Highlight Threshold	ნათელი ტონების ზღურბლი
-	Highlight Tint	ნათელი ტონების ტონირება
-	Highlights Lightness	ნათელი ტონების სინათლე
+	Highlight Blue Balance	ღია ტონების ლურჯის ბალანსი
+	Highlight Brightness	ღია ტონების სიკაშკაშე
+	Highlight Color	ღია ტონების ფერი
+	Highlight Green Balance	ღია ტონების მწვანის ბალანსი
+	Highlight Red Balance	ღია ტონების წითლის ბალანსი
+	Highlight Rolloff	ღია ტონების რბილი შეზღუდვა
+	Highlight Threshold	ღია ტონების ზღურბლი
+	Highlight Tint	ღია ტონების ტონირება
+	Highlights Lightness	ღია ტონების სინათლე
 	Highpass	მაღალსიხშირული
 	Hindi	ჰინდი
 	Hindi digits	ჰინდის ციფრები
@@ -1927,10 +1927,10 @@
 	Left to right	მარცხნიდან მარჯვნივ
 	Legacy	მოძველებული
 	Length	სიგრძე
-	Lens Blur	ლინზის გაბუნდოვნება
-	Lens Distortion	ლინზის დამახინჯება
-	Lens Flare	ლინზის ანარეკლი
-	Lens Type	ლინზის ტიპი
+	Lens Blur	ობიექტივის გაბუნდოვნება
+	Lens Distortion	ობიექტივის დამახინჯება
+	Lens Flare	ობიექტივის ანარეკლი
+	Lens Type	ობიექტივის ტიპი
 	Level 1	დონე 1
 	Level 2	დონე 2
 	Level 3	დონე 3
@@ -1956,8 +1956,8 @@
 	Lights & Blurs	სინათლე და გაბუნდოვნება
 	Lights & Glows	სინათლე და ნათება
 	Line Thickness	ხაზის სისქე
-	Linear Burn	წრფივი ჩაბნელება
-	Linear Dodge (Add)	წრფივი გაღიავება (მიმატება)
+	Linear Burn	წრფივი ჩამუქება
+	Linear Dodge (Add)	წრფივი გაღიავება (დამატება)
 	Linear Light	წრფივი სინათლე
 	Linear Ramp	წრფივი გრადიენტი
 	Linear Wipe	წრფივი გადაწმენდა
@@ -2043,10 +2043,10 @@
 	Metrics Kerning	კერნინგი მეტრიკით
 	Mid	შუა
 	Mid Point	შუა წერტილი
-	Midtone Blue Balance	შუა ტონების ლურჯის ბალანსი
-	Midtone Green Balance	შუა ტონების მწვანის ბალანსი
-	Midtone Red Balance	შუა ტონების წითლის ბალანსი
-	Midtones Lightness	შუა ტონების სინათლე
+	Midtone Blue Balance	შუალედური ტონების ლურჯის ბალანსი
+	Midtone Green Balance	შუალედური ტონების მწვანის ბალანსი
+	Midtone Red Balance	შუალედური ტონების წითლის ბალანსი
+	Midtones Lightness	შუალედური ტონების სინათლე
 	Minimum	მინიმუმი
 	Minimum time	მინიმალური დრო
 	Minimum time interval thinning	შემცირება მინიმალური დროის ინტერვალით
@@ -2062,7 +2062,7 @@
 	Modulation	მოდულაცია
 	Modulation Rate	მოდულაციის სიხშირე
 	Mono Media	მონო მედია
-	Monochrome	მონოქრომი
+	Monochrome	მონოქრომული
 	Monochrome toned cyan-blue	მონოქრომი ცისფერ-ლურჯი ტონირებით
 	Monochrome toned warm brown	მონოქრომი თბილი ყავისფერი ტონირებით
 	Monoscopic	მონოსკოპიური
@@ -2071,7 +2071,7 @@
 	Morph Cut	მორფული ჭრილი
 	Mosaic	მოზაიკა
 	Mosaic (Legacy)	მოზაიკა (მოძველებული)
-	Motion Blur	მოძრაობით გაბუნდოვნება
+	Motion Blur	მოძრაობის გაბუნდოვნება
 	Motion Camera	მოძრავი კამერა
 	Motion Preset	მოძრაობის პრესეტი
 	Motion Tween	მოძრაობის ინტერპოლაცია
@@ -2220,15 +2220,15 @@
 	Pre-Delay	წინა დაყოვნება
 	Prefix	პრეფიქსი
 	Presence Lift	ყოფნის ეფექტის აწევა
-	Preserve Luminosity	სიკაშკაშის შენარჩუნება
+	Preserve Luminosity	ნათების შენარჩუნება
 	Preserve Scale	მასშტაბის შენარჩუნება
 	ProcAmp	ProcAmp
-	Projecting cap	გამოწეული ბოლო
+	Projecting cap	გამოწეული დაბოლოება
 	Projects	პროექტები
 	Pull Motion	გამოწევით მოძრაობა
 	Pulls highlights and whites down	ნათელ ტონებსა და თეთრებს ქვემოთ წევს
-	Push	გაძევება
-	Push (Legacy)	გაძევება (მოძველებული)
+	Push	გადაწევა
+	Push (Legacy)	გადაწევა (მოძველებული)
 	Q	Q
 	RAM reserved for other applications	სხვა აპლიკაციებისთვის დაჯავშნული RAM
 	RGB	RGB
@@ -2304,10 +2304,10 @@
 	Roll (Z Axis)	გორება (Z ღერძი)
 	Room Size	ოთახის ზომა
 	Rotation Amount	შემობრუნების რაოდენობა
-	Roughen	დაუხეშება
+	Roughen	გაუხეშება
 	Roughen Color	ფერის დაუხეშება
 	Roughen Edges	კიდეების დაუხეშება
-	Round cap	მომრგვალებული ბოლო
+	Round cap	მომრგვალებული დაბოლოება
 	Round join	მომრგვალებული შეერთება
 	Rounded Crop	მომრგვალებული ჩამოჭრა
 	Rows	სტრიქონები
@@ -2329,7 +2329,7 @@
 	Scan Lines	სკანირების ხაზები
 	Scene	სცენა
 	Scientific Filter	სამეცნიერო ფილტრი
-	Scratch disk location for Captured Audio	ჩაწერილი აუდიოს სამუშაო დისკის მდებარეობა
+	Scratch disk location for Captured Audio	ჩაწერილი აუდიოს დროებითი დისკის მდებარეობა
 	Screen	ეკრანი
 	Seconds	წამი
 	Segments	სეგმენტები
@@ -2383,7 +2383,7 @@
 	Simple Text	მარტივი ტექსტი
 	Single-band Compressor	ერთზოლიანი კომპრესორი
 	Sinusoidal	სინუსოიდური
-	Skew	გადახრა
+	Skew	დახრა
 	Skew Axis	გადახრის ღერძი
 	Slats	ფიცრები
 	Slice	ნაჭერი
@@ -2544,7 +2544,7 @@
 	Track Matte Key	ტრეკის მატის გასაღები
 	Transcription	ტრანსკრიფცია
 	Transcription preferences	ტრანსკრიფციის პარამეტრები
-	Transform	ტრანსფორმაცია
+	Transform	გარდაქმნა
 	Transformers	ტრანსფორმერები
 	Transience	გარდამავლობა
 	Transition Completion	გადასვლის დასრულება
@@ -2641,7 +2641,7 @@
 	Video Transitions	ვიდეოგადასვლები
 	Video Usage	ვიდეოს გამოყენება
 	Vignette	ვინიეტი
-	Vivid Light	მკვეთრი სინათლე
+	Vivid Light	კაშკაშა სინათლე
 	Vocal Booth	ვოკალის კაბინა
 	Vocal Enhancer	ვოკალის გამაუმჯობესებელი
 	Voice	ხმა
@@ -2691,7 +2691,7 @@
 	YC	YC
 	YC no Chroma	YC ქრომის გარეშე
 	YUV	YUV
-	Yellow-green highlights and blue-lifted shadows from crossed channel curves	მოყვითალო-მწვანე ნათელი ტონები და მოლურჯოდ აწეული ჩრდილები არხების გადაჯვარედინებული მრუდებით
+	Yellow-green highlights and blue-lifted shadows from crossed channel curves	მოყვითალო-მწვანე ღია ტონები და მოლურჯოდ აწეული ჩრდილები არხების გადაჯვარედინებული მრუდებით
 	Z Position	მდებარეობა Z ღერძზე
 	Z Rotation	ბრუნვა Z ღერძზე
 	Zoom	მასშტაბი
@@ -2744,7 +2744,7 @@
 	All	ყველა
 	Any	ნებისმიერი
 	Case Sensitive	რეგისტრის გათვალისწინებით
-	Scratch Disks	სამუშაო დისკები
+	Scratch Disks	დროებითი დისკები
 	Ingest Settings	მიღების პარამეტრები
 	Captured and Generated:	ჩაწერილი და გენერირებული:
 	Video Previews:	ვიდეოს წინასწარი რენდერები:
@@ -2779,7 +2779,7 @@
 	Existing XMP files written by other applications are left unchanged.	სხვა აპლიკაციების მიერ ჩაწერილი XMP ფაილები უცვლელი რჩება.
 	To {name}	{name}-ში
 	Ordering:	დალაგება:
-	Sort Order	სორტირების რიგი
+	Sort Order	სორტირების წესი
 	Selection Order	მონიშვნის რიგი
 	Placement:	განთავსება:
 	Sequentially	თანმიმდევრულად
@@ -2852,7 +2852,7 @@
 	Shortcut	მალსახმობი
 	Type a shortcut… (Esc cancels)	შეიყვანეთ მალსახმობი… (Esc — გაუქმება)
 	Add another shortcut	კიდევ ერთი მალსახმობის დამატება
-	No matching commands	შესაბამისი ბრძანებები არ არის
+	No matching commands	შესაბამისი ბრძანება ვერ მოიძებნა
 	Key:	კლავიში:
 	Modifiers	მოდიფიკატორები
 	Nothing is assigned to this key	ამ კლავიშზე არაფერია მინიჭებული
@@ -2923,7 +2923,7 @@
 	True Peak Limit	ჭეშმარიტი პიკის ზღვარი
 	Audio only	მხოლოდ აუდიო
 	Scaling	მასშტაბირება
-	Scale To Fit	მასშტაბირება მორგებით
+	Scale To Fit	მასშტაბის მორგება
 	Scale To Fill	მასშტაბირება შევსებით
 	Stretch To Fill	გაჭიმვა შევსებით
 	Summary	შეჯამება
@@ -2988,7 +2988,7 @@
 	Apple ProRes 4444 with Alpha	Apple ProRes 4444 ალფათი
 	Apple ProRes 4444 XQ	Apple ProRes 4444 XQ
 	Application	აპლიკაცია
-	Apply Guide Template	გიდების შაბლონის გამოყენება
+	Apply Guide Template	დამხმარე ხაზების შაბლონის გამოყენება
 	Auto Save Now	ახლავე ავტოშენახვა
 	Auto-Match Loudness	ხმამაღლობის ავტოგათანაბრება
 	Avid DNxHR	Avid DNxHR
@@ -3042,7 +3042,7 @@
 	Decrease Video Tracks Height	ვიდეოტრეკების სიმაღლის შემცირება
 	Delete Captions	სუბტიტრების წაშლა
 	Delete Graphic Layer	გრაფიკული ფენის წაშლა
-	Delete Guide Template	გიდების შაბლონის წაშლა
+	Delete Guide Template	დამხმარე ხაზების შაბლონის წაშლა
 	Delete Media Cache Files	მედიის ქეშის ფაილების წაშლა
 	Discard Unsaved Changes	შეუნახავი ცვლილებების უარყოფა
 	Does Not Contain	არ შეიცავს
@@ -3335,7 +3335,7 @@
 	WAV, stereo 48 kHz 16-bit PCM	WAV, სტერეო 48 kHz 16-bit PCM
 	WAV, stereo 48 kHz 24-bit PCM	WAV, სტერეო 48 kHz 24-bit PCM
 	Warm Tint	თბილი ტონირება
-	Warm highlights, brown shadows	თბილი ნათელი ტონები, ყავისფერი ჩრდილები
+	Warm highlights, brown shadows	თბილი ღია ტონები, ყავისფერი ჩრდილები
 	Waveform Audio	Waveform Audio
 	Waveform Audio 48 kHz 16-bit	Waveform Audio 48 kHz 16-bit
 	Waveform Audio 48 kHz 24-bit	Waveform Audio 48 kHz 24-bit
@@ -3369,7 +3369,7 @@
 	Sepia Tone	სეპიის ტონი
 	Cold Mono	ცივი მონოქრომი
 	Lift Shadows	ჩრდილების აწევა
-	Protect Highlights	ნათელი ტონების დაცვა
+	Protect Highlights	ღია ტონების დაცვა
 	Half Saturation	ნახევარი გაჯერება
 	Boost Vibrance	სიცოცხლისუნარიანობის გაძლიერება
 	Legal Range Squeeze	დასაშვებ დიაპაზონში მოქცევა
@@ -3489,7 +3489,7 @@
 	Editing Mode:	მონტაჟის რეჟიმი:
 	Timebase:	დროის ბაზა:
 	Frame Size:	კადრის ზომა:
-	Pixel Aspect Ratio:	პიქსელის თანაფარდობა:
+	Pixel Aspect Ratio:	პიქსელის გვერდების თანაფარდობა:
 	Fields:	ველები:
 	Channel Format:	არხების ფორმატი:
 	Number of Channels:	არხების რაოდენობა:
