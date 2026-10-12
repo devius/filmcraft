@@ -2796,8 +2796,6 @@
 	Ignore Audio	აუდიოს იგნორირება
 	Ignore Video	ვიდეოს იგნორირება
 	Apply a cut at each detected cut point	ჭრილის დასმა ყოველ ამოცნობილ ჭრილის წერტილში
-	Create a subclip for each detected cut point	ქვეკლიპის შექმნა ყოველი ამოცნობილი ჭრილის წერტილისთვის
-	Generate clip markers at each detected cut point	კლიპის მარკერების შექმნა ყოველ ამოცნობილ ჭრილის წერტილში
 	Sensitivity:	მგრძნობელობა:
 	Normalize Mix Track to:	მიქსის ტრეკის ნორმალიზება დონემდე:
 	Disabled clips	გამორთული კლიპები
@@ -3553,3 +3551,32 @@
 	Notes for this project: to-dos, instructions, frame numbers… Saved with the project.	ამ პროექტის შენიშვნები: გასაკეთებელი საქმეები, ინსტრუქციები, კადრების ნომრები… ინახება პროექტთან ერთად.
 	Use Effect Shutter Angle	ეფექტის ჩამკეტის კუთხის გამოყენება
 	Settings	პარამეტრები
+	A file dialog is already open	ფაილის დიალოგი უკვე გახსნილია
+	Create a bin of subclips from each detected cut point	ქვეკლიპების ბინის შექმნა ყოველი ამოცნობილი ჭრილის წერტილიდან
+	Create a clip marker at each detected cut point	კლიპის მარკერის შექმნა ყოველ ამოცნობილ ჭრილის წერტილში
+	FLAC	FLAC
+	FLAC 48 kHz 24-bit	FLAC 48 kHz 24-bit
+	FLAC, stereo 48 kHz 24-bit, lossless	FLAC, სტერეო 48 kHz 24-bit, დანაკარგის გარეშე
+	FLAC (lossless)	FLAC (დანაკარგის გარეშე)
+	Compression Level	შეკუმშვის დონე
+	0 fastest, 8 smallest	0 — ყველაზე სწრაფი, 8 — ყველაზე მცირე
+	Drag inward to round the corners	კუთხეების მოსამრგვალებლად გადაათრიეთ შიგნით
+	Appearance Settings…	იერსახის პარამეტრები…
+	Add to favorites	რჩეულებში დამატება
+	Remove from favorites	რჩეულებიდან ამოშლა
+	Compression	შეკუმშვა
+	ZIP (1 scan line)	ZIP (1 სკანირების ხაზი)
+	ZIP (16 scan lines)	ZIP (16 სკანირების ხაზი)
+	Safe graphics mode: {mode}	გრაფიკის უსაფრთხო რეჟიმი: {mode}
+	An earlier start failed with the default graphics. Updating the graphics driver usually fixes this.	წინა გაშვება ნაგულისხმევი გრაფიკით ჩაიშალა. როგორც წესი, ამას გრაფიკის დრაივერის განახლება აგვარებს.
+	Use Default Graphics	ნაგულისხმევი გრაფიკის გამოყენება
+	The default graphics are used from the next start.	ნაგულისხმევი გრაფიკა შემდეგი გაშვებიდან იქნება გამოყენებული.
+	DirectX 12 only	მხოლოდ DirectX 12
+	software rendering	პროგრამული რენდერი
+	Label Color Presets	იარლიყების ფერების პრესეტები
+	{name} (Modified)	{name} (შეცვლილი)
+	Revert to the preset's colors and names	პრესეტის ფერებსა და სახელებზე დაბრუნება
+	Import a preset file…	პრესეტის ფაილის იმპორტი…
+	Export the labels to a preset file…	იარლიყების ექსპორტი პრესეტის ფაილში…
+	Show the presets folder	პრესეტების საქაღალდის ჩვენება
+	Delete this preset	ამ პრესეტის წაშლა
