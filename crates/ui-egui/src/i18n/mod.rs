@@ -1054,7 +1054,7 @@ mod tests {
         }
         missing.sort();
         assert!(missing.is_empty(), "untranslated Georgian strings: {missing:#?}");
-        for (en, ka) in [("Settings", "პარამეტრები"), ("Sequence", "სეკვენცია"), ("Timeline", "დროის ხაზი")]
+        for (en, ka) in [("Settings", "პარამეტრები"), ("Sequence", "სეკვენცია"), ("Timeline", "ტაიმლაინი")]
         {
             assert_eq!(Language::Ka.tr(en), ka);
         }
