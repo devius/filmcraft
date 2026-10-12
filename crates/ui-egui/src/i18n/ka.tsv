@@ -82,7 +82,7 @@
 	Composite Video	კომპოზიტური ვიდეო
 	Consolidate Duplicates	დუბლიკატების გაერთიანება
 	Copy	კოპირება
-	Copy Paste Includes Sequence Markers	კოპირება-ჩაწებება მოიცავს სეკვენციის მარკერებს
+	Copy Paste Includes Sequence Markers	კოპირება-ჩასმა მოიცავს სეკვენციის მარკერებს
 	Create Captions from Transcript…	სუბტიტრების შექმნა ტრანსკრიპტიდან…
 	Create Multi-Camera Source Sequence…	მრავალკამერიანი წყარო სეკვენციის შექმნა…
 	Create Proxies…	პროქსების შექმნა…
@@ -151,7 +151,7 @@
 	Go to Out	გამოსვლაზე გადასვლა
 	Go to Previous Caption Segment	სუბტიტრების წინა სეგმენტზე გადასვლა
 	Go to Previous Marker	წინა მარკერზე გადასვლა
-	Go to Split	გაყოფის წერტილზე გადასვლა
+	Go to Split	დაყოფის წერტილზე გადასვლა
 	Graphics and Titles	გრაფიკა და ტიტრები
 	Graphics…	გრაფიკა…
 	Green	მწვანე
@@ -198,7 +198,7 @@
 	Mark In	შესვლის დასმა
 	Mark Out	გამოსვლის დასმა
 	Mark Selection	მონიშნულის მონიშვნა
-	Mark Split	გაყოფის დასმა
+	Mark Split	დაყოფის დასმა
 	Markers	მარკერები
 	Match Frame	შესაბამისი კადრი
 	Media Analysis & Transcription…	მედიის ანალიზი და ტრანსკრიფცია…
@@ -224,9 +224,9 @@
 	Open Project…	პროექტის გახსნა…
 	Optical Flow	ოპტიკური ნაკადი
 	Overwrite	გადაწერა
-	Paste	ჩაწებება
-	Paste Attributes…	ატრიბუტების ჩაწებება…
-	Paste Insert	ჩაწებება ჩასმით
+	Paste	ჩასმა
+	Paste Attributes…	ატრიბუტების ჩასმა…
+	Paste Insert	ჩასმა ჩასმის რეჟიმით
 	Paused Resolution	გარჩევადობა პაუზისას
 	Playback Resolution	დაკვრის გარჩევადობა
 	Playback…	დაკვრა…
@@ -273,7 +273,7 @@
 	Revert Remix	რემიქსის გაუქმება
 	Review	რეცენზირება
 	Right	მარჯვნივ
-	Ripple Delete	წაშლა შუალედის გარეშე
+	Ripple Delete	ძვრადი წაშლა
 	Ripple Sequence Markers	სეკვენციის მარკერების ძვრა
 	Rose	ვარდისფერი
 	Safe Margins	უსაფრთხო ზღვრები
@@ -345,7 +345,7 @@
 	Video In	ვიდეოს შესვლა
 	Video Options	ვიდეოს პარამეტრები
 	Video Out	ვიდეოს გამოსვლა
-	Video and Audio Waveform Split	ვიდეოსა და აუდიოს ტალღის ფორმის გაყოფა
+	Video and Audio Waveform Split	ვიდეოსა და აუდიოს ტალღის ფორმის დაყოფა
 	View	ჩვენება
 	Violet	იისფერი
 	Window	ფანჯარა
@@ -354,7 +354,7 @@
 	Zoom In	გადიდება
 	Zoom Out	დაპატარავება
 	Zoom to Sequence	სეკვენციაზე მასშტაბირება
-	Home	მთავარი
+	Home	საწყისი ეკრანი
 	Import	იმპორტი
 	{name} - Edited	{name} - რედაქტირებული
 	Full screen	სრული ეკრანი
@@ -561,7 +561,7 @@
 	Import captions file…	სუბტიტრების ფაილის იმპორტი…
 	New {format} track	ახალი {format} ტრეკი
 	Add caption at playhead	სუბტიტრის დამატება დაკვრის კურსორთან
-	Split caption at playhead	სუბტიტრის გაყოფა დაკვრის კურსორთან
+	Split caption at playhead	სუბტიტრის დაყოფა დაკვრის კურსორთან
 	Merge selected captions	მონიშნული სუბტიტრების შერწყმა
 	Delete selected captions	მონიშნული სუბტიტრების წაშლა
 	No captions on this track. Press + to add one at the playhead.	ამ ტრეკზე სუბტიტრები არ არის. დააჭირეთ +-ს, რომ დაამატოთ დაკვრის კურსორთან.
@@ -891,8 +891,8 @@
 	HDR	HDR
 	HDR White	HDR თეთრი
 	HDR Specular	HDR სარკისებრი
-	Look	იერსახე
-	Look LUT	იერსახის LUT
+	Look	ვიზუალური სტილი
+	Look LUT	ვიზუალური სტილის LUT
 	Intensity	ინტენსივობა
 	Adjustments	კორექცია
 	Faded Film	გახუნებული ფირი
@@ -1261,8 +1261,8 @@
 	1 file	1 ფაილი
 	{n} files	ფაილი: {n}
 	Additional Scale	დამატებითი მასშტაბი
-	Additive Dissolve	ადიტიური მიქრობა
-	Additive Dissolve (Legacy)	ადიტიური მიქრობა (მოძველებული)
+	Additive Dissolve	ადიტიური გადადნობა
+	Additive Dissolve (Legacy)	ადიტიური გადადნობა (მოძველებული)
 	Adjust	კორექცია
 	Advanced	დამატებითი
 	Aggressive	აგრესიული
@@ -1371,7 +1371,7 @@
 	Blend Mode	შერევის რეჟიმი
 	Blend With Original	ორიგინალთან შერევა
 	Blending Mode	შერევის რეჟიმი
-	Block Dissolve	ბლოკური მიქრობა
+	Block Dissolve	ბლოკური გადადნობა
 	Block Height	ბლოკის სიმაღლე
 	Block Motion	ბლოკური მოძრაობა
 	Block Size	ბლოკის ზომა
@@ -1390,7 +1390,7 @@
 	Blur Amount	გაბუნდოვნების სიდიდე
 	Blur Angle	გაბუნდოვნების კუთხე
 	Blur Dimensions	გაბუნდოვნების მიმართულება
-	Blur Dissolve	გაბუნდოვნებით მიქრობა
+	Blur Dissolve	გაბუნდოვნებით გადადნობა
 	Blur Layer	გაბუნდოვნების ფენა
 	Blur Length	გაბუნდოვნების სიგრძე
 	Blurriness	გაბუნდოვნება
@@ -1433,14 +1433,14 @@
 	Camera Shake	კამერის რყევა
 	Capitalisation	რეგისტრი
 	Cathedral	ტაძარი
-	Cell Pattern	უჯრედების ნიმუში
+	Cell Pattern	უჯრედების პატერნი
 	Center Channel Pan	ცენტრალური არხის პანორამა
 	Center Gradient	ცენტრის გრადიენტი
 	Center Input	ცენტრის შემავალი
 	Center Out	ცენტრის გამომავალი
 	Center Point (Latitude)	ცენტრის წერტილი (განედი)
 	Center Point (Longitude)	ცენტრის წერტილი (გრძედი)
-	Center Split	ცენტრის გაყოფა
+	Center Split	ცენტრის დაყოფა
 	Center of Sphere	სფეროს ცენტრი
 	Cents	ცენტი
 	Change to Color	ფერად შეცვლა
@@ -1526,8 +1526,8 @@
 	Crop	ჩამოჭრა
 	Crop Less <-> Smooth More	ნაკლები ჩამოჭრა <-> მეტი დამრბილება
 	Cross Displacement	ჯვარედინი წანაცვლება
-	Cross Dissolve	ჯვარედინი მიქრობა
-	Cross Dissolve (Legacy)	ჯვარედინი მიქრობა (მოძველებული)
+	Cross Dissolve	ჯვარედინი გადადნობა
+	Cross Dissolve (Legacy)	ჯვარედინი გადადნობა (მოძველებული)
 	Cross Zoom	ჯვარედინი მასშტაბირება
 	Cross Zoom (Legacy)	ჯვარედინი მასშტაბირება (მოძველებული)
 	Crossfade	ჯვარედინი მიქრობა
@@ -1587,7 +1587,7 @@
 	Detailed Analysis	დეტალური ანალიზი
 	Device Class	მოწყობილობის კლასი
 	Dialogue	დიალოგი
-	Diamond	რომბი
+	Diamond	ბრილიანტი
 	Difference	სხვაობა
 	Dimensions	ზომები
 	Dimmed	ჩამქრალი
@@ -1606,8 +1606,8 @@
 	Display Color Management	ეკრანის ფერთა მართვა
 	Display Color Settings	ეკრანის ფერთა პარამეტრები
 	Display out of sync indicators for unlinked clips	სინქრონიზაციის დარღვევის ინდიკატორების ჩვენება დაუკავშირებელი კლიპებისთვის
-	Dissolve	მიქრობა
-	Dissolve Blocks	ბლოკებით მიქრობა
+	Dissolve	გადადნობა
+	Dissolve Blocks	ბლოკებით გადადნობა
 	Distance	მანძილი
 	Distance to Image	მანძილი გამოსახულებამდე
 	Distort	დამახინჯება
@@ -1695,8 +1695,8 @@
 	Fill Point	შევსების წერტილი
 	Fill Right with Left	მარჯვენას შევსება მარცხენით
 	Fill Selector	შევსების ამრჩევი
-	Film Dissolve	კინოფირის მიქრობა
-	Film Dissolve (Legacy)	კინოფირის მიქრობა (მოძველებული)
+	Film Dissolve	კინოფირის გადადნობა
+	Film Dissolve (Legacy)	კინოფირის გადადნობა (მოძველებული)
 	Film Roll	კინოფირის გადახვევა
 	Filter	ფილტრი
 	Filter Frequency	ფილტრის სიხშირე
@@ -1840,7 +1840,7 @@
 	Highlight Rolloff	ნათელი ტონების რბილი მილევა
 	Highlight Threshold	ღია ტონების ზღვარი
 	Highlight Tint	ღია ტონების ტონირება
-	Highlights Lightness	ღია ტონების სინათლე
+	Highlights Lightness	ღია ტონების სიღიავე
 	Highpass	მაღალსიხშირული
 	Hindi	ჰინდი
 	Hindi digits	ჰინდის ციფრები
@@ -1891,7 +1891,7 @@
 	Iris	დიაფრაგმა
 	Iris Box	დიაფრაგმა: კვადრატი
 	Iris Cross	დიაფრაგმა: ჯვარი
-	Iris Diamond	დიაფრაგმა: რომბი
+	Iris Diamond	დიაფრაგმა: ბრილიანტი
 	Iris Radius	დიაფრაგმის რადიუსი
 	Iris Rotation	დიაფრაგმის შემობრუნება
 	Iris Round	დიაფრაგმა: წრე
@@ -2046,7 +2046,7 @@
 	Midtone Blue Balance	შუალედური ტონების ლურჯის ბალანსი
 	Midtone Green Balance	შუალედური ტონების მწვანის ბალანსი
 	Midtone Red Balance	შუალედური ტონების წითლის ბალანსი
-	Midtones Lightness	შუალედური ტონების სინათლე
+	Midtones Lightness	შუალედური ტონების სიღიავე
 	Minimum	მინიმუმი
 	Minimum time	მინიმალური დრო
 	Minimum time interval thinning	შემცირება მინიმალური დროის ინტერვალით
@@ -2099,7 +2099,7 @@
 	Noise Level	ხმაურის დონე
 	Noise Reduction/Restoration	ხმაურის შემცირება/აღდგენა
 	Noise Type	ხმაურის ტიპი
-	Non-Additive Dissolve	არაადიტიური მიქრობა
+	Non-Additive Dissolve	არაადიტიური გადადნობა
 	Normal	ჩვეულებრივი
 	Notch 1	ჩაღრმავება 1
 	Notch 2	ჩაღრმავება 2
@@ -2156,8 +2156,8 @@
 	Parade (RGB)	პარადი (RGB)
 	Parametric Equalizer	პარამეტრული ეკვალაიზერი
 	Passband Ripple	გამტარი ზოლის პულსაცია
-	Path	კონტური
-	Path Points	კონტურის წერტილები
+	Path	ტრაექტორია
+	Path Points	ტრაექტორიის წერტილები
 	Pause Media Encoder queue during playback	Media Encoder-ის რიგის დაპაუზება დაკვრისას
 	Peak Frequency	პიკის სიხშირე
 	Peak Gain	პიკის გაძლიერება
@@ -2232,7 +2232,7 @@
 	Q	Q
 	RAM reserved for other applications	სხვა აპლიკაციებისთვის დაჯავშნული RAM
 	RGB	RGB
-	RGB Split	RGB-ის გაყოფა
+	RGB Split	RGB-ის დაყოფა
 	RGB-White	RGB-თეთრი
 	Radial	რადიალური
 	Radial Blur	რადიალური გაბუნდოვნება
@@ -2350,9 +2350,9 @@
 	Shadow Red Balance	ჩრდილების წითელის ბალანსი
 	Shadow Size	ჩრდილის ზომა
 	Shadow Tint	ჩრდილების ტონირება
-	Shadows Lightness	ჩრდილების სიღია
+	Shadows Lightness	ჩრდილების სიღიავე
 	Shake	რყევა
-	Shape Dissolve	ფიგურული მიქრობა
+	Shape Dissolve	ფიგურული გადადნობა
 	Shape Flow	ფიგურის დინება
 	Shape Size	ფიგურის ზომა
 	Shapes	ფიგურები
@@ -2366,7 +2366,7 @@
 	Show Clip Mismatch Warning dialog	კლიპის შეუსაბამობის გაფრთხილების დიალოგის ჩვენება
 	Show Event Indicator	მოვლენის ინდიკატორის ჩვენება
 	Show Focus Area	ფოკუსის არის ჩვენება
-	Show Home	მთავარი ეკრანის ჩვენება
+	Show Home	საწყისი ეკრანის ჩვენება
 	Show Mask Tracker Preview	ნიღბის ტრეკერის გადახედვის ჩვენება
 	Show Only Noise	მხოლოდ ხმაურის ჩვენება
 	Show Open Dialog	გახსნის დიალოგის ჩვენება
@@ -2428,8 +2428,8 @@
 	Spin	ტრიალი
 	Spin Direction	ტრიალის მიმართულება
 	Spin Motion	ტრიალით მოძრაობა
-	Split	გაყოფა
-	Split (Legacy)	გაყოფა (მოძველებული)
+	Split	დაყოფა
+	Split (Legacy)	დაყოფა (მოძველებული)
 	Spotlight	პროჟექტორი
 	Spread	გაშლა
 	Spring Motion	ზამბარისებური მოძრაობა
@@ -2954,7 +2954,7 @@
 	Drag an edit point to roll it: the out of one clip and the in of the next move together.	გადაათრიეთ ჭრილი მცოცავი მონტაჟისთვის: ერთი კლიპის გამოსვლა და შემდეგის შესვლა ერთად გადაინაცვლებს.
 	Drag an edge to change the clip's speed so it fills the new duration.	გადაათრიეთ კიდე კლიპის სიჩქარის შესაცვლელად, რომ მან ახალი ხანგრძლივობა შეავსოს.
 	Drag the edge of a music clip to remix it to the new duration at musically matching beats.	გადაათრიეთ მუსიკალური კლიპის კიდე, რომ ის ახალ ხანგრძლივობაზე გადაეწყოს მუსიკალურად შესაბამის დარტყმებზე.
-	Click to split a clip. Shift-click to split all tracks.	დააწკაპუნეთ კლიპის გასაყოფად. Shift-დაწკაპუნება — ყველა ტრეკის გაყოფა.
+	Click to split a clip. Shift-click to split all tracks.	დააწკაპუნეთ კლიპის დასაყოფად. Shift-დაწკაპუნება — ყველა ტრეკის დაყოფა.
 	Drag a clip to slip its source in/out without moving it.	გადაათრიეთ კლიპი მისი წყაროს შესვლა/გამოსვლის გადასაცურებლად ისე, რომ კლიპი არ გადაადგილდეს.
 	Drag a clip to slide it between its neighbours.	გადაათრიეთ კლიპი მეზობლებს შორის გადასასრიალებლად.
 	Drag to scroll the timeline.	გადაათრიეთ ტაიმლაინის გადასახვევად.
@@ -3246,7 +3246,7 @@
 	Select to Segment Start	მონიშვნა სეგმენტის დასაწყისამდე
 	Selection Tool	მონიშვნის ხელსაწყო
 	Set Comparison Reference	შედარების ეტალონის დაყენება
-	Set Creative Look	კრეატიული იერსახის დაყენება
+	Set Creative Look	კრეატიული ვიზუალური სტილის დაყენება
 	Set Input LUT	შემავალი LUT-ის დაყენება
 	Set Project Panel View	პროექტის პანელის ხედის დაყენება
 	Show Next Screen	შემდეგი ეკრანის ჩვენება
@@ -3270,7 +3270,7 @@
 	Social Vertical 1080×1920	სოციალური ვერტიკალური 1080×1920
 	Soft Vignette	რბილი ვინეტი
 	Source In/Out	წყაროს შესვლა/გამოსვლა
-	Split Caption	სუბტიტრის გაყოფა
+	Split Caption	სუბტიტრის დაყოფა
 	Square Pixels (1.0)	კვადრატული პიქსელები (1.0)
 	Stack Clips	კლიპების დასტად დაწყობა
 	Start Export Queue	ექსპორტის რიგის დაწყება
