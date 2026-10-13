@@ -406,7 +406,7 @@ mod tests {
         assert_eq!(Language::parse("id-ID"), None, "the preference stores the bare code");
         assert_eq!(Language::Ka.name(), "ქართული");
         assert_eq!(Language::Ka.tr("File"), "ფაილი");
-        assert_eq!(Language::Ka.tr("Save As…"), "შენახვა სხვა სახელით…");
+        assert_eq!(Language::Ka.tr("Save As…"), "შენახვა როგორც…");
         assert_eq!(Language::Ka.tr("ჩემი კლიპი.mp4"), "ჩემი კლიპი.mp4");
         assert_eq!(Language::parse("ka"), Some(Language::Ka));
         assert_eq!(Language::parse("ka-GE"), None, "the preference stores the bare code");

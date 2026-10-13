@@ -34,7 +34,7 @@ meaning of the English labels; no proprietary translation resources were consult
 | Source | Georgian |
 |---|---|
 | File / Edit / Window | ფაილი / რედაქტირება / ფანჯარა |
-| Save As… / Undo / Redo | შენახვა სხვა სახელით… / დაბრუნება / ხელახლა შესრულება |
+| Save As… / Undo / Redo | შენახვა როგორც… / დაბრუნება / ხელახლა შესრულება |
 | Cut / Paste | ამოჭრა / ჩასმა |
 | Project / Bin | პროექტი / ბინი |
 | Sequence / Nest… | სეკვენცია / ჩადგმა… |
