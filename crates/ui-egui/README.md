@@ -22,7 +22,7 @@ Chinese, German, Russian, French, Indonesian, Korean and Italian (which cover th
 restored on startup, and also available in Settings > General.
 Its default, System Language (`system`), follows the operating system: the first of the user's
 preferred languages that the interface has (the host supplies them through
-`HostHooks::system_languages`: `sys-locale` on the desktop, `navigator.languages` on the web),
+`HostHooks::system_languages`: `sys-locale` on the desktop, `?lang=` in the address then `navigator.languages` on the web),
 otherwise English.
 The `app.language.*` UI commands and `prefs.set` reach it through the control channel.
 Japanese requires a craft-fonts build or a suitable installed font.
