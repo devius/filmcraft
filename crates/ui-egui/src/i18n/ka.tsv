@@ -222,6 +222,9 @@
 	Normalize Mix Track…	მიქსის ტრეკის ნორმალიზება…
 	Offline File…	ოფლაინ ფაილი…
 	Open Project…	პროექტის გახსნა…
+	Open Recent	ბოლოდროინდელის გახსნა
+	Clear Recent Files	ბოლოდროინდელი ფაილების სიის გასუფთავება
+	Recent	ბოლოდროინდელი
 	Optical Flow	ოპტიკური ნაკადი
 	Overwrite	გადაწერა
 	Paste	ჩასმა
@@ -274,6 +277,7 @@
 	Review	განხილვა
 	Right	მარჯვნივ
 	Ripple Delete	ძვრადი წაშლა
+	Ripple Delete Head Frame	დასაწყისის ძვრადი წაშლა
 	Ripple Sequence Markers	სეკვენციის მარკერების ძვრა
 	Rose	ვარდისფერი
 	Safe Margins	უსაფრთხო ზღვრები
@@ -1823,6 +1827,8 @@
 	Height	სიმაღლე
 	Hexagon	ექვსკუთხედი
 	Hide Back Face	უკანა მხარის დამალვა
+	Hide FilmCraft	FilmCraft-ის დამალვა
+	Hide Others	სხვების დამალვა
 	High	მაღალი
 	High Cutoff	მაღალი ზღვარი
 	High Frequency Cut	მაღალი სიხშირეების მოკვეთა
@@ -2911,6 +2917,10 @@
 	Sample Size	ნიმუშის ზომა
 	16 bit	16 ბიტი
 	24 bit	24 ბიტი
+	32 bit	32 ბიტი
+	32 bit float	32 ბიტი (მცურავი წერტილი)
+	FLAC stores whole-number samples only	FLAC მხოლოდ მთელრიცხვა სემპლებს ინახავს
+	MXF export writes integer PCM only	MXF-ის ექსპორტი მხოლოდ მთელრიცხვა PCM-ს წერს
 	Size / Opacity	ზომა / გაუმჭვირვალობა
 	Image Overlay	სურათის გადაფარვა
 	PNG or JPEG file	PNG ან JPEG ფაილი
@@ -3415,6 +3425,7 @@
 	The language changed but could not be saved: {e}	ენა შეიცვალა, მაგრამ ვერ შეინახა: {e}
 	no Chinese font is installed on this system; the interface stays in English	ამ სისტემაზე ჩინური შრიფტი არ არის დაყენებული; ინტერფეისი ინგლისურად რჩება
 	no Georgian font is installed on this system; the interface stays in English	ამ სისტემაში ქართული შრიფტი არ არის დაყენებული; ინტერფეისი ინგლისურად დარჩება
+	no Korean font is installed on this system; the interface stays in English	ამ სისტემაზე კორეული შრიფტი არ არის დაყენებული; ინტერფეისი ინგლისურად რჩება
 	no Japanese font is installed on this system; the interface stays in English	ამ სისტემაზე იაპონური შრიფტი არ არის დაყენებული; ინტერფეისი ინგლისურად რჩება
 	Show	ჩვენება
 	Sort	სორტირება
@@ -3580,3 +3591,9 @@
 	Export the labels to a preset file…	იარლიყების ექსპორტი პრესეტის ფაილში…
 	Show the presets folder	პრესეტების საქაღალდის ჩვენება
 	Delete this preset	ამ პრესეტის წაშლა
+	Opens in your web browser: {url}	იხსნება ვებბრაუზერში: {url}
+	Saves this session's log and shows it in your file manager.	ინახავს ამ სესიის ჟურნალს და აჩვენებს მას ფაილების მენეჯერში.
+	Shows a report on this computer.	აჩვენებს ანგარიშს ამ კომპიუტერის შესახებ.
+	Shows the version, community links and credits in a FilmCraft window.	აჩვენებს ვერსიას, საზოგადოების ბმულებსა და მონაწილეებს FilmCraft-ის ფანჯარაში.
+	Couldn't open your web browser	ვებბრაუზერი ვერ გაიხსნა
+	Open this address in your browser yourself:	ეს მისამართი ბრაუზერში თავად გახსენით:

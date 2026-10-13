@@ -1,6 +1,6 @@
 # Georgian interface
 
-> **Last reviewed:** 2026-10-13 · **Last updated:** 2026-10-13 · **Change:** minor (Georgian catalog in sync with 0.7.2, 3,574 entries; terminology and scope written down) · **Target:** FilmCraft 0.7.2
+> **Last reviewed:** 2026-10-13 · **Last updated:** 2026-10-13 · **Change:** minor (Georgian catalog in sync with 0.7.2, 3,591 entries; terminology and scope written down) · **Target:** FilmCraft 0.7.2
 
 Choose **Edit › Language › ქართული** (also Settings › General › Interface Language), or leave the
 setting on System Language and use a Georgian system display language (`ka`, `ka-GE`,
@@ -10,7 +10,7 @@ with the other preferences and restored at startup. Project content (track and b
 project), command ids, timecode, engine errors and CLI/MCP/control responses stay as they are.
 
 `crates/ui-egui/src/i18n/ka.tsv` has every entry of the Spanish catalog plus the native macOS
-Settings item (3,574 entries): menus, panels, tools, dialogs, settings, effect and transition
+Settings item (3,591 entries): menus, panels, tools, dialogs, settings, effect and transition
 names and their parameters, presets, export formats and status messages. It is written from the
 meaning of the English labels; no proprietary translation resources were consulted.
 
