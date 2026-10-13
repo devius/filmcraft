@@ -43,7 +43,7 @@
 	Audio Meters	აუდიოს დონის მაჩვენებლები
 	Audio Options	აუდიოს პარამეტრები
 	Audio Out	აუდიოს გამოსვლა
-	Audio Track Mixer	აუდიოტრეკების მიქშერი
+	Audio Track Mixer	აუდიო ტრეკების მიქშერი
 	Audio Waveform	აუდიოს ტალღის ფორმა
 	Auto Save…	ავტოშენახვა…
 	Automate to Sequence…	სეკვენციაში ავტომატური განთავსება…
@@ -94,7 +94,7 @@
 	Delete Transcript	ტრანსკრიპტის წაშლა
 	Demo Footage	სადემონსტრაციო ვიდეომასალა
 	Demo Project	სადემონსტრაციო პროექტი
-	Deselect All	ყველაფრის მონიშვნის მოხსნა
+	Deselect All	ყველა მონიშვნის მოხსნა
 	Detach Proxies	პროქსების მოხსნა
 	Display Mode	ჩვენების რეჟიმი
 	Distribute	განაწილება
@@ -130,8 +130,8 @@
 	FilmCraft on getartcraft.com	FilmCraft getartcraft.com-ზე
 	Find Next	შემდეგის ძებნა
 	Find…	ძებნა…
-	Fit	მორგება
-	Fit to frame	კადრზე მორგება
+	Fit	ჩატევა
+	Fit to frame	კადრში ჩატევა
 	Flatten	გაერთიანება
 	Forest	ტყისფერი
 	Frame Blending	კადრების შერევა
@@ -142,7 +142,7 @@
 	From Source Monitor, Match Frame	წყაროს მონიტორიდან, შესაბამისი კადრი
 	From file…	ფაილიდან…
 	Full	სრული
-	Generate Audio Waveform	აუდიოს ტალღის ფორმის გენერირება
+	Generate Audio Waveform	აუდიოს ტალღის ფორმის გენერაცია
 	Get Media File Properties for	მედიაფაილის თვისებების მიღება:
 	Go to Gap	შუალედზე გადასვლა
 	Go to In	შესვლაზე გადასვლა
@@ -194,10 +194,10 @@
 	Make Subclip…	ქვეკლიპის შექმნა…
 	Make Subsequence	ქვესეკვენციის შექმნა
 	Manage Guides…	დამხმარე ხაზების მართვა…
-	Mark Clip	კლიპის მონიშვნა
+	Mark Clip	კლიპის მარკირება
 	Mark In	შესვლის დასმა
 	Mark Out	გამოსვლის დასმა
-	Mark Selection	მონიშნულის მონიშვნა
+	Mark Selection	მონიშნულის მარკირება
 	Mark Split	დაყოფის დასმა
 	Markers	მარკერები
 	Match Frame	შესაბამისი კადრი
@@ -222,7 +222,7 @@
 	Normalize Mix Track…	მიქსის ტრეკის ნორმალიზება…
 	Offline File…	ოფლაინ ფაილი…
 	Open Project…	პროექტის გახსნა…
-	Open Recent	ბოლოდროინდელის გახსნა
+	Open Recent	ბოლოს გახსნილი ფაილების გახსნა
 	Clear Recent Files	ბოლოდროინდელი ფაილების სიის გასუფთავება
 	Recent	ბოლოდროინდელი
 	Optical Flow	ოპტიკური ნაკადი
@@ -258,7 +258,7 @@
 	Remove Filler Words	შემავსებელი სიტყვების მოცილება
 	Remove Pauses	პაუზების მოცილება
 	Remove Unused	გამოუყენებლის მოცილება
-	Rename…	გადარქმევა…
+	Rename…	სახელის შეცვლა…
 	Render Audio	აუდიოს რენდერი
 	Render Effects In to Out	ეფექტების რენდერი შესვლიდან გამოსვლამდე
 	Render In to Out	რენდერი შესვლიდან გამოსვლამდე
@@ -290,7 +290,7 @@
 	Scale to Frame Size	კადრის ზომაზე მასშტაბირება
 	Scene Edit Detection…	სცენების ჭრილების ამოცნობა…
 	Scratch Disks…	დროებითი დისკები…
-	Search Bin	ბინში ძებნა
+	Search Bin	ბინში ძიება
 	Select	მონიშვნა
 	Select All	ყველაფრის მონიშვნა
 	Select All Matching	ყველა შესაბამისის მონიშვნა
@@ -350,7 +350,7 @@
 	Video Options	ვიდეოს პარამეტრები
 	Video Out	ვიდეოს გამოსვლა
 	Video and Audio Waveform Split	ვიდეოსა და აუდიოს ტალღის ფორმის დაყოფა
-	View	ჩვენება
+	View	ხედი
 	Violet	იისფერი
 	Window	ფანჯარა
 	Workspaces	სამუშაო სივრცეები
@@ -363,8 +363,8 @@
 	{name} - Edited	{name} - რედაქტირებული
 	Full screen	სრული ეკრანი
 	Volume	ხმის დონე
-	Master volume: use the Audio Track Mixer	მასტერის ხმის დონე: გამოიყენეთ აუდიოტრეკების მიქშერი
-	Search	ძებნა
+	Master volume: use the Audio Track Mixer	მასტერის ხმის დონე: გამოიყენეთ აუდიო ტრეკების მიქშერი
+	Search	ძიება
 	Quick Export	სწრაფი ექსპორტი
 	Join the ArtCraft Discord (discord.gg/artcraft)	შემოუერთდით ArtCraft-ის Discord-ს (discord.gg/artcraft)
 	Cancel	გაუქმება
@@ -393,16 +393,16 @@
 	Amount	რაოდენობა
 	Placement	განთავსება
 	Track type	ტრეკის ტიპი
-	Add video tracks	ვიდეოტრეკების დამატება
-	Add audio tracks	აუდიოტრეკების დამატება
+	Add video tracks	ვიდეო ტრეკების დამატება
+	Add audio tracks	აუდიო ტრეკების დამატება
 	Add audio submix tracks	აუდიოს ქვემიქსის ტრეკების დამატება
 	After {name}	{name}-ის შემდეგ
 	Before First Track	პირველ ტრეკამდე
 	Delete Tracks	ტრეკების წაშლა
-	Video Tracks	ვიდეოტრეკები
-	Audio Tracks	აუდიოტრეკები
-	Delete Video Tracks	ვიდეოტრეკების წაშლა
-	Delete Audio Tracks	აუდიოტრეკების წაშლა
+	Video Tracks	ვიდეო ტრეკები
+	Audio Tracks	აუდიო ტრეკები
+	Delete Video Tracks	ვიდეო ტრეკების წაშლა
+	Delete Audio Tracks	აუდიო ტრეკების წაშლა
 	All Empty Tracks	ყველა ცარიელი ტრეკი
 	Caption Tracks	სუბტიტრების ტრეკები
 	Delete Caption Tracks	სუბტიტრების ტრეკების წაშლა
@@ -498,7 +498,7 @@
 	Restore Frame	ჩარჩოს აღდგენა
 	Restore Workspace	სამუშაო სივრცის აღდგენა
 	Reveal Sequence in Project	სეკვენციის ჩვენება პროექტში
-	Video Thumbnails	ვიდეოს მინიატურები
+	Video Thumbnails	ვიდეოს ესკიზები
 	Audio Waveforms	აუდიოს ტალღის ფორმები
 	Delete Preset	პრესეტის წაშლა
 	Export Preset…	პრესეტის ექსპორტი…
@@ -534,16 +534,16 @@
 	Untitled Workspace	უსახელო სამუშაო სივრცე
 	New Workspace	ახალი სამუშაო სივრცე
 	Edit Workspaces	სამუშაო სივრცეების რედაქტირება
-	Rename	გადარქმევა
+	Rename	სახელის შეცვლა
 	Restore Original	საწყისის აღდგენა
-	Search effects	ეფექტების ძებნა
+	Search effects	ეფექტების ძიება
 	Apply to Selected Clips	მონიშნულ კლიპებზე გამოყენება
 	Metadata Display	მეტამონაცემების ჩვენება
 	Save As New View Preset	ახალ ხედის პრესეტად შენახვა
 	Manage Saved View Presets	ხედის შენახული პრესეტების მართვა
 	Freeform View Options	თავისუფალი ხედის პარამეტრები
 	Save Arrangement	განლაგების შენახვა
-	Saves the view, columns, sort, thumbnail and font size.	ინახავს ხედს, სვეტებს, სორტირებას, მინიატურებისა და შრიფტის ზომას.
+	Saves the view, columns, sort, thumbnail and font size.	ინახავს ხედს, სვეტებს, სორტირებას, ესკიზებისა და შრიფტის ზომას.
 	Grid spacing:	ბადის ბიჯი:
 	Default clip size:	კლიპის ნაგულისხმევი ზომა:
 	Snap to grid	ბადეზე მიბმა
@@ -557,7 +557,7 @@
 	{n}. (empty)	{n}. (ცარიელი)
 	Restore	აღდგენა
 	Overwrite with Current View	მიმდინარე ხედით გადაწერა
-	Graphics text search arrives with M10.1–M10.2	გრაფიკის ტექსტში ძებნა დაემატება M10.1–M10.2-ში
+	Graphics text search arrives with M10.1–M10.2	გრაფიკის ტექსტში ძიება დაემატება M10.1–M10.2-ში
 	Open a sequence to work with captions	სუბტიტრებთან სამუშაოდ გახსენით სეკვენცია
 	Add captions	სუბტიტრების დამატება
 	Create a caption track or import a caption file.	შექმენით სუბტიტრების ტრეკი ან შემოიტანეთ სუბტიტრების ფაილი.
@@ -803,7 +803,7 @@
 	Frame Size / Rate	კადრის ზომა / სიხშირე
 	Align Timecode	დროის კოდის სწორება
 	Relink others automatically	დანარჩენების ავტომატური ხელახლა დაკავშირება
-	Search in:	ძებნა აქ:
+	Search in:	ძიება აქ:
 	Browse…	არჩევა…
 	Exact name matches only	მხოლოდ სახელის ზუსტი დამთხვევა
 	No candidates yet — Search a folder or Locate the file.	კანდიდატები ჯერ არ არის — მოძებნეთ საქაღალდეში ან მიუთითეთ ფაილი.
@@ -863,7 +863,7 @@
 	Enhance Speech	მეტყველების გაუმჯობესება
 	Low Tone	დაბალი ტემბრი
 	High Tone	მაღალი ტემბრი
-	Mix	შერევა
+	Mix	მიქსი
 	Reverb	რევერბი
 	Stereo Width	სტერეოს სიგანე
 	Remixing music to a target duration is not available yet. Trim the clip and add a crossfade instead.	მუსიკის სამიზნე ხანგრძლივობამდე რემიქსი ჯერ მიუწვდომელია. სანაცვლოდ მოკვეთეთ კლიპი და დაამატეთ ჯვარედინი მიქრობა.
@@ -876,7 +876,7 @@
 	Sensitivity	მგრძნობელობა
 	Reduce By	შემცირება
 	Fades	მიქრობები
-	Generate Keyframes	საკვანძო კადრების გენერირება
+	Generate Keyframes	საკვანძო კადრების გენერაცია
 	Clip Volume	კლიპის ხმის დონე
 	(no clip selected)	(კლიპი არ არის მონიშნული)
 	Master · {name}	მასტერი · {name}
@@ -956,7 +956,7 @@
 	Default location	ნაგულისხმევი მდებარეობა
 	Font family	შრიფტის ოჯახი
 	Label Colors	იარლიყების ფერები
-	Decoded frames held for the monitors and thumbnails: {used} of {budget}.	მონიტორებისა და მინიატურებისთვის შენახული დეკოდირებული კადრები: {used} / {budget}.
+	Decoded frames held for the monitors and thumbnails: {used} of {budget}.	მონიტორებისა და ესკიზებისთვის შენახული დეკოდირებული კადრები: {used} / {budget}.
 	FilmCraft keeps the rest of the RAM free for other applications.	დანარჩენ ოპერატიულ მეხსიერებას FilmCraft სხვა პროგრამებისთვის თავისუფლად ტოვებს.
 	not available in this session	ამ სესიაში მიუწვდომელია
 	Currently: {loc} — {files} file(s), {size}	ამჟამად: {loc} — ფაილი: {files}, {size}
@@ -995,7 +995,7 @@
 	Level	დონე
 	Speed {n}%	სიჩქარე {n}%
 	Value	მნიშვნელობა
-	Velocity	სიჩქარის ცვლილება
+	Velocity	სიჩქარე
 	Default	ნაგულისხმევი
 	Custom ({n} points)	მორგებული (წერტილი: {n})
 	Select a graphic clip, or use the Type tool (T) on the Program monitor	აირჩიეთ გრაფიკული კლიპი ან გამოიყენეთ ტექსტის ხელსაწყო (T) პროგრამის მონიტორში
@@ -1048,7 +1048,7 @@
 	   Angle	   კუთხე
 	   Distance	   მანძილი
 	   Blur	   გაბუნდოვნება
-	Search templates	შაბლონების ძებნა
+	Search templates	შაბლონების ძიება
 	All Categories	ყველა კატეგორია
 	Install…	ინსტალაცია…
 	Install Motion Graphics Template (.fcgt)	მოძრავი გრაფიკის შაბლონის ინსტალაცია (.fcgt)
@@ -1086,7 +1086,7 @@
 	Replace:	ჩანაცვლება:
 	Replaced {n} font uses	ჩანაცვლდა შრიფტის გამოყენება: {n}
 	Show/Hide Effects and Sends	ეფექტებისა და გაგზავნების ჩვენება/დამალვა
-	Audio Track Mixer menu	აუდიოტრეკების მიქშერის მენიუ
+	Audio Track Mixer menu	აუდიო ტრეკების მიქშერის მენიუ
 	Show/Hide Tracks…	ტრეკების ჩვენება/დამალვა…
 	Meter Input(s) Only	მხოლოდ შემავალი სიგნალის საზომი
 	Show/Hide Tracks	ტრეკების ჩვენება/დამალვა
@@ -1117,7 +1117,7 @@
 	Up One Level	ერთი დონით ზემოთ
 	File Types Displayed	საჩვენებელი ფაილის ტიპები
 	List View	სიის ხედი
-	Thumbnail View	მინიატურების ხედი
+	Thumbnail View	ესკიზების ხედი
 	Ingest	მედიის შეტანა
 	Open Ingest Settings	მედიის შეტანის პარამეტრების გახსნა
 	Import as Image Sequence	იმპორტი გამოსახულებების თანმიმდევრობად
@@ -1143,7 +1143,7 @@
 	Edit Columns	სვეტების რედაქტირება
 	Guides	დამხმარე ხაზები
 	(no audio)	(აუდიო არ არის)
-	Generating waveform…	ტალღის ფორმის გენერირება…
+	Generating waveform…	ტალღის ფორმის გენერაცია…
 	Reference  {tc}	ეტალონი  {tc}
 	Set	დაყენება
 	Set the reference to the playhead	ეტალონის დაყენება დაკვრის კურსორზე
@@ -1182,9 +1182,9 @@
 	Icon	ხატულა
 	Freeform	თავისუფალი
 	Preview Area	გადახედვის არე
-	Thumbnails	მინიატურები
-	Thumbnails show effects applied	მინიატურებზე გამოყენებული ეფექტები ჩანს
-	Thumbnail controls for all pointing devices	მინიატურების მართვა ყველა მიმთითებელი მოწყობილობისთვის
+	Thumbnails	ესკიზები
+	Thumbnails show effects applied	ესკიზებზე გამოყენებული ეფექტები ჩანს
+	Thumbnail controls for all pointing devices	ესკიზების მართვა ყველა მიმთითებელი მოწყობილობისთვის
 	Refresh Sort Order	დალაგების რიგის განახლება
 	Metadata Display…	მეტამონაცემების ჩვენება…
 	Save Current View Preset	მიმდინარე ხედის პრესეტის შენახვა
@@ -1219,7 +1219,7 @@
 	Snap in Timeline (S)	მიბმა ტაიმლაინზე (S)
 	Caption track options	სუბტიტრების ტრეკის პარამეტრები
 	Timeline Display Settings	ტაიმლაინის ჩვენების პარამეტრები
-	Show Video Thumbnails	ვიდეოს მინიატურების ჩვენება
+	Show Video Thumbnails	ვიდეოს ესკიზების ჩვენება
 	Head	დასაწყისი
 	Head and Tail	დასაწყისი და დასასრული
 	Continuous	უწყვეტი
@@ -1306,7 +1306,7 @@
 	At Startup	გაშვებისას
 	At playback end, return to beginning when restarting playback	დაკვრის ბოლოს, ხელახლა დაკვრისას დასაწყისში დაბრუნება
 	Attempt to force hardware to document sample rate	მოწყობილობისთვის დოკუმენტის დისკრეტიზაციის სიხშირის იძულებით დაყენების მცდელობა
-	Audio Codec	აუდიოკოდეკი
+	Audio Codec	აუდიო კოდეკი
 	Audio Duration	აუდიოს ხანგრძლივობა
 	Audio Effects	აუდიოეფექტები
 	Audio Hardware	აუდიოაპარატურა
@@ -1427,7 +1427,7 @@
 	Burn Alpha	ალფა-არხის ჩაშენება
 	Burn Chroma	ქრომას ჩაწვა
 	Burn Color	ფერის ჩაწვა
-	Butt cap	ბლაგვი დაბოლოება
+	Butt cap	ბრტყელი დაბოლოება
 	Butterworth	ბატერვორთი
 	CEA-608	CEA-608
 	CEA-708	CEA-708
@@ -1501,7 +1501,7 @@
 	Color To Leave	შესანარჩუნებელი ფერი
 	Color Tolerance	ფერის დაშვება
 	Color Wheels & Match	ფერის ბორბლები და შესაბამისობა
-	Colorize	შეფერადება
+	Colorize	გაფერადება
 	Columns	სვეტები
 	Comment	კომენტარი
 	Complexity	სირთულე
@@ -1566,7 +1566,7 @@
 	DeReverb	რევერბის მოცილება
 	Decay	ჩაქრობა
 	Decay Time (RT60)	ჩაქრობის დრო (RT60)
-	Default Audio Tracks	ნაგულისხმევი აუდიოტრეკები
+	Default Audio Tracks	ნაგულისხმევი აუდიო ტრეკები
 	Default Emoji font	ნაგულისხმევი Emoji შრიფტი
 	Default Media Scaling	მედიის ნაგულისხმევი მასშტაბირება
 	Default Output	ნაგულისხმევი გამოტანა
@@ -1678,7 +1678,7 @@
 	Extended Dynamic Range Monitoring	გაფართოებული დინამიკური დიაპაზონის მონიტორინგი
 	FFT Filter	FFT ფილტრი
 	Fade	მიქრობა
-	Fade Out	მიქრობა
+	Fade Out	ჩაქრობა
 	Faded Matte	გაცრეცილი მატი
 	Falloff	მილევა
 	Far Away	შორს
@@ -1738,7 +1738,7 @@
 	Frame Layout	კადრის განლაგება
 	Frame Rate	კადრების სიხშირე
 	Frame Width	კადრის სიგანე
-	Frame cache for monitors and thumbnails	კადრების ქეში მონიტორებისა და მინიატიურებისთვის
+	Frame cache for monitors and thumbnails	კადრების ქეში მონიტორებისა და ესკიზებისთვის
 	Frames	კადრები
 	Framing	კადრირება
 	French	ფრანგული
@@ -1765,10 +1765,10 @@
 	Gaussian Blur	გაუსის გაბუნდოვნება
 	Gaussian Blur (Legacy)	გაუსის გაბუნდოვნება (მოძველებული)
 	General	ზოგადი
-	Generate	გენერირება
-	Generate Timecode	დროის კოდის გენერირება
-	Generate waveforms and conform audio using multithreading	ტალღის ფორმების გენერირება და აუდიოს მორგება მრავალნაკადიანად
-	Generate waveforms automatically during import	ტალღის ფორმების ავტომატური გენერირება იმპორტისას
+	Generate	გენერაცია
+	Generate Timecode	დროის კოდის გენერაცია
+	Generate waveforms and conform audio using multithreading	ტალღის ფორმების გენერაცია და აუდიოს მორგება მრავალნაკადიანად
+	Generate waveforms automatically during import	ტალღის ფორმების ავტომატური გენერაცია იმპორტისას
 	German	გერმანული
 	Ghosts	მოჩვენებები
 	Glass	მინა
@@ -1933,8 +1933,8 @@
 	Left to right	მარცხნიდან მარჯვნივ
 	Legacy	მოძველებული
 	Length	სიგრძე
-	Lens Blur	ობიექტივის გაბუნდოვნება
-	Lens Distortion	ობიექტივის დეფორმაცია
+	Lens Blur	ლინზის ბუნდოვნება
+	Lens Distortion	ლინზის დეფორმაცია
 	Lens Flare	ობიექტივის ანარეკლი
 	Lens Type	ობიექტივის ტიპი
 	Level 1	დონე 1
@@ -2226,7 +2226,7 @@
 	Pre-Delay	წინა დაყოვნება
 	Prefix	პრეფიქსი
 	Presence Lift	ყოფნის ეფექტის აწევა
-	Preserve Luminosity	ნათების შენარჩუნება
+	Preserve Luminosity	სიკაშკაშის შენარჩუნება
 	Preserve Scale	მასშტაბის შენარჩუნება
 	ProcAmp	ProcAmp
 	Projecting cap	გამოწეული დაბოლოება
@@ -2416,9 +2416,9 @@
 	Soften Harshness	სიმკაცრის შერბილება
 	Softness	სირბილე
 	Solarize	სოლარიზაცია
-	Solid Colors	ერთფეროვანი ფერები
+	Solid Colors	მყარი ფერები
 	Source Point	წყაროს წერტილი
-	Source Text	წყაროს ტექსტი
+	Source Text	წყარო ტექსტი
 	Spacer	გამყოფი
 	Spanish	ესპანური
 	Speaker Angle	დინამიკის კუთხე
@@ -2473,12 +2473,12 @@
 	Stopband Attenuation	ჩახშობის ზოლის მილევა
 	Straight Color	სუფთა ფერი
 	Strength	სიძლიერე
-	Stretch	გაჭიმვა
-	Stretch Gradient to Fit	გრადიენტის გაჭიმვა მოსარგებად
-	Stretch Map to Fit	რუკის გაჭიმვა მოსარგებად
-	Stretch Width or Height	სიგანის ან სიმაღლის გაჭიმვა
-	Stretch Wipe	გაჭიმვით წმენდა
-	Stretch to Fit Frame	კადრზე მოსარგებად გაჭიმვა
+	Stretch	გაწელვა
+	Stretch Gradient to Fit	გრადიენტის გაწელვა მოსარგებად
+	Stretch Map to Fit	რუკის გაწელვა მოსარგებად
+	Stretch Width or Height	სიგანის ან სიმაღლის გაწელვა
+	Stretch Wipe	გაწელვით წმენდა
+	Stretch to Fit Frame	კადრზე მოსარგებად გაწელვა
 	Stripe	ზოლი
 	Stripes	ზოლები
 	Strobe Color	სტრობის ფერი
@@ -2636,7 +2636,7 @@
 	Video 6	ვიდეო 6
 	Video 7	ვიდეო 7
 	Video 8	ვიდეო 8
-	Video Codec	ვიდეოკოდეკი
+	Video Codec	ვიდეო კოდეკი
 	Video Duration	ვიდეოს ხანგრძლივობა
 	Video Effects	ვიდეოეფექტები
 	Video In Point	ვიდეოს შესვლის წერტილი
@@ -2744,7 +2744,7 @@
 	{name} (Simplified)	{name} (გამარტივებული)
 	Find in:	ძებნა:
 	Find:	ძებნა:
-	Search:	ძებნა:
+	Search:	ძიება:
 	Clip Names and Markers	კლიპების სახელები და მარკერები
 	Match:	დამთხვევა:
 	All	ყველა
@@ -2850,7 +2850,7 @@
 	Application shortcuts work whatever panel has focus	აპლიკაციის მალსახმობები მუშაობს, რომელ პანელზეც არ უნდა იყოს ფოკუსი
 	Panel shortcuts override application shortcuts while that panel has focus	პანელის მალსახმობები აპლიკაციის მალსახმობებს ანაცვლებს, სანამ ეს პანელი ფოკუსშია
 	Modifier held / selected	დაჭერილი / არჩეული მოდიფიკატორი
-	Search commands or keys	ბრძანებების ან კლავიშების ძებნა
+	Search commands or keys	ბრძანებების ან კლავიშების ძიება
 	Selected: {command}	არჩეულია: {command}
 	Command	ბრძანება
 	Shortcut	მალსახმობი
@@ -2933,7 +2933,7 @@
 	Scaling	მასშტაბირება
 	Scale To Fit	მასშტაბის მორგება
 	Scale To Fill	მასშტაბირება შევსებით
-	Stretch To Fill	გაჭიმვა შევსებით
+	Stretch To Fill	გაწელვა შევსებით
 	Summary	შეჯამება
 	Sequence, {w}x{h}, {fps} fps, {rate} Hz	სეკვენცია, {w}x{h}, {fps} fps, {rate} Hz
 	Estimated file size: {size}	ფაილის სავარაუდო ზომა: {size}
@@ -2941,7 +2941,7 @@
 	Exporting {path}	ექსპორტირდება {path}
 	Added to the export queue	დაემატა ექსპორტის რიგს
 	Preset Manager	პრესეტების მართვა
-	Search presets	პრესეტების ძებნა
+	Search presets	პრესეტების ძიება
 	Favorites only	მხოლოდ რჩეულები
 	Show in the Preset menu	ჩვენება პრესეტების მენიუში
 	User	მომხმარებლის
@@ -2954,7 +2954,7 @@
 	Quick Export: {path}	სწრაფი ექსპორტი: {path}
 	Graphics problem: switched to software compositing	გრაფიკის პრობლემა: გადაირთო პროგრამულ კომპოზიციაზე
 	GPU acceleration is unavailable; preview renders on the CPU	GPU-აჩქარება მიუწვდომელია; გადახედვა CPU-ზე რენდერდება
-	Exporting	ექსპორტირება
+	Exporting	ექსპორტირდება
 	Click to select, or click in empty space and drag to marquee select. Use Shift, Opt, and Cmd for other options.	დაწკაპეთ მოსანიშნად, ან დაწკაპეთ ცარიელ ადგილას და გადაათრიეთ ჩარჩოთი მოსანიშნად. სხვა ვარიანტებისთვის გამოიყენეთ Shift, Opt და Cmd.
 	Click to select all clips to the right in all tracks. Shift-click for a single track.	დაწკაპეთ ყველა ტრეკზე მარჯვნივ მდებარე ყველა კლიპის მოსანიშნად. Shift-დაწკაპუნება — ერთი ტრეკისთვის.
 	Click to select all clips to the left in all tracks. Shift-click for a single track.	დაწკაპეთ ყველა ტრეკზე მარცხნივ მდებარე ყველა კლიპის მოსანიშნად. Shift-დაწკაპუნება — ერთი ტრეკისთვის.
@@ -3040,14 +3040,14 @@
 	D1/DV PAL (1.0940)	D1/DV PAL (1.0940)
 	DVCPRO HD (1.5)	DVCPRO HD (1.5)
 	Darkens outside a feathered oval mask	აბნელებს შერბილებული ოვალური ნიღბის გარეთ
-	Decrease Audio Tracks Height	აუდიოტრეკების სიმაღლის შემცირება
+	Decrease Audio Tracks Height	აუდიო ტრეკების სიმაღლის შემცირება
 	Decrease Clip Volume	კლიპის ხმის დონის შემცირება
 	Decrease Clip Volume Many	კლიპის ხმის დონის ბევრად შემცირება
 	Decrease Font Size by Five Units	შრიფტის ზომის შემცირება ხუთი ერთეულით
 	Decrease Font Size by One Unit	შრიფტის ზომის შემცირება ერთი ერთეულით
 	Decrease Leading by Five Units	სტრიქონთა ინტერვალის შემცირება ხუთი ერთეულით
 	Decrease Leading by One Unit	სტრიქონთა ინტერვალის შემცირება ერთი ერთეულით
-	Decrease Video Tracks Height	ვიდეოტრეკების სიმაღლის შემცირება
+	Decrease Video Tracks Height	ვიდეო ტრეკების სიმაღლის შემცირება
 	Delete Captions	სუბტიტრების წაშლა
 	Delete Graphic Layer	გრაფიკული შრის წაშლა
 	Delete Guide Template	დამხმარე ხაზების შაბლონის წაშლა
@@ -3098,14 +3098,14 @@
 	High Quality 1080p HD	მაღალი ხარისხი 1080p HD
 	High Quality 2160p 4K	მაღალი ხარისხი 2160p 4K
 	Image Sequence	სურათების თანმიმდევრობა
-	Increase Audio Tracks Height	აუდიოტრეკების სიმაღლის გაზრდა
+	Increase Audio Tracks Height	აუდიო ტრეკების სიმაღლის გაზრდა
 	Increase Clip Volume	კლიპის ხმის დონის გაზრდა
 	Increase Clip Volume Many	კლიპის ხმის დონის ბევრად გაზრდა
 	Increase Font Size by Five Units	შრიფტის ზომის გაზრდა ხუთი ერთეულით
 	Increase Font Size by One Unit	შრიფტის ზომის გაზრდა ერთი ერთეულით
 	Increase Leading by Five Units	სტრიქონთა ინტერვალის გაზრდა ხუთი ერთეულით
 	Increase Leading by One Unit	სტრიქონთა ინტერვალის გაზრდა ერთი ერთეულით
-	Increase Video Tracks Height	ვიდეოტრეკების სიმაღლის გაზრდა
+	Increase Video Tracks Height	ვიდეო ტრეკების სიმაღლის გაზრდა
 	Large blocks resolving to the picture over the first second	დიდი ბლოკები, რომლებიც პირველი წამის განმავლობაში გამოსახულებად იკრიბება
 	Left align text	ტექსტის მარცხნივ სწორება
 	Looping GIF, 640×360 at 15 fps	ციკლური GIF, 640×360, 15 fps
@@ -3136,10 +3136,10 @@
 	Merge Captions	სუბტიტრების შერწყმა
 	Mixer	მიქშერი
 	Mosaic In	მოზაიკით გამოჩენა
-	Move All Audio Targets Down	ყველა აუდიოსამიზნის ქვემოთ გადატანა
-	Move All Audio Targets Up	ყველა აუდიოსამიზნის ზემოთ გადატანა
-	Move All Video Targets Down	ყველა ვიდეოსამიზნის ქვემოთ გადატანა
-	Move All Video Targets Up	ყველა ვიდეოსამიზნის ზემოთ გადატანა
+	Move All Audio Targets Down	ყველა აუდიოსამიზნის ჩამოწევა
+	Move All Audio Targets Up	ყველა აუდიოსამიზნის აწევა
+	Move All Video Targets Down	ყველა ვიდეოსამიზნის ჩამოწევა
+	Move All Video Targets Up	ყველა ვიდეოსამიზნის აწევა
 	Move Selection Down	მონიშნულის ქვემოთ გადატანა
 	Move Selection End	მონიშნულის ბოლოში გადატანა
 	Move Selection Home	მონიშნულის დასაწყისში გადატანა
@@ -3194,7 +3194,7 @@
 	Opacity 0 → 100 % over the first second	გაუმჭვირვალობა 0 → 100 % პირველი წამის განმავლობაში
 	Opacity 100 → 0 % over the last second	გაუმჭვირვალობა 100 → 0 % ბოლო წამის განმავლობაში
 	Open Bin	ბინის გახსნა
-	Open Search	ძებნის გახსნა
+	Open Search	ძიების გახსნა
 	PNG	PNG
 	PNG Sequence	PNG თანმიმდევრობა
 	Panel	პანელი
@@ -3222,7 +3222,7 @@
 	QuickTime, ProRes 4444 XQ (4:4:4), 24-bit 48 kHz PCM	QuickTime, ProRes 4444 XQ (4:4:4), 24-bit 48 kHz PCM
 	QuickTime, ProRes 422, 24-bit 48 kHz PCM	QuickTime, ProRes 422, 24-bit 48 kHz PCM
 	Quit FilmCraft	FilmCraft-იდან გასვლა
-	Rate Stretch Tool	სიჩქარის გაჭიმვის ხელსაწყო
+	Rate Stretch Tool	სიჩქარის გაწელვის ხელსაწყო
 	Razor Tool	სამართებლის ხელსაწყო
 	Rectangle Tool	მართკუთხედის ხელსაწყო
 	Remix Tool	რემიქსის ხელსაწყო
@@ -3294,16 +3294,16 @@
 	TIFF	TIFF
 	TIFF Sequence	TIFF თანმიმდევრობა
 	TextPanel	ტექსტის პანელი
-	Thumbnail Size Next	მინიატურის შემდეგი ზომა
-	Thumbnail Size Previous	მინიატურის წინა ზომა
+	Thumbnail Size Next	ესკიზის შემდეგი ზომა
+	Thumbnail Size Previous	ესკიზის წინა ზომა
 	Toggle All Audio Targets	ყველა აუდიოსამიზნის გადართვა
 	Toggle All Source Audio	წყაროს მთელი აუდიოს გადართვა
 	Toggle All Source Video	წყაროს მთელი ვიდეოს გადართვა
 	Toggle All Video Targets	ყველა ვიდეოსამიზნის გადართვა
 	Toggle Audio During Scrubbing	აუდიოს გადართვა გადახვევისას
 	Toggle Full Screen	სრულ ეკრანზე გადართვა
-	Toggle Mute for All Targeted Audio Tracks	დადუმების გადართვა ყველა სამიზნე აუდიოტრეკისთვის
-	Toggle Solo for All Targeted Audio Tracks	სოლოს გადართვა ყველა სამიზნე აუდიოტრეკისთვის
+	Toggle Mute for All Targeted Audio Tracks	დადუმების გადართვა ყველა სამიზნე აუდიო ტრეკისთვის
+	Toggle Solo for All Targeted Audio Tracks	სოლოს გადართვა ყველა სამიზნე აუდიო ტრეკისთვის
 	Toggle Source/Program Monitor Focus	ფოკუსის გადართვა წყაროს/პროგრამის მონიტორზე
 	Toggle Target Audio 1	სამიზნე აუდიო 1-ის გადართვა
 	Toggle Target Audio 2	სამიზნე აუდიო 2-ის გადართვა
@@ -3321,7 +3321,7 @@
 	Toggle Target Video 6	სამიზნე ვიდეო 6-ის გადართვა
 	Toggle Target Video 7	სამიზნე ვიდეო 7-ის გადართვა
 	Toggle Target Video 8	სამიზნე ვიდეო 8-ის გადართვა
-	Toggle Track Output for All Targeted Video Tracks	ტრეკის გამოსავლის გადართვა ყველა სამიზნე ვიდეოტრეკისთვის
+	Toggle Track Output for All Targeted Video Tracks	ტრეკის გამოსავლის გადართვა ყველა სამიზნე ვიდეო ტრეკისთვის
 	Toggle Trim Type	მოკვეთის ტიპის გადართვა
 	Toggle View	ხედის გადართვა
 	Track Select Backward Tool	ტრეკის უკუმონიშვნის ხელსაწყო
@@ -3353,9 +3353,9 @@
 	YouTube 1080p Full HD	YouTube 1080p Full HD
 	YouTube 2160p 4K Ultra HD	YouTube 2160p 4K Ultra HD
 	Zoom Program Monitor to 100%	პროგრამის მონიტორის მასშტაბი 100%
-	Zoom Program Monitor to Fit	პროგრამის მონიტორის ეკრანზე მორგება
+	Zoom Program Monitor to Fit	პროგრამის მონიტორში ჩატევა
 	Zoom Source Monitor to 100%	წყაროს მონიტორის მასშტაბი 100%
-	Zoom Source Monitor to Fit	წყაროს მონიტორის ეკრანზე მორგება
+	Zoom Source Monitor to Fit	წყაროს მონიტორში ჩატევა
 	Zoom Tool	მასშტაბის ხელსაწყო
 	with:	ამით:
 	Interface Language	ინტერფეისის ენა
@@ -3521,7 +3521,7 @@
 	Maximum Render Quality	რენდერის მაქსიმალური ხარისხი
 	Composite in Linear Color	კომპოზიტინგი წრფივ ფერში
 	Auto Tone Map Media (HDR and log into SDR)	მედიის ავტომატური ტონური ასახვა (HDR და log SDR-ში)
-	Configure…	კონფიგურირება…
+	Configure…	კონფიგურაცია…
 	Not supported in FilmCraft yet	FilmCraft-ში ჯერ არ არის მხარდაჭერილი
 	FilmCraft always composites in linear light	FilmCraft კომპოზიტინგს ყოველთვის წრფივ სინათლეში ასრულებს
 	Loop marked range	მონიშნული დიაპაზონის ციკლი

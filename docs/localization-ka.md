@@ -51,7 +51,7 @@ meaning of the English labels; no proprietary translation resources were consult
 | Effects / Effect Controls | ეფექტები / ეფექტის მართვა |
 | Video Transitions / Cross Dissolve / Fade | ვიდეოგადასვლები / ჯვარედინი გადადნობა / მიქრობა |
 | Preset | პრესეტი |
-| Audio Track Mixer / Mute / Volume | აუდიოტრეკების მიქშერი / დადუმება / ხმის დონე |
+| Audio Track Mixer / Mute / Volume | აუდიო ტრეკების მიქშერი / დადუმება / ხმის დონე |
 | Captions | სუბტიტრები |
 | Workspaces / Appearance | სამუშაო სივრცეები / იერსახე |
 | Render In to Out | რენდერი შესვლიდან გამოსვლამდე |
