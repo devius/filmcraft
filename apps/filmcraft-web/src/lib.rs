@@ -116,6 +116,23 @@ impl eframe::App for WebApp {
     }
 }
 
+/// A font file from the site: only a TrueType/OpenType file is returned (a host may answer a
+/// missing file with its index page).
+async fn fetch_font(url: &str) -> Result<Vec<u8>, String> {
+    let js = |e: JsValue| format!("{e:?}");
+    let window = web_sys::window().ok_or("no window")?;
+    let resp: web_sys::Response = wasm_bindgen_futures::JsFuture::from(window.fetch_with_str(url)).await.map_err(js)?.dyn_into().map_err(js)?;
+    if !resp.ok() {
+        return Err(format!("HTTP {}", resp.status()));
+    }
+    let buf = wasm_bindgen_futures::JsFuture::from(resp.array_buffer().map_err(js)?).await.map_err(js)?;
+    let bytes = js_sys::Uint8Array::new(&buf).to_vec();
+    match bytes.get(..4) {
+        Some([0, 1, 0, 0] | b"OTTO" | b"true") if bytes.len() <= 32 << 20 => Ok(bytes),
+        _ => Err("not a font file".into()),
+    }
+}
+
 fn query_flag(name: &str) -> bool {
     web_sys::window().and_then(|w| w.location().search().ok()).and_then(|s| web_sys::UrlSearchParams::new_with_str(&s).ok()).is_some_and(|p| p.has(name))
 }
@@ -143,6 +160,14 @@ pub async fn start(canvas_id: String) -> Result<(), JsValue> {
 
     api::install()?;
     import::install_drop_handlers()?;
+
+    // The Georgian interface face, when the site serves one beside the page (the bundled fonts
+    // have none and the browser lends none); fetched before the app starts, so the Georgian
+    // interface (a saved setting, or the browser's language) can be shown from the first frame.
+    match fetch_font("fonts/NotoSansGeorgian.ttf").await {
+        Ok(bytes) => filmcraft_ui_egui::i18n::set_georgian_font(bytes),
+        Err(e) => log::info!("no Georgian interface font: {e}"),
+    }
 
     let demo = !query_flag("empty");
     let mut web_options = eframe::WebOptions::default();
@@ -187,8 +212,18 @@ pub async fn start(canvas_id: String) -> Result<(), JsValue> {
                 let mut app = FilmcraftApp::new(session);
                 import::install_hooks(&mut app);
                 // Settings ▸ General ▸ Interface Language ▸ System Language (#218): the browser's languages.
-                app.hooks.system_languages =
-                    Some(Box::new(|| web_sys::window().map(|w| w.navigator().languages().iter().filter_map(|v| v.as_string()).collect()).unwrap_or_default()));
+                // `?lang=ka` in the address comes first, then the browser's languages.
+                app.hooks.system_languages = Some(Box::new(|| {
+                    let window = web_sys::window();
+                    let lang = window
+                        .as_ref()
+                        .and_then(|w| w.location().search().ok())
+                        .and_then(|s| web_sys::UrlSearchParams::new_with_str(&s).ok())
+                        .and_then(|p| p.get("lang"))
+                        .filter(|l| !l.is_empty());
+                    let browser = window.map(|w| w.navigator().languages().iter().filter_map(|v| v.as_string()).collect::<Vec<_>>()).unwrap_or_default();
+                    lang.into_iter().chain(browser).collect()
+                }));
                 let (tx, rx) = std::sync::mpsc::channel();
                 api::set_sender(tx);
                 app = app.with_control(rx);

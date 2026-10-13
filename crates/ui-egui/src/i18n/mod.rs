@@ -350,6 +350,12 @@ pub fn georgian_font_available() -> bool {
     crate::georgian::available()
 }
 
+/// Supply a Georgian face (a font file) for a system without one: the web build fetches one
+/// served beside the page. Call it before the app starts; only the first call counts.
+pub fn set_georgian_font(bytes: Vec<u8>) {
+    crate::georgian::set_runtime_font(bytes);
+}
+
 /// A label in capitals for interface chrome (the header's workspace name). Georgian Mkhedruli is
 /// left as it is: its capital forms (Mtavruli) are not used for interface text.
 pub fn ui_caps(text: &str) -> String {

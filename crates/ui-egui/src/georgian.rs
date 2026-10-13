@@ -10,8 +10,23 @@ use egui::{FontData, FontDefinitions};
 const SAMPLE: &str = "ქართულიაბგდევზთიკლმნოპჟრსტუფღყშჩცძწჭხჯჰ";
 const PREFERRED: &[&str] = &["SF Georgian", "Sylfaen", "Noto Sans Georgian", "DejaVu Sans", "Arial Unicode MS", "FreeSans"];
 
-/// One installed face covering Georgian (scanned once per process; none on the web).
+/// A face the shell supplies (the web build fetches one served beside the page, before the app
+/// starts): used where no installed face is found.
+static SUPPLIED: OnceLock<Arc<FontData>> = OnceLock::new();
+
+/// Use `bytes` (a font file) as the Georgian face when no installed one is found. Call it before
+/// the app starts, so a saved Georgian setting finds it; only the first call counts.
+pub fn set_runtime_font(bytes: Vec<u8>) {
+    let _ = SUPPLIED.set(Arc::new(FontData::from_owned(bytes)));
+}
+
+/// One installed face covering Georgian (scanned once per process; none on the web), else the
+/// supplied one.
 fn system_font() -> Option<Arc<FontData>> {
+    installed_font().or_else(|| SUPPLIED.get().cloned())
+}
+
+fn installed_font() -> Option<Arc<FontData>> {
     static FONT: OnceLock<Option<Arc<FontData>>> = OnceLock::new();
     FONT.get_or_init(|| {
         if cfg!(target_arch = "wasm32") {
