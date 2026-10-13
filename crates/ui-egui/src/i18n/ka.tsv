@@ -2918,7 +2918,7 @@
 	16 bit	16 ბიტი
 	24 bit	24 ბიტი
 	32 bit	32 ბიტი
-	32 bit float	32 ბიტი (მცურავი წერტილი)
+	32 bit float	32 ბიტი (მცურავი)
 	FLAC stores whole-number samples only	FLAC მხოლოდ მთელრიცხვა სემპლებს ინახავს
 	MXF export writes integer PCM only	MXF-ის ექსპორტი მხოლოდ მთელრიცხვა PCM-ს წერს
 	Size / Opacity	ზომა / გაუმჭვირვალობა
