@@ -20,7 +20,7 @@
 	Add Range Marker	დიაპაზონის მარკერის დამატება
 	Add Range Marker to In and Out	დიაპაზონის მარკერის დამატება შესვლიდან გამოსვლამდე
 	Add Tracks…	ტრეკების დამატება…
-	Adjustment Layer…	კორექციის ფენა…
+	Adjustment Layer…	კორექციის შრე…
 	Align to Selection	მონიშნულზე სწორება
 	Align to Video Frame	ვიდეოკადრთან სწორება
 	Align to Video Frame as Group	ვიდეოკადრთან სწორება ჯგუფად
@@ -215,7 +215,7 @@
 	Multi-Camera View	მრავალკამერიანი ხედი
 	Nest…	ჩადგმა…
 	New	ახალი
-	New Layer	ახალი ფენა
+	New Layer	ახალი შრე
 	New Project Panel	პროექტის ახალი პანელი
 	Next in Sequence	შემდეგი სეკვენციაში
 	Next in Track	შემდეგი ტრეკზე
@@ -230,7 +230,7 @@
 	Paused Resolution	გარჩევადობა პაუზისას
 	Playback Resolution	დაკვრის გარჩევადობა
 	Playback…	დაკვრა…
-	Plugins…	დანამატები…
+	Plugins…	პლაგინები…
 	Polygon	მრავალკუთხედი
 	Preferences	პარამეტრები
 	Previous in Sequence	წინა სეკვენციაში
@@ -292,9 +292,9 @@
 	Select All Matching	ყველა შესაბამისის მონიშვნა
 	Select Label Group	იარლიყის ჯგუფის მონიშვნა
 	Select Next Graphic	შემდეგი გრაფიკის მონიშვნა
-	Select Next Layer	შემდეგი ფენის მონიშვნა
+	Select Next Layer	შემდეგი შრის მონიშვნა
 	Select Previous Graphic	წინა გრაფიკის მონიშვნა
-	Select Previous Layer	წინა ფენის მონიშვნა
+	Select Previous Layer	წინა შრის მონიშვნა
 	Selection Follows Playhead	მონიშვნა მიჰყვება დაკვრის კურსორს
 	Selection as FilmCraft Project…	მონიშნული, როგორც FilmCraft-ის პროექტი…
 	Selection…	მონიშნული…
@@ -422,7 +422,7 @@
 	Show finished jobs	დასრულებული ამოცანების ჩვენება
 	Cancelled	გაუქმდა
 	Failed: {e}	ვერ შესრულდა: {e}
-	Done	დასრულდა
+	Done	მზადაა
 	No background jobs.	ფონური ამოცანები არ არის.
 	Recover Unsaved Changes	შეუნახავი ცვლილებების აღდგენა
 	Untitled	უსათაურო
@@ -606,7 +606,7 @@
 	Voice-Over Record Settings	კადრსმიღმა ხმის ჩაწერის პარამეტრები
 	Source:	წყარო:
 	Default Input	ნაგულისხმევი შესასვლელი
-	Input:	შესასვლელი:
+	Input:	შემავალი:
 	Channel {n}	არხი {n}
 	Countdown Sound Cues	უკუთვლის ხმოვანი სიგნალები
 	Pre-roll:	ჩაწერამდე:
@@ -777,7 +777,7 @@
 	Reverse Field Dominance	ნახევარკადრების რიგის შებრუნება
 	Processing Options	დამუშავების პარამეტრები
 	None	არცერთი
-	Always Deinterlace	ყოველთვის დეინტერლეისი
+	Always Deinterlace	ყოველთვის სტრიქონგამოტოვების მოცილება
 	Flicker Removal	ციმციმის მოცილება
 	Save changes to “{project_name}” before closing?	შევინახო ცვლილებები „{project_name}“-ში დახურვამდე?
 	Don't Save	არ შეინახო
@@ -839,7 +839,7 @@
 	Project Manager: writing {path}	პროექტის მენეჯერი: იწერება {path}
 	Timeline: (no sequences)	ტაიმლაინი: (სეკვენციები არ არის)
 	Browse	არჩევა
-	Select audio clips, then click a preset to apply it.	მონიშნეთ აუდიოკლიპები, შემდეგ დააწკაპუნეთ პრესეტზე მის გამოსაყენებლად.
+	Select audio clips, then click a preset to apply it.	მონიშნეთ აუდიოკლიპები, შემდეგ დაწკაპეთ პრესეტზე მის გამოსაყენებლად.
 	{name} (user)	{name} (მომხმარებლის)
 	Select audio clips to edit them here	მონიშნეთ აუდიოკლიპები აქ მათ რედაქტირებისთვის
 	Multiple Clips Selected	მონიშნულია რამდენიმე კლიპი
@@ -919,7 +919,7 @@
 	Color/Gray	ფერი/ნაცრისფერი
 	Color/Black	ფერი/შავი
 	White/Black	თეთრი/შავი
-	Refine	დახვეწა
+	Refine	დაზუსტება
 	Denoise	ხმაურის მოცილება
 	Blur	გაბუნდოვნება
 	Correction	კორექცია
@@ -935,7 +935,7 @@
 	Create ellipse mask	ელიფსური ნიღბის შექმნა
 	Create 4-point polygon mask	ოთხწერტილიანი მრავალკუთხა ნიღბის შექმნა
 	Free draw bezier	ბეზიეს თავისუფალი ხატვა
-	Click in the Program monitor to place mask points (drag for curves); click the first point or press Enter to close	ნიღბის წერტილების დასასმელად დააწკაპუნეთ პროგრამის მონიტორში (მრუდებისთვის გადაათრიეთ); დასახურად დააწკაპუნეთ პირველ წერტილზე ან დააჭირეთ Enter-ს
+	Click in the Program monitor to place mask points (drag for curves); click the first point or press Enter to close	ნიღბის წერტილების დასასმელად დაწკაპეთ პროგრამის მონიტორში (მრუდებისთვის გადაათრიეთ); დასახურად დაწკაპეთ პირველ წერტილზე ან დააჭირეთ Enter-ს
 	Delete Mask	ნიღბის წაშლა
 	Inverted	შებრუნებული
 	Drag: move · Alt-click: smooth/corner · Cmd-click: delete	გადათრევა: გადაადგილება · Alt-დაწკაპუნება: გლუვი/კუთხოვანი · Cmd-დაწკაპუნება: წაშლა
@@ -996,12 +996,12 @@
 	Custom ({n} points)	მორგებული (წერტილი: {n})
 	Select a graphic clip, or use the Type tool (T) on the Program monitor	აირჩიეთ გრაფიკული კლიპი ან გამოიყენეთ ტექსტის ხელსაწყო (T) პროგრამის მონიტორში
 	Create new graphic	ახალი გრაფიკის შექმნა
-	New Text Layer	ახალი ტექსტური ფენა
+	New Text Layer	ახალი ტექსტური შრე
 	New Text	ახალი ტექსტი
 	New Rectangle	ახალი მართკუთხედი
 	New Ellipse	ახალი ელიფსი
-	Delete Layer	ფენის წაშლა
-	Select a layer to edit its properties.	აირჩიეთ ფენა მისი თვისებების შესაცვლელად.
+	Delete Layer	შრის წაშლა
+	Select a layer to edit its properties.	აირჩიეთ შრე მისი თვისებების შესაცვლელად.
 	Align Left	მარცხნივ სწორება
 	Align Center Horizontally	ჰორიზონტალურად ცენტრში სწორება
 	Align Right	მარჯვნივ სწორება
@@ -1209,7 +1209,7 @@
 	Restore Arrangement	განლაგების აღდგენა
 	Delete Arrangement	განლაგების წაშლა
 	Drop media here to create sequence.	სეკვენციის შესაქმნელად მედია აქ ჩააგდეთ.
-	Double-click a sequence in the Project panel to open it here.	აქ გასახსნელად ორჯერ დააწკაპუნეთ სეკვენციაზე პროექტის პანელში.
+	Double-click a sequence in the Project panel to open it here.	აქ გასახსნელად ორჯერ დაწკაპეთ სეკვენციაზე პროექტის პანელში.
 	Open Demo Project	სადემონსტრაციო პროექტის გახსნა
 	Insert and overwrite sequences as nests or individual clips	სეკვენციების ჩასმა და გადაწერა ჩადგმულის ან ცალკეული კლიპების სახით
 	Snap in Timeline (S)	მიბმა ტაიმლაინზე (S)
@@ -1243,7 +1243,7 @@
 	35mm Prime	35 მმ ფიქსირებული ობიექტივი
 	3D Roll	3D გორება
 	3D Rotate	3D შემობრუნება
-	3D Spin	3D ტრიალი
+	3D Spin	3D ბრუნვა
 	3D Spinback	3D უკუტრიალი
 	4-Color Gradient	4-ფერიანი გრადიენტი
 	5.1 Media	5.1 მედია
@@ -1277,7 +1277,7 @@
 	Alpha Glow	ალფას ნათება
 	Always import embedded CEA-708 closed captions with wide aspect.	ჩაშენებული CEA-708 დახურული სუბტიტრების ყოველთვის ფართო თანაფარდობით იმპორტი.
 	Always override audio tags	აუდიოს ჭდეების ყოველთვის გადაფარვა
-	Ambience	გარემოს ხმა
+	Ambience	გარემო
 	Ambience Intensity	გარემოს ინტენსიურობა
 	Ambience Light Color	გარემოს სინათლის ფერი
 	Amount of Noise	ხმაურის რაოდენობა
@@ -1351,8 +1351,8 @@
 	Bandpass	ზოლური ფილტრი
 	Barn Doors	ფარდები
 	Basic	საბაზო
-	Basic 3D	საბაზისო 3D
-	Basic Correction	საბაზისო კორექცია
+	Basic 3D	საბაზო 3D
+	Basic Correction	საბაზო კორექცია
 	Bass	ბასი
 	Behind	უკან
 	Bessel	ბესელი
@@ -1391,7 +1391,7 @@
 	Blur Angle	გაბუნდოვნების კუთხე
 	Blur Dimensions	გაბუნდოვნების მიმართულება
 	Blur Dissolve	გაბუნდოვნებით გადადნობა
-	Blur Layer	გაბუნდოვნების ფენა
+	Blur Layer	გაბუნდოვნების შრე
 	Blur Length	გაბუნდოვნების სიგრძე
 	Blurriness	გაბუნდოვნება
 	Bokeh Blur	ბოკე-გაბუნდოვნება
@@ -1400,10 +1400,10 @@
 	Border Color	ჩარჩოს ფერი
 	Border Width	ჩარჩოს სიგანე
 	Borders	ჩარჩოები
-	Bottom Center	ქვემოთ ცენტრში
-	Bottom Left	ქვემოთ მარცხნივ
-	Bottom Right	ქვემოთ მარჯვნივ
-	Bounce	ახტომა
+	Bottom Center	ქვედა ცენტრი
+	Bottom Left	ქვედა მარცხენა
+	Bottom Right	ქვედა მარჯვენა
+	Bounce	ხტუნვა
 	Branching	განშტოება
 	Bright	ნათელი
 	Bright Air	ნათელი ჰაერი
@@ -1612,8 +1612,8 @@
 	Distance to Image	მანძილი გამოსახულებამდე
 	Distort	დამახინჯება
 	Distortion	დამახინჯება
-	Distortion Complexity	დამახინჯების სირთულე
-	Distortion Rate	დამახინჯების სიჩქარე
+	Distortion Complexity	დეფორმაციის სირთულე
+	Distortion Rate	დეფორმაციის სიჩქარე
 	Distortion Type	დამახინჯების ტიპი
 	Divide	გაყოფა
 	Do not delete cache files automatically	ქეშის ფაილები ავტომატურად არ წაიშალოს
@@ -1629,7 +1629,7 @@
 	Duck Under Dialogue	ხმის დაწევა დიალოგის ქვეშ
 	Duck Under Voice and Effects	ხმის დაწევა ხმისა და ეფექტების ქვეშ
 	Ducking	ხმის ავტომატური დაწევა
-	Dutch	ჰოლანდიური
+	Dutch	ნიდერლანდური
 	Dynamic Link	Dynamic Link
 	Dynamics Processing	დინამიკის დამუშავება
 	Early Reflections	ადრეული არეკვლები
@@ -1754,8 +1754,8 @@
 	GB	GB
 	Gamma	გამა
 	Gamma Correction	გამა-კორექცია
-	Gamut Warning	გამის გაფრთხილება
-	Gamut Warning Color	გამის გაფრთხილების ფერი
+	Gamut Warning	ფერთა გამიდან გასვლის გაფრთხილება
+	Gamut Warning Color	ფერთა გამიდან გასვლის გაფრთხილების ფერი
 	Gap	შუალედი
 	Gap Color	შუალედის ფერი
 	Gaussian Blur	გაუსის გაბუნდოვნება
@@ -1781,7 +1781,7 @@
 	Good	კარგი
 	Gradient	გრადიენტი
 	Gradient End	გრადიენტის დასასრული
-	Gradient Layer	გრადიენტის ფენა
+	Gradient Layer	გრადიენტის შრე
 	Gradient Placement	გრადიენტის განთავსება
 	Gradient Scatter	გრადიენტის გაფანტვა
 	Gradient Shape	გრადიენტის ფორმა
@@ -1849,7 +1849,7 @@
 	Horizontal Blocks	ჰორიზონტალური ბლოკები
 	Horizontal Decentering	ჰორიზონტალური დეცენტრირება
 	Horizontal Displacement	ჰორიზონტალური წანაცვლება
-	Horizontal Flip	ჰორიზონტალური ასახვა
+	Horizontal Flip	ჰორიზონტალური არეკვლა
 	Horizontal Margin	ჰორიზონტალური არშია
 	Horizontal and Vertical	ჰორიზონტალური და ვერტიკალური
 	Hue Center	ფერის ტონის ცენტრი
@@ -1917,8 +1917,8 @@
 	Large Trim Offset	მოკვეთის დიდი წანაცვლება
 	Large Volume Adjustment	ხმის დონის დიდი ცვლილება
 	Latch	ჩაჭერა
-	Layer Name	ფენის სახელი
-	Layers	ფენები
+	Layer Name	შრის სახელი
+	Layers	შრეები
 	Leave Color	ფერის დატოვება
 	Left - Left	მარცხენა - მარცხენა
 	Left - Right	მარცხენა - მარჯვენა
@@ -1928,7 +1928,7 @@
 	Legacy	მოძველებული
 	Length	სიგრძე
 	Lens Blur	ობიექტივის გაბუნდოვნება
-	Lens Distortion	ობიექტივის დამახინჯება
+	Lens Distortion	ობიექტივის დეფორმაცია
 	Lens Flare	ობიექტივის ანარეკლი
 	Lens Type	ობიექტივის ტიპი
 	Level 1	დონე 1
@@ -1964,7 +1964,7 @@
 	Linear Wipe (Legacy)	წრფივი წმენდა (მოძველებული)
 	Linear keyframe thinning	საკვანძო კადრების წრფივი შემცირება
 	Linear to Log	წრფივიდან ლოგარითმულში
-	Liquid Distortion	თხევადი დამახინჯება
+	Liquid Distortion	თხევადი დეფორმაცია
 	Local Projects	ლოკალური პროექტები
 	Location	მდებარეობა
 	Log Note	ჟურნალის შენიშვნა
@@ -2054,8 +2054,8 @@
 	Mirror	სარკე
 	Mirror Alternate	სარკე მონაცვლეობით
 	Missing font replacement	მიუწვდომელი შრიფტის ჩანაცვლება
-	Miter join	წვეტიანი შეერთება
-	Miter limit	წვეტის ზღვარი
+	Miter join	მახვილი შეერთება
+	Miter limit	მახვილის ზღვარი
 	Mixed Crystals	შერეული კრისტალები
 	Mode	რეჟიმი
 	Modern High Gain	თანამედროვე მაღალი გაძლიერება
@@ -2358,7 +2358,7 @@
 	Shapes	ფიგურები
 	Shard Size	ნამსხვრევის ზომა
 	Sharp Colors	მკვეთრი ფერები
-	Sharpen Amount	სიმკვეთრის რაოდენობა
+	Sharpen Amount	გამკვეთრების ოდენობა
 	Shift Center To	ცენტრის გადატანა:
 	Shift clips that overlap trim point during ripple trimming	ძვრადი მოკვეთისას მოკვეთის წერტილზე გადაფარული კლიპების წანაცვლება
 	Shot	კადრი
@@ -2421,13 +2421,13 @@
 	Special Effects	სპეციალური ეფექტები
 	Speech model	მეტყველების მოდელი
 	Speed	სიჩქარე
-	Spherize	სფეროდ გარდაქმნა
+	Spherize	სფერიზება
 	Spiky	ეკლიანი
 	Spill	ფერის გადაღვრა
 	Spill Suppression	ფერის გადაღვრის ჩახშობა
-	Spin	ტრიალი
-	Spin Direction	ტრიალის მიმართულება
-	Spin Motion	ტრიალით მოძრაობა
+	Spin	ბრუნვა
+	Spin Direction	ბრუნვის მიმართულება
+	Spin Motion	ბრუნვით მოძრაობა
 	Split	დაყოფა
 	Split (Legacy)	დაყოფა (მოძველებული)
 	Spotlight	პროჟექტორი
@@ -2490,7 +2490,7 @@
 	Stroke Only	მხოლოდ კონტური
 	Stroke Randomness	შტრიხების შემთხვევითობა
 	Stroke Type	კონტურის ტიპი
-	Stroke Width	კონტურის სიგანე
+	Stroke Width	კონტურის სისქე
 	Stroke line cap	კონტურის ხაზის ბოლო
 	Stroke line join	კონტურის ხაზის შეერთება
 	Studio Reverb	სტუდიური რევერბერაცია
@@ -2537,9 +2537,9 @@
 	To	საბოლოო
 	Tolerance	დაშვება
 	Tone	ტონი
-	Top Center	ზემოთ ცენტრში
-	Top Left	ზემოთ მარცხნივ
-	Top Right	ზემოთ მარჯვნივ
+	Top Center	ზედა ცენტრი
+	Top Left	ზედა მარცხენა
+	Top Right	ზედა მარჯვენა
 	Touch	შეხება
 	Track Matte Key	ტრეკის მატის გასაღები
 	Transcription	ტრანსკრიფცია
@@ -2619,7 +2619,7 @@
 	Vertical Blocks	ვერტიკალური ბლოკები
 	Vertical Decentering	ვერტიკალური დეცენტრირება
 	Vertical Displacement	ვერტიკალური წანაცვლება
-	Vertical Flip	ვერტიკალური ასახვა
+	Vertical Flip	ვერტიკალური არეკვლა
 	Vertical Margin	ვერტიკალური ზღვარი
 	Very Narrow	ძალიან ვიწრო
 	Video 1	ვიდეო 1
@@ -2854,11 +2854,11 @@
 	Key:	კლავიში:
 	Modifiers	მოდიფიკატორები
 	Nothing is assigned to this key	ამ კლავიშზე არაფერია მინიჭებული
-	Click a key on the keyboard to see its shortcuts	დააწკაპუნეთ კლავიატურის კლავიშზე მისი მალსახმობების სანახავად
+	Click a key on the keyboard to see its shortcuts	დაწკაპეთ კლავიატურის კლავიშზე მისი მალსახმობების სანახავად
 	Assign {key} to {command}	{key}-ის მინიჭება ბრძანებაზე {command}
 	Conflict: {key} is assigned to {commands} ({ctx})	კონფლიქტი: {key} მინიჭებულია ბრძანებებზე {commands} ({ctx})
 	 and 	 და 
-	Click a command's Shortcut cell and press keys to assign it; + adds another shortcut.	დააწკაპუნეთ ბრძანების მალსახმობის უჯრაზე და დააჭირეთ კლავიშებს მისანიჭებლად; + ამატებს კიდევ ერთ მალსახმობს.
+	Click a command's Shortcut cell and press keys to assign it; + adds another shortcut.	დაწკაპეთ ბრძანების მალსახმობის უჯრაზე და დააჭირეთ კლავიშებს მისანიჭებლად; + ამატებს კიდევ ერთ მალსახმობს.
 	Cleared {n} shortcut(s) of {command}	{command}: გასუფთავდა მალსახმობი: {n}
 	No export preset named `{name}`	ექსპორტის პრესეტი სახელით `{name}` არ არსებობს
 	Open a sequence to export	ექსპორტისთვის გახსენით სეკვენცია
@@ -2945,18 +2945,18 @@
 	Graphics problem: switched to software compositing	გრაფიკის პრობლემა: გადაირთო პროგრამულ კომპოზიციაზე
 	GPU acceleration is unavailable; preview renders on the CPU	GPU-აჩქარება მიუწვდომელია; გადახედვა CPU-ზე რენდერდება
 	Exporting	ექსპორტირება
-	Click to select, or click in empty space and drag to marquee select. Use Shift, Opt, and Cmd for other options.	დააწკაპუნეთ მოსანიშნად, ან დააწკაპუნეთ ცარიელ ადგილას და გადაათრიეთ ჩარჩოთი მოსანიშნად. სხვა ვარიანტებისთვის გამოიყენეთ Shift, Opt და Cmd.
-	Click to select all clips to the right in all tracks. Shift-click for a single track.	დააწკაპუნეთ ყველა ტრეკზე მარჯვნივ მდებარე ყველა კლიპის მოსანიშნად. Shift-დაწკაპუნება — ერთი ტრეკისთვის.
-	Click to select all clips to the left in all tracks. Shift-click for a single track.	დააწკაპუნეთ ყველა ტრეკზე მარცხნივ მდებარე ყველა კლიპის მოსანიშნად. Shift-დაწკაპუნება — ერთი ტრეკისთვის.
+	Click to select, or click in empty space and drag to marquee select. Use Shift, Opt, and Cmd for other options.	დაწკაპეთ მოსანიშნად, ან დაწკაპეთ ცარიელ ადგილას და გადაათრიეთ ჩარჩოთი მოსანიშნად. სხვა ვარიანტებისთვის გამოიყენეთ Shift, Opt და Cmd.
+	Click to select all clips to the right in all tracks. Shift-click for a single track.	დაწკაპეთ ყველა ტრეკზე მარჯვნივ მდებარე ყველა კლიპის მოსანიშნად. Shift-დაწკაპუნება — ერთი ტრეკისთვის.
+	Click to select all clips to the left in all tracks. Shift-click for a single track.	დაწკაპეთ ყველა ტრეკზე მარცხნივ მდებარე ყველა კლიპის მოსანიშნად. Shift-დაწკაპუნება — ერთი ტრეკისთვის.
 	Drag an edit point to ripple trim; later clips move to keep the gap closed.	გადაათრიეთ ჭრილი ძვრადი მოკვეთისთვის; შემდეგი კლიპები გადაინაცვლებს, რომ ხარვეზი არ დარჩეს.
 	Drag an edit point to roll it: the out of one clip and the in of the next move together.	გადაათრიეთ ჭრილი მცოცავი მონტაჟისთვის: ერთი კლიპის გამოსვლა და შემდეგის შესვლა ერთად გადაინაცვლებს.
 	Drag an edge to change the clip's speed so it fills the new duration.	გადაათრიეთ კიდე კლიპის სიჩქარის შესაცვლელად, რომ მან ახალი ხანგრძლივობა შეავსოს.
 	Drag the edge of a music clip to remix it to the new duration at musically matching beats.	გადაათრიეთ მუსიკალური კლიპის კიდე, რომ ის ახალ ხანგრძლივობაზე გადაეწყოს მუსიკალურად შესაბამის დარტყმებზე.
-	Click to split a clip. Shift-click to split all tracks.	დააწკაპუნეთ კლიპის დასაყოფად. Shift-დაწკაპუნება — ყველა ტრეკის დაყოფა.
+	Click to split a clip. Shift-click to split all tracks.	დაწკაპეთ კლიპის დასაყოფად. Shift-დაწკაპუნება — ყველა ტრეკის დაყოფა.
 	Drag a clip to slip its source in/out without moving it.	გადაათრიეთ კლიპი მისი წყაროს შესვლა/გამოსვლის გადასაცურებლად ისე, რომ კლიპი არ გადაადგილდეს.
 	Drag a clip to slide it between its neighbours.	გადაათრიეთ კლიპი მეზობლებს შორის გადასასრიალებლად.
 	Drag to scroll the timeline.	გადაათრიეთ ტაიმლაინის გადასახვევად.
-	Click to zoom in; Opt-click to zoom out.	დააწკაპუნეთ გასადიდებლად; Opt-დაწკაპუნება — დასაპატარავებლად.
+	Click to zoom in; Opt-click to zoom out.	დაწკაპეთ გასადიდებლად; Opt-დაწკაპუნება — დასაპატარავებლად.
 	FilmCraft hit an error	FilmCraft-ს შეცდომა მოუვიდა
 	Details: {path}	დეტალები: {path}
 	Opened {url}	გაიხსნა {url}
@@ -2997,7 +2997,7 @@
 	BMP	BMP
 	BMP Sequence	BMP თანმიმდევრობა
 	Baseline	Baseline
-	Begin Text Editing for a Graphic Layer	გრაფიკული ფენის ტექსტის რედაქტირების დაწყება
+	Begin Text Editing for a Graphic Layer	გრაფიკული შრის ტექსტის რედაქტირების დაწყება
 	Begins With	იწყება
 	Blur In	გამოჩენა გაბუნდოვნებიდან
 	Blur Out	გაბუნდოვნებით გაქრობა
@@ -3039,7 +3039,7 @@
 	Decrease Leading by One Unit	სტრიქონთა ინტერვალის შემცირება ერთი ერთეულით
 	Decrease Video Tracks Height	ვიდეოტრეკების სიმაღლის შემცირება
 	Delete Captions	სუბტიტრების წაშლა
-	Delete Graphic Layer	გრაფიკული ფენის წაშლა
+	Delete Graphic Layer	გრაფიკული შრის წაშლა
 	Delete Guide Template	დამხმარე ხაზების შაბლონის წაშლა
 	Delete Media Cache Files	მედიის ქეშის ფაილების წაშლა
 	Discard Unsaved Changes	შეუნახავი ცვლილებების უარყოფა
@@ -3448,7 +3448,7 @@
 	Text Box Height	ტექსტური ბლოკის სიმაღლე
 	Paragraph Text	აბზაცის ტექსტი
 	Point Text	წერტილოვანი ტექსტი
-	Text Layer Type	ტექსტური ფენის ტიპი
+	Text Layer Type	ტექსტური შრის ტიპი
 	Text Styling	ტექსტის გაფორმება
 	New Color Matte	ახალი ფერადი მატი
 	Color Matte Color	ფერადი მატის ფერი
@@ -3477,8 +3477,8 @@
 	Add keyframe	საკვანძო კადრის დამატება
 	Remove keyframe	საკვანძო კადრის წაშლა
 	Turn on animation and add keyframe	ანიმაციის ჩართვა და საკვანძო კადრის დამატება
-	Click to select, or click in empty space and drag to marquee select. Use Shift, Alt, and Ctrl for other options.	დააწკაპუნეთ მოსანიშნად, ან დააწკაპუნეთ ცარიელ ადგილას და გადაათრიეთ ჩარჩოთი მოსანიშნად. სხვა ვარიანტებისთვის გამოიყენეთ Shift, Alt და Ctrl.
-	Click to zoom in; Alt-click to zoom out.	დააწკაპუნეთ გასადიდებლად; Alt-დაწკაპუნება — დასაპატარავებლად.
+	Click to select, or click in empty space and drag to marquee select. Use Shift, Alt, and Ctrl for other options.	დაწკაპეთ მოსანიშნად, ან დაწკაპეთ ცარიელ ადგილას და გადაათრიეთ ჩარჩოთი მოსანიშნად. სხვა ვარიანტებისთვის გამოიყენეთ Shift, Alt და Ctrl.
+	Click to zoom in; Alt-click to zoom out.	დაწკაპეთ გასადიდებლად; Alt-დაწკაპუნება — დასაპატარავებლად.
 	Drag: move · Alt-click: smooth/corner · Ctrl-click: delete	გადათრევა: გადაადგილება · Alt-დაწკაპუნება: გლუვი/კუთხოვანი · Ctrl-დაწკაპუნება: წაშლა
 	Include Alpha Channel	ალფა-არხის ჩართვა
 	Sequence Settings	სეკვენციის პარამეტრები
@@ -3558,16 +3558,16 @@
 	FLAC 48 kHz 24-bit	FLAC 48 kHz 24-bit
 	FLAC, stereo 48 kHz 24-bit, lossless	FLAC, სტერეო 48 kHz 24-bit, დანაკარგის გარეშე
 	FLAC (lossless)	FLAC (დანაკარგის გარეშე)
-	Compression Level	შეკუმშვის დონე
+	Compression Level	კომპრესიის დონე
 	0 fastest, 8 smallest	0 — ყველაზე სწრაფი, 8 — ყველაზე მცირე
 	Drag inward to round the corners	კუთხეების მოსამრგვალებლად გადაათრიეთ შიგნით
 	Appearance Settings…	იერსახის პარამეტრები…
 	Add to favorites	რჩეულებში დამატება
 	Remove from favorites	რჩეულებიდან ამოშლა
-	Compression	შეკუმშვა
+	Compression	კომპრესია
 	ZIP (1 scan line)	ZIP (1 სკანირების ხაზი)
 	ZIP (16 scan lines)	ZIP (16 სკანირების ხაზი)
-	Safe graphics mode: {mode}	გრაფიკის უსაფრთხო რეჟიმი: {mode}
+	Safe graphics mode: {mode}	უსაფრთხო გრაფიკული რეჟიმი: {mode}
 	An earlier start failed with the default graphics. Updating the graphics driver usually fixes this.	წინა გაშვება ნაგულისხმევი გრაფიკით ჩაიშალა. როგორც წესი, ამას გრაფიკის დრაივერის განახლება აგვარებს.
 	Use Default Graphics	ნაგულისხმევი გრაფიკის გამოყენება
 	The default graphics are used from the next start.	ნაგულისხმევი გრაფიკა შემდეგი გაშვებიდან იქნება გამოყენებული.
