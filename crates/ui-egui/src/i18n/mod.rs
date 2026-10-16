@@ -344,12 +344,6 @@ pub fn korean_font_available() -> bool {
     crate::cjk::korean_available()
 }
 
-/// Whether the interface can show Georgian: the bundled Latin fonts have no Georgian letters, so
-/// `theme::install` adds an installed system face (see `georgian.rs`). False without one (the web).
-pub fn georgian_font_available() -> bool {
-    crate::georgian::available()
-}
-
 /// A label in capitals for interface chrome (the header's workspace name). Georgian Mkhedruli is
 /// left as it is: its capital forms (Mtavruli) are not used for interface text.
 pub fn ui_caps(text: &str) -> String {
@@ -1248,21 +1242,12 @@ mod tests {
         set_current(Language::En);
     }
 
-    /// Georgian switches and persists with an installed Georgian face, and is refused without one.
+    /// Georgian switches and persists; with the craft-fonts Georgian face every letter renders.
     #[test]
-    fn georgian_switches_and_persists_or_is_refused_without_a_font() {
+    fn georgian_switches_and_persists() {
         let mut app = crate::FilmcraftApp::new(filmcraft_engine::Session::default());
         let ctx = egui::Context::default();
         let r = crate::menus::invoke(&mut app, &ctx, "app.language.georgian", serde_json::json!({}));
-        if !georgian_font_available() {
-            assert!(r.is_err(), "{r:?}");
-            assert_eq!(app.ui.language, Language::En);
-            app.session.execute("prefs.set", serde_json::json!({"key": "general.interfaceLanguage", "value": "ka"})).unwrap();
-            app.apply_prefs(&ctx);
-            assert_eq!(app.ui.language, Language::En);
-            set_current(Language::En);
-            return;
-        }
         assert_eq!(r.unwrap(), serde_json::json!("ka"));
         assert_eq!((app.ui.language, current()), (Language::Ka, Language::Ka));
         assert_eq!(app.session.prefs.general.interface_language, "ka");
@@ -1273,10 +1258,13 @@ mod tests {
         let mut restarted = filmcraft_engine::Session::default();
         restarted.prefs = serde_json::from_str(&prefs).unwrap();
         assert_eq!(crate::FilmcraftApp::new(restarted).ui.language, Language::Ka);
-        // every Georgian letter (and the catalog's other letters) renders with the installed fallback
+        // every Georgian letter (and the catalog's other letters) renders with the craft-fonts face
         let (entries, _) = catalog::parse_entries(include_str!("ka.tsv"));
         let alphabet = "აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ„“";
-        assert_bundled_fonts_cover(alphabet.chars().chain(entries.iter().flat_map(|(_, _, ka)| ka.chars()).filter(|c| c.is_alphabetic())));
+        let georgian_face = filmcraft_text::fonts::CRAFT_FONTS.iter().any(|f| f.scripts.contains(&"Geor"));
+        if georgian_face {
+            assert_bundled_fonts_cover(alphabet.chars().chain(entries.iter().flat_map(|(_, _, ka)| ka.chars()).filter(|c| c.is_alphabetic())));
+        }
         crate::menus::invoke(&mut app, &ctx, "app.language.english", serde_json::json!({})).unwrap();
         set_current(Language::En);
     }

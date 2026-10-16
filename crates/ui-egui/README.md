@@ -25,8 +25,8 @@ preferred languages that the interface has (the host supplies them through
 `HostHooks::system_languages`: `sys-locale` on the desktop, `navigator.languages` on the web),
 otherwise English.
 The `app.language.*` UI commands and `prefs.set` reach it through the control channel.
-Japanese requires a craft-fonts build or a suitable installed font; Georgian an installed Georgian
-font (SF Georgian, Sylfaen, Noto Sans Georgian, DejaVu Sans).
+Japanese requires a craft-fonts build or a suitable installed font; Georgian uses the craft-fonts
+Noto Sans Georgian face (an installed Georgian face in builds without it).
 
 English source strings are lookup keys in `src/i18n/<code>.tsv`. `tl!` translates literals, `tlf!`
 fills translated templates, and `i18n::t` translates names from registries. Placeholder values
