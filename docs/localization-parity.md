@@ -57,7 +57,7 @@ whole interface, one PR) at ~4–8 h per language for the catalog plus tests.
 | Vietnamese | vi | 0 (0%) | — | Latin with stacked diacritics (font coverage to check) | — | none | 6–12 h + review |
 | *Other shipped:* Italian | it | 3,573 (same entries as Spanish, plus the macOS Settings item); must cover the core menus, no entry without a Spanish one | as Spanish | Latin (bundled fonts) | not recorded; welcome | partial | review |
 | *Other shipped:* Ukrainian | uk | 351 (10.0%) | menus only | Cyrillic (bundled) | not recorded | menus only | 5–9 h |
-| *Other shipped:* Georgian | ka | 3,591 (every Spanish entry, plus the macOS Settings item) | as Spanish | Georgian (craft-fonts Noto Sans Georgian) | native speaker | partial | review |
+| *Other shipped:* Georgian | ka | 3,590 (every Spanish entry) | as Spanish | Georgian (craft-fonts Noto Sans Georgian) | native speaker | partial | review |
 
 Premiere also ships Italian, which we now cover like Spanish, and Russian (6–10 h).
 
