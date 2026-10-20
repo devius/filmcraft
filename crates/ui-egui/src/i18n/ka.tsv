@@ -1257,6 +1257,7 @@
 	59.94 fps Non Drop-Frame	59.94 fps, კადრების გამოტოვების გარეშე
 	ASC CDL	ASC CDL
 	Accessible color contrast	ფერის ხელმისაწვდომი კონტრასტი
+	Animate zoom, scrolling and menus	მასშტაბირების, გადახვევისა და მენიუების ანიმაცია
 	Action-Safe Margin	მოქმედების უსაფრთხო ზღვარი
 	Active Monitor	აქტიური მონიტორი
 	Add	დამატება
@@ -3596,3 +3597,8 @@
 	Shows the version, community links and credits in a FilmCraft window.	აჩვენებს ვერსიას, საზოგადოების ბმულებსა და მონაწილეებს FilmCraft-ის ფანჯარაში.
 	Couldn't open your web browser	ვებბრაუზერი ვერ გაიხსნა
 	Open this address in your browser yourself:	ეს მისამართი ბრაუზერში თავად გახსენით:
+	Reset Interface Zoom	ინტერფეისის მასშტაბის ჩამოყრა
+	Track Color	ტრეკის ფერი
+	Open a sequence to search its graphics	გრაფიკაში საძებნად გახსენით სეკვენცია
+	No text graphics in this sequence. Add text with the Type tool.	ამ სეკვენციაში ტექსტური გრაფიკა არ არის. დაამატეთ ტექსტი ტექსტის ხელსაწყოთი.
+	No matching text.	შესაბამისი ტექსტი არ არის.
