@@ -64,22 +64,30 @@ pub(crate) fn craft_fonts() -> impl Iterator<Item = &'static CraftFont> {
 /// Installed faces for the scripts craft-fonts does not cover, looked up once per process (native
 /// builds only). A face that covers several scripts (Segoe UI) is added once.
 fn system_fonts() -> &'static [(String, Arc<FontData>)] {
-    static FONTS: OnceLock<Vec<(String, Arc<FontData>)>> = OnceLock::new();
+    &system().0
+}
+
+/// The installed faces and the scripts they cover between them.
+#[allow(clippy::type_complexity)]
+fn system() -> &'static (Vec<(String, Arc<FontData>)>, Vec<&'static str>) {
+    static FONTS: OnceLock<(Vec<(String, Arc<FontData>)>, Vec<&'static str>)> = OnceLock::new();
     FONTS.get_or_init(|| {
         if cfg!(target_arch = "wasm32") {
-            return Vec::new();
+            return (Vec::new(), Vec::new());
         }
         let missing: Vec<&Script> = SCRIPTS.iter().filter(|s| !craft_fonts().any(|f| f.scripts.contains(&s.code))).collect();
         if missing.is_empty() {
-            return Vec::new();
+            return (Vec::new(), Vec::new());
         }
         filmcraft_text::fonts::scan_system();
         let faces: Vec<_> = filmcraft_text::fonts::all_faces().into_iter().filter(|f| f.info.origin == "system" && !f.info.italic).collect();
         let by_weight = |f: &&Arc<Face>| f.info.weight.abs_diff(400);
         let mut chosen: Vec<&Arc<Face>> = Vec::new();
         let mut out = Vec::new();
+        let mut covered = Vec::new();
         for s in missing {
             if chosen.iter().any(|f| f.covers_text(s.sample)) {
+                covered.push(s.code);
                 continue;
             }
             let covers = |f: &&Arc<Face>| f.covers_text(s.sample);
@@ -93,10 +101,17 @@ fn system_fonts() -> &'static [(String, Arc<FontData>)] {
             };
             let font = FontData { font: Cow::Owned(data), index: face.info.index, tweak: Default::default() };
             out.push((format!("system-{}", s.code.to_lowercase()), Arc::new(font)));
+            covered.push(s.code);
             chosen.push(face);
         }
-        out
+        (out, covered)
     })
+}
+
+/// Whether the interface can draw script `code` (one of [`SCRIPTS`]): a craft-fonts face for it,
+/// or an installed face [`install`] adds (native builds only; the web has no installed faces).
+pub(crate) fn can_draw(code: &str) -> bool {
+    craft_fonts().any(|f| f.scripts.contains(&code)) || system().1.contains(&code)
 }
 
 /// Append the right-to-left faces (craft-fonts, else installed ones) after the other fallbacks of

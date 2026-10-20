@@ -344,6 +344,13 @@ pub fn korean_font_available() -> bool {
     crate::cjk::korean_available()
 }
 
+/// Whether the interface can show Georgian: `theme::install` adds craft-fonts' Noto Sans Georgian,
+/// else an installed Georgian face (see `rtl.rs`). False on builds without craft-fonts and systems
+/// (and the web) without one.
+pub fn georgian_font_available() -> bool {
+    crate::rtl::can_draw("Geor")
+}
+
 /// A label in capitals for interface chrome (the header's workspace name). Georgian Mkhedruli is
 /// left as it is: its capital forms (Mtavruli) are not used for interface text.
 pub fn ui_caps(text: &str) -> String {
@@ -1258,12 +1265,19 @@ mod tests {
         set_current(Language::En);
     }
 
-    /// Georgian switches and persists; with the craft-fonts Georgian face every letter renders.
+    /// Georgian switches and persists when a face draws it (craft-fonts' or an installed one), and is
+    /// refused, keeping English, when none does; with the craft-fonts Georgian face every letter renders.
     #[test]
     fn georgian_switches_and_persists() {
         let mut app = crate::FilmcraftApp::new(filmcraft_engine::Session::default());
         let ctx = egui::Context::default();
         let r = crate::menus::invoke(&mut app, &ctx, "app.language.georgian", serde_json::json!({}));
+        if !georgian_font_available() {
+            assert!(r.unwrap_err().contains("no Georgian font"));
+            assert_eq!((app.ui.language, current()), (Language::En, Language::En));
+            assert_ne!(app.session.prefs.general.interface_language, "ka");
+            return;
+        }
         assert_eq!(r.unwrap(), serde_json::json!("ka"));
         assert_eq!((app.ui.language, current()), (Language::Ka, Language::Ka));
         assert_eq!(app.session.prefs.general.interface_language, "ka");
