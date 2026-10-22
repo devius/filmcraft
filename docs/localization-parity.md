@@ -24,9 +24,7 @@ control channel, the CLI and MCP stay English.
 
 Fonts come from [craft-fonts](https://github.com/storytold/craft-fonts) (`CRAFT_FONTS_DIR`, all
 official releases) or an installed system face; without one, switching to Japanese or Chinese is
-refused with a message. Georgian uses the craft-fonts Noto Sans Georgian face, on the web too
-(native builds without craft-fonts use an installed Georgian face, like Arabic and Hebrew), and
-the header's capitalised workspace name leaves Georgian lowercase (no Mtavruli). Simplified Chinese is picked for `zh`, `zh-CN`, `zh-SG`, `zh-Hans`, not
+refused with a message. Georgian uses the craft-fonts Noto Sans Georgian face. Simplified Chinese is picked for `zh`, `zh-CN`, `zh-SG`, `zh-Hans`, not
 Traditional locales. Ukrainian uses the bundled Cyrillic interface fonts. Vertical text in titles
 is supported. The interface (egui) shapes each font run with harfrust and has Arabic and Hebrew
 fallback fonts (`crates/ui-egui/src/rtl.rs`), but it has no bidi pass: only captions (timeline
