@@ -20,7 +20,7 @@ concurrency:
 
 env:
   # Same craft-fonts commit as release.yml, so the font tests see what a release build embeds.
-  CRAFT_FONTS_REF: abb83316d96aa59c1cf64784289e378fe9fa5695
+  CRAFT_FONTS_REF: a71c20e30af613287c504f7e685ca8fad77752bc
 
 jobs:
   gate:
