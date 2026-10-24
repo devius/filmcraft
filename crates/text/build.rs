@@ -9,7 +9,8 @@
 //! `CRAFT_FONTS_DIR` an error.
 //!
 //! Native builds embed every font. The web (wasm32) build embeds only the UI font (BIZ UDPGothic
-//! Regular, ~4.5 MB) to stay under the web size budget (Cloudflare serves files up to 25 MiB).
+//! Regular, ~4.5 MB) and the Georgian face (Noto Sans Georgian, ~230 KB) to stay under the web size
+//! budget (Cloudflare serves files up to 25 MiB).
 //! Only the local directory is read: no network.
 
 use std::fmt::Write as _;

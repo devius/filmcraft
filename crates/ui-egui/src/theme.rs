@@ -697,6 +697,29 @@ mod tests {
         assert!(galley.size().x > 13.0 * 4.0, "{:?}", galley.size());
     }
 
+    /// Built with a craft-fonts that has Noto Sans Georgian (`Geor`): it is in every font family
+    /// ([`crate::rtl`]), so Georgian text gets real glyphs.
+    #[test]
+    fn georgian_renders_with_craft_fonts() {
+        if !filmcraft_text::fonts::CRAFT_FONTS.iter().any(|f| f.scripts.contains(&"Geor")) {
+            eprintln!("SKIPPED: built without a craft-fonts Georgian face (set CRAFT_FONTS_DIR to a craft-fonts checkout that has one)");
+            return;
+        }
+        let ctx = installed();
+        ctx.fonts_mut(|fonts| {
+            let defs = fonts.definitions().clone();
+            for (family, stack) in &defs.families {
+                assert!(stack.iter().any(|n| n == "craft:Noto Sans Georgian Regular"), "{family:?}: {stack:?}");
+            }
+            for family in [FontFamily::Proportional, FontFamily::Monospace] {
+                let font = FontId::new(13.0, family);
+                for ch in "ქართული ფილმი".chars().filter(|c| !c.is_whitespace()) {
+                    assert!(fonts.has_glyph(&font, ch), "missing {ch} in {font:?}");
+                }
+            }
+        });
+    }
+
     /// Latin text keeps its UI faces, with or without craft-fonts and system Chinese fonts.
     #[test]
     fn works_without_craft_fonts() {
