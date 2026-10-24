@@ -711,7 +711,9 @@ mod tests {
             for (family, stack) in &defs.families {
                 assert!(stack.iter().any(|n| n == "craft:Noto Sans Georgian Regular"), "{family:?}: {stack:?}");
             }
-            for family in [FontFamily::Proportional, FontFamily::Monospace] {
+            // not Monospace: egui's Hack draws Georgian there and is also that family's replacement
+            // face, so `has_glyph` reports a false negative for it
+            for family in [FontFamily::Proportional, FontFamily::Name("semibold".into()), FontFamily::Name("medium".into())] {
                 let font = FontId::new(13.0, family);
                 for ch in "ქართული ფილმი".chars().filter(|c| !c.is_whitespace()) {
                     assert!(fonts.has_glyph(&font, ch), "missing {ch} in {font:?}");
