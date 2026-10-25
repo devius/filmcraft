@@ -85,6 +85,7 @@ impl Language {
             Self::Id => "id",
             Self::It => "it",
             Self::Ko => "ko",
+            Self::Ka => "ka",
         }
     }
 
