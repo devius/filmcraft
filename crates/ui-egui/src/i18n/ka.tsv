@@ -125,7 +125,7 @@
 	File	ფაილი
 	File…	ფაილი…
 	Fill frame	კადრის შევსება
-	FilmCraft Help…	FilmCraft-ის დახმარება…
+	FilmCraft Help…	დახმარება…
 	FilmCraft on GitHub	FilmCraft GitHub-ზე
 	FilmCraft on getartcraft.com	FilmCraft getartcraft.com-ზე
 	Find Next	შემდეგის ძებნა
@@ -260,7 +260,7 @@
 	Remove Unused	გამოუყენებლის მოცილება
 	Rename…	სახელის შეცვლა…
 	Render Audio	აუდიოს რენდერი
-	Render Effects In to Out	ეფექტების რენდერი შესვლიდან გამოსვლამდე
+	Render Effects In to Out	ეფექტების რენდერი დიაპაზონში
 	Render In to Out	რენდერი შესვლიდან გამოსვლამდე
 	Render Selection	მონიშნულის რენდერი
 	Replace Fonts in Projects…	შრიფტების ჩანაცვლება პროექტებში…
@@ -316,7 +316,7 @@
 	Show Through Edits	გამჭოლი ჭრილების ჩვენება
 	Simplify Sequence…	სეკვენციის გამარტივება…
 	Snap in Program Monitor	მიბმა პროგრამის მონიტორში
-	Snap in Timeline	მიბმა ტაიმლაინზე
+	Snap in Timeline	მიბმა
 	Source	წყარო
 	Source Settings…	წყაროს პარამეტრები…
 	Speed/Duration…	სიჩქარე/ხანგრძლივობა…
@@ -357,10 +357,10 @@
 	Yellow	ყვითელი
 	Zoom In	გადიდება
 	Zoom Out	დაპატარავება
-	Zoom to Sequence	სეკვენციაზე მასშტაბირება
+	Zoom to Sequence	სეკვენციის ჩატევა
 	Home	საწყისი ეკრანი
 	Import	იმპორტი
-	{name} - Edited	{name} - რედაქტირებული
+	{name} - Edited	{name} – შეცვლილი
 	Full screen	სრული ეკრანი
 	Volume	ხმის დონე
 	Master volume: use the Audio Track Mixer	მასტერის ხმის დონე: გამოიყენეთ აუდიო ტრეკების მიქშერი
@@ -1048,7 +1048,7 @@
 	   Angle	   კუთხე
 	   Distance	   მანძილი
 	   Blur	   გაბუნდოვნება
-	Search templates	შაბლონების ძიება
+	Search templates	ძიება
 	All Categories	ყველა კატეგორია
 	Install…	ინსტალაცია…
 	Install Motion Graphics Template (.fcgt)	მოძრავი გრაფიკის შაბლონის ინსტალაცია (.fcgt)
@@ -1301,7 +1301,7 @@
 	Angle	კუთხე
 	Animation	ანიმაცია
 	Anti-aliasing Quality	კიდეების გასწორების ხარისხი
-	Anti-flicker Filter	ციმციმის საწინააღმდეგო ფილტრი
+	Anti-flicker Filter	ანტიციმციმის ფილტრი
 	Antialiasing for Best Quality	კიდეების გასწორება საუკეთესო ხარისხისთვის
 	Asymmetry	ასიმეტრია
 	At Startup	გაშვებისას
@@ -1312,7 +1312,7 @@
 	Audio Effects	აუდიოეფექტები
 	Audio Hardware	აუდიოაპარატურა
 	Audio In Point	აუდიოს შესვლის წერტილი
-	Audio Info	აუდიოს ინფორმაცია
+	Audio Info	აუდიო
 	Audio Out Point	აუდიოს გამოსვლის წერტილი
 	Audio Samples	აუდიოს სემპლები
 	Audio Time Units	აუდიოს დროის ერთეულები
@@ -1326,7 +1326,7 @@
 	Auto Save also saves the current project(s)	ავტოშენახვა მიმდინარე პროექტ(ებ)საც ინახავს
 	Auto-tag audio types in the timeline	აუდიოს ტიპების ავტომატური მონიშვნა ტაიმლაინზე
 	Auto-transcribe all imported clips	ყველა იმპორტირებული კლიპის ავტომატური ტრანსკრიფცია
-	Auto-transcribe only clips in sequences	მხოლოდ სეკვენციებში არსებული კლიპების ავტომატური ტრანსკრიფცია
+	Auto-transcribe only clips in sequences	მხოლოდ სეკვენციების კლიპების ავტოტრანსკრიფცია
 	Automatch Time	ავტომატური დაბრუნების დრო
 	Automatic Click Remover	დაწკაპუნებების ავტომატური მოცილება
 	Automatically Hide Dependent Clips	დამოკიდებული კლიპების ავტომატური დამალვა
@@ -1439,7 +1439,7 @@
 	Capitalisation	რეგისტრი
 	Cathedral	ტაძარი
 	Cell Pattern	უჯრედების პატერნი
-	Center Channel Pan	ცენტრალური არხის პანორამა
+	Center Channel Pan	ცენტრის არხის პანორამა
 	Center Gradient	ცენტრის გრადიენტი
 	Center Input	ცენტრის შემავალი
 	Center Out	ცენტრის გამომავალი
@@ -1553,8 +1553,8 @@
 	Cycle (in Revolutions)	ციკლი (ბრუნებში)
 	Cycle Evolution	ევოლუციის ციკლი
 	Damping	ჩაქრობა
-	Damping HF	მაღალი სიხშირეების ჩაქრობა
-	Damping LF	დაბალი სიხშირეების ჩაქრობა
+	Damping HF	მაღლების ჩაქრობა
+	Damping LF	დაბლების ჩაქრობა
 	Dark	ბნელი
 	Darken	ჩამუქება
 	Darker Color	უფრო მუქი ფერი
@@ -1836,7 +1836,7 @@
 	High Frequency Damping	მაღალი სიხშირეების ჩაქრობა
 	High Pass	მაღალსიხშირული ფილტრი
 	High Shelf	მაღალსიხშირული შელფი
-	High Shelf Gain	მაღალსიხშირული შელფის გაძლიერება
+	High Shelf Gain	მაღალი შელფის გაძლიერება
 	High contrast with held highlights and deep shadows	მაღალი კონტრასტი შენარჩუნებული ღია ტონებითა და ღრმა ჩრდილებით
 	Highlight	ნათელი უბნები
 	Highlight Blue Balance	ღია ტონების ლურჯის ბალანსი
@@ -1988,7 +1988,7 @@
 	Low Frequency Cut	დაბალი სიხშირეების მოკვეთა
 	Low Pass	დაბალსიხშირული ფილტრი
 	Low Shelf	დაბალსიხშირული შელფი
-	Low Shelf Gain	დაბალსიხშირული შელფის გაძლიერება
+	Low Shelf Gain	დაბალი შელფის გაძლიერება
 	Lower Left	ქვედა მარცხენა
 	Lower Right	ქვედა მარჯვენა
 	Lowpass	დაბალსიხშირული
@@ -2023,20 +2023,20 @@
 	Matte Generation	მატის გენერაცია
 	Matte Luma	მატის ლუმა
 	Maximum	მაქსიმუმი
-	Maximum Amplitude	მაქსიმალური ამპლიტუდა
+	Maximum Amplitude	უდიდესი ამპლიტუდა
 	Maximum Block Size	ბლოკის მაქსიმალური ზომა
 	Maximum Blur	მაქსიმალური გაბუნდოვნება
 	Maximum Project Versions	პროექტის ვერსიების მაქსიმალური რაოდენობა
-	Maximum Reduction	მაქსიმალური შემცირება
+	Maximum Reduction	უდიდესი შემცირება
 	Maximum Scale	მაქსიმალური მასშტაბი
 	Media	მედია
 	Media Analysis	მედიის ანალიზი
-	Media Analysis & Transcription	მედიის ანალიზი და ტრანსკრიფცია
+	Media Analysis & Transcription	ანალიზი და ტრანსკრიფცია
 	Media Cache	მედიაქეში
 	Media Cache Database	მედიაქეშის მონაცემთა ბაზა
 	Media Cache Files	მედიაქეშის ფაილები
 	Media Cache Management	მედიაქეშის მართვა
-	Media Duration	მედიის ხანგრძლივობა
+	Media Duration	ხანგრძლივობა
 	Media End	მედიის დასასრული
 	Media Time	მედიის დრო
 	Media Timecode	მედიის დროის კოდი
@@ -2117,7 +2117,7 @@
 	Notch Filter	ჩაღრმავების ფილტრი
 	Notch Width	ჩაღრმავების სიგანე
 	Number Of Echoes	ექოების რაოდენობა
-	Number of Harmonics	ჰარმონიკების რაოდენობა
+	Number of Harmonics	ჰარმონიკები
 	Obsolete	მოძველებული
 	Octagon	რვაკუთხედი
 	Offset	წანაცვლება
@@ -2322,7 +2322,7 @@
 	Rusty	ჟანგიანი
 	Rusty Color	ჟანგის ფერი
 	SFX	ხმოვანი ეფექტები
-	Sample Rate	დისკრეტიზაციის სიხშირე
+	Sample Rate	სემპლების სიხშირე
 	Saturation at 50 %	გაჯერება 50 %-ზე
 	Save .cfa and .pek media cache files next to original media files when possible	.cfa და .pek მედიაქეშის ფაილების შენახვა, თუ შესაძლებელია, საწყისი მედიაფაილების გვერდით
 	Scale (Degrees)	მასშტაბი (გრადუსი)
@@ -2579,7 +2579,7 @@
 	Twist Smoother	გრეხა, უფრო გლუვი
 	Typewriter	საბეჭდი მანქანა
 	Ultra Key	Ultra Key
-	Uniform Scale	ერთგვაროვანი მასშტაბი
+	Uniform Scale	თანაბარი მასშტაბი
 	Uniform Spacing	ერთგვაროვანი დაშორება
 	Unsharp Mask	არამკვეთრი ნიღაბი
 	Update it at least every	განახლება სულ მცირე ყოველ
@@ -2641,7 +2641,7 @@
 	Video Duration	ვიდეოს ხანგრძლივობა
 	Video Effects	ვიდეოეფექტები
 	Video In Point	ვიდეოს შესვლის წერტილი
-	Video Info	ვიდეოს ინფორმაცია
+	Video Info	ვიდეო
 	Video Limiter	ვიდეოლიმიტერი
 	Video Out Point	ვიდეოს გამოსვლის წერტილი
 	Video Transition Default Duration	ვიდეოგადასვლის ნაგულისხმევი ხანგრძლივობა
@@ -2671,7 +2671,7 @@
 	Waveform (RGB)	ტალღის ფორმა (RGB)
 	Wavelength	ტალღის სიგრძე
 	Wet	დამუშავებული
-	Wet Out	დამუშავებული სიგნალის გამოსავალი
+	Wet Out	ეფექტის გამოსავალი
 	When Opening a Project	პროექტის გახსნისას
 	Whip	სწრაფი გადაქაჩვა
 	Whip (Legacy)	სწრაფი გადაქაჩვა (მოძველებული)
@@ -2897,15 +2897,15 @@
 	Image	სურათი
 	Frame Size	კადრის ზომა
 	Match Source	წყაროს მიხედვით
-	Field Order	ნახევარკადრების რიგი
+	Field Order	ნახევარკადრთა რიგი
 	Aspect	თანაფარდობა
 	Profile	პროფილი
 	Bitrate Encoding	ბიტრეიტის კოდირება
 	Target Bitrate	სამიზნე ბიტრეიტი
 	Adaptive ({bpp} bits per pixel)	ადაპტური ({bpp} ბიტი პიქსელზე)
-	Maximum Bitrate	მაქსიმალური ბიტრეიტი
+	Maximum Bitrate	უდიდესი ბიტრეიტი
 	Quality (CRF)	ხარისხი (CRF)
-	Key Frame Distance	საკვანძო კადრებს შორის მანძილი
+	Key Frame Distance	საკვანძო კადრის ბიჯი
 	Quality	ხარისხი
 	Render at Maximum Depth	რენდერი მაქსიმალური სიღრმით
 	Use Maximum Render Quality	მაქსიმალური რენდერის ხარისხის გამოყენება
@@ -2972,8 +2972,8 @@
 	Details: {path}	დეტალები: {path}
 	Opened {url}	გაიხსნა {url}
 	(empty)	(ცარიელი)
-	Step Back 1 Frame	ერთი კადრით უკან
-	Step Forward 1 Frame	ერთი კადრით წინ
+	Step Back 1 Frame	კადრით უკან
+	Step Forward 1 Frame	კადრით წინ
 	Match Playhead	დაკვრის კურსორთან შესაბამისობა
 	Gang to Program	პროგრამასთან დაწყვილება
 	AAC Audio	AAC აუდიო
@@ -3042,7 +3042,7 @@
 	DVCPRO HD (1.5)	DVCPRO HD (1.5)
 	Darkens outside a feathered oval mask	აბნელებს შერბილებული ოვალური ნიღბის გარეთ
 	Decrease Audio Tracks Height	აუდიო ტრეკების სიმაღლის შემცირება
-	Decrease Clip Volume	კლიპის ხმის დონის შემცირება
+	Decrease Clip Volume	ხმის დონის შემცირება
 	Decrease Clip Volume Many	კლიპის ხმის დონის ბევრად შემცირება
 	Decrease Font Size by Five Units	შრიფტის ზომის შემცირება ხუთი ერთეულით
 	Decrease Font Size by One Unit	შრიფტის ზომის შემცირება ერთი ერთეულით
@@ -3065,7 +3065,7 @@
 	Export Frame	კადრის ექსპორტი
 	Extend Next Edit To Playhead	შემდეგი ჭრილის გაგრძელება დაკვრის კურსორამდე
 	Extend Previous Edit To Playhead	წინა ჭრილის გაგრძელება დაკვრის კურსორამდე
-	Extend Selected Edit to Playhead	მონიშნული ჭრილის გაგრძელება დაკვრის კურსორამდე
+	Extend Selected Edit to Playhead	ჭრილის გაგრძელება კურსორამდე
 	Extend Selection Down	მონიშვნის გაფართოება ქვემოთ
 	Extend Selection Left	მონიშვნის გაფართოება მარცხნივ
 	Extend Selection Right	მონიშვნის გაფართოება მარჯვნივ
@@ -3074,14 +3074,14 @@
 	Gaussian Blur from 0 to 60 over the last second	გაუსის გაბუნდოვნება 0-დან 60-მდე ბოლო წამის განმავლობაში
 	Gaussian Blur from 60 to 0 over the first second	გაუსის გაბუნდოვნება 60-დან 0-მდე პირველი წამის განმავლობაში
 	Generate Ducking Keyframes	ხმის ავტომატური დაწევის საკვანძო კადრების შექმნა
-	Go to Next Edit Point	შემდეგ ჭრილზე გადასვლა
+	Go to Next Edit Point	შემდეგ ჭრილზე
 	Go to Next Edit Point on Any Track	შემდეგ ჭრილზე გადასვლა ნებისმიერ ტრეკზე
-	Go to Previous Edit Point	წინა ჭრილზე გადასვლა
+	Go to Previous Edit Point	წინა ჭრილზე
 	Go to Previous Edit Point on Any Track	წინა ჭრილზე გადასვლა ნებისმიერ ტრეკზე
 	Go to Selected Clip End	მონიშნული კლიპის ბოლოზე გადასვლა
 	Go to Selected Clip Start	მონიშნული კლიპის დასაწყისზე გადასვლა
-	Go to Sequence End	სეკვენციის ბოლოზე გადასვლა
-	Go to Sequence Start	სეკვენციის დასაწყისზე გადასვლა
+	Go to Sequence End	სეკვენციის ბოლო
+	Go to Sequence Start	სეკვენციის დასაწყისი
 	H.264	H.264
 	AV1	AV1
 	H.264 1920×1080 for video sharing sites, VBR 1 pass, 16 Mbps	H.264 1920×1080 ვიდეოგაზიარების საიტებისთვის, VBR, 1 გავლა, 16 Mbps
@@ -3095,12 +3095,12 @@
 	H.264 at the sequence's frame size and rate; 0.1 bits per pixel	H.264 სეკვენციის კადრის ზომითა და სიხშირით; 0.1 ბიტი პიქსელზე
 	H.264 at the sequence's frame size and rate; bitrate adapts to the frame size (0.2 bits per pixel)	H.264 სეკვენციის კადრის ზომითა და სიხშირით; ბიტრეიტი ერგება კადრის ზომას (0.2 ბიტი პიქსელზე)
 	HD Anamorphic 1080 (1.333)	HD ანამორფული 1080 (1.333)
-	Hand Tool	ხელის ხელსაწყო
+	Hand Tool	ხელი
 	High Quality 1080p HD	მაღალი ხარისხი 1080p HD
 	High Quality 2160p 4K	მაღალი ხარისხი 2160p 4K
 	Image Sequence	სურათების თანმიმდევრობა
 	Increase Audio Tracks Height	აუდიო ტრეკების სიმაღლის გაზრდა
-	Increase Clip Volume	კლიპის ხმის დონის გაზრდა
+	Increase Clip Volume	ხმის დონის გაზრდა
 	Increase Clip Volume Many	კლიპის ხმის დონის ბევრად გაზრდა
 	Increase Font Size by Five Units	შრიფტის ზომის გაზრდა ხუთი ერთეულით
 	Increase Font Size by One Unit	შრიფტის ზომის გაზრდა ერთი ერთეულით
@@ -3130,7 +3130,7 @@
 	Match Source – Adaptive Medium Bitrate	წყაროს შესაბამისი – ადაპტური საშუალო ბიტრეიტი
 	Matches	ემთხვევა
 	Maximize or Restore Active Frame	აქტიური კადრის გაშლა ან აღდგენა
-	Maximize or Restore Frame Under Cursor	კურსორქვეშა კადრის გაშლა ან აღდგენა
+	Maximize or Restore Frame Under Cursor	კადრის გაშლა/აღდგენა
 	Media Browser Settings	მედიის ბრაუზერის პარამეტრები
 	MediaBrowser	მედიის ბრაუზერი
 	MediaCache	მედიაქეში
@@ -3149,7 +3149,7 @@
 	Move Selection Page Up	მონიშნულის გვერდით ზემოთ გადატანა
 	Move Selection Right	მონიშნულის მარჯვნივ გადატანა
 	Move Selection Up	მონიშნულის ზემოთ გადატანა
-	Multi-Camera Record On/Off Toggle	მრავალკამერიანი ჩაწერის ჩართვა/გამორთვა
+	Multi-Camera Record On/Off Toggle	მრავალკამერიანი ჩაწერა
 	Multicam	მრავალკამერიანი
 	Navigate to End of Segment	სეგმენტის ბოლოზე გადასვლა
 	Navigate to Next Line	შემდეგ სტრიქონზე გადასვლა
@@ -3199,7 +3199,7 @@
 	PNG	PNG
 	PNG Sequence	PNG თანმიმდევრობა
 	Panel	პანელი
-	Pen Tool	კალმის ხელსაწყო
+	Pen Tool	კალამი
 	PiP 35% Upper Right	PiP 35% ზედა მარჯვენა
 	Picture-in-picture: 35 % scale in the upper right	სურათი სურათში: 35 % მასშტაბი ზედა მარჯვენა კუთხეში
 	Play Around	დაკვრა ირგვლივ
@@ -3223,25 +3223,25 @@
 	QuickTime, ProRes 4444 XQ (4:4:4), 24-bit 48 kHz PCM	QuickTime, ProRes 4444 XQ (4:4:4), 24-bit 48 kHz PCM
 	QuickTime, ProRes 422, 24-bit 48 kHz PCM	QuickTime, ProRes 422, 24-bit 48 kHz PCM
 	Quit FilmCraft	FilmCraft-იდან გასვლა
-	Rate Stretch Tool	სიჩქარის გაწელვის ხელსაწყო
-	Razor Tool	სამართებლის ხელსაწყო
+	Rate Stretch Tool	სიჩქარის გაწელვა
+	Razor Tool	სამართებელი
 	Rectangle Tool	მართკუთხედის ხელსაწყო
 	Remix Tool	რემიქსის ხელსაწყო
 	Right align text	ტექსტის მარჯვნივ სწორება
-	Ripple Edit Tool	ძვრადი მონტაჟის ხელსაწყო
-	Ripple Trim Next Edit to Playhead	შემდეგი ჭრილის ძვრადი მოკვეთა დაკვრის კურსორამდე
-	Ripple Trim Previous Edit to Playhead	წინა ჭრილის ძვრადი მოკვეთა დაკვრის კურსორამდე
-	Rolling Edit Tool	მცოცავი მონტაჟის ხელსაწყო
-	Select Camera 1	კამერა 1-ის არჩევა
-	Select Camera 2	კამერა 2-ის არჩევა
-	Select Camera 3	კამერა 3-ის არჩევა
-	Select Camera 4	კამერა 4-ის არჩევა
-	Select Camera 5	კამერა 5-ის არჩევა
-	Select Camera 6	კამერა 6-ის არჩევა
-	Select Camera 7	კამერა 7-ის არჩევა
-	Select Camera 8	კამერა 8-ის არჩევა
-	Select Camera 9	კამერა 9-ის არჩევა
-	Select Clip at Playhead	კლიპის მონიშვნა დაკვრის კურსორთან
+	Ripple Edit Tool	ძვრადი მონტაჟი
+	Ripple Trim Next Edit to Playhead	შემდეგი ჭრილის ძვრადი მოკვეთა
+	Ripple Trim Previous Edit to Playhead	წინა ჭრილის ძვრადი მოკვეთა
+	Rolling Edit Tool	მცოცავი მონტაჟი
+	Select Camera 1	კამერა 1
+	Select Camera 2	კამერა 2
+	Select Camera 3	კამერა 3
+	Select Camera 4	კამერა 4
+	Select Camera 5	კამერა 5
+	Select Camera 6	კამერა 6
+	Select Camera 7	კამერა 7
+	Select Camera 8	კამერა 8
+	Select Camera 9	კამერა 9
+	Select Clip at Playhead	კლიპის მონიშვნა კურსორთან
 	Select Find Box	ძებნის ველის მონიშვნა
 	Select Next Clip	შემდეგი კლიპის მონიშვნა
 	Select Next Panel	შემდეგი პანელის არჩევა
@@ -3253,16 +3253,16 @@
 	Select to Previous Word	მონიშვნა წინა სიტყვამდე
 	Select to Segment End	მონიშვნა სეგმენტის ბოლომდე
 	Select to Segment Start	მონიშვნა სეგმენტის დასაწყისამდე
-	Selection Tool	მონიშვნის ხელსაწყო
+	Selection Tool	მონიშვნა
 	Set Comparison Reference	შედარების ეტალონის დაყენება
 	Set Creative Look	კრეატიული ვიზუალური სტილის დაყენება
 	Set Input LUT	შემავალი LUT-ის დაყენება
 	Set Project Panel View	პროექტის პანელის ხედის დაყენება
-	Show Next Screen	შემდეგი ეკრანის ჩვენება
-	Show Previous Screen	წინა ეკრანის ჩვენება
+	Show Next Screen	შემდეგი ეკრანი
+	Show Previous Screen	წინა ეკრანი
 	Show Program Transcript	პროგრამის ტრანსკრიპტის ჩვენება
-	Shuttle Left	შატლი მარცხნივ
-	Shuttle Right	შატლი მარჯვნივ
+	Shuttle Left	შატლი უკან
+	Shuttle Right	შატლი წინ
 	Shuttle Slow Left	ნელი შატლი მარცხნივ
 	Shuttle Slow Right	ნელი შატლი მარჯვნივ
 	Shuttle Stop	შატლის შეჩერება
@@ -3270,12 +3270,12 @@
 	Slide Clip Selection Left One Frame	მონიშნული კლიპების სრიალი მარცხნივ ერთი კადრით
 	Slide Clip Selection Right Five Frames	მონიშნული კლიპების სრიალი მარჯვნივ ხუთი კადრით
 	Slide Clip Selection Right One Frame	მონიშნული კლიპების სრიალი მარჯვნივ ერთი კადრით
-	Slide Tool	სრიალის ხელსაწყო
+	Slide Tool	სრიალი
 	Slip Clip Selection Left Five Frames	მონიშნული კლიპების ცურვა მარცხნივ ხუთი კადრით
 	Slip Clip Selection Left One Frame	მონიშნული კლიპების ცურვა მარცხნივ ერთი კადრით
 	Slip Clip Selection Right Five Frames	მონიშნული კლიპების ცურვა მარჯვნივ ხუთი კადრით
 	Slip Clip Selection Right One Frame	მონიშნული კლიპების ცურვა მარჯვნივ ერთი კადრით
-	Slip Tool	ცურვის ხელსაწყო
+	Slip Tool	ცურვა
 	Social Vertical 1080×1920	სოციალური ვერტიკალური 1080×1920
 	Soft Vignette	რბილი ვინეტი
 	Source In/Out	წყაროს შესვლა/გამოსვლა
@@ -3326,12 +3326,12 @@
 	Toggle Trim Type	მოკვეთის ტიპის გადართვა
 	Toggle View	ხედის გადართვა
 	Track Select Backward Tool	ტრეკის უკუმონიშვნის ხელსაწყო
-	Track Select Forward Tool	ტრეკის წინამონიშვნის ხელსაწყო
+	Track Select Forward Tool	ტრეკის წინამონიშვნა
 	Track Selected Mask	მონიშნული ნიღბის ტრეკინგი
 	Trim Next Edit to Playhead	შემდეგი ჭრილის მოკვეთა დაკვრის კურსორამდე
 	Trim Previous Edit to Playhead	წინა ჭრილის მოკვეთა დაკვრის კურსორამდე
 	Trimming	მოკვეთა
-	Type Tool	ტექსტის ხელსაწყო
+	Type Tool	ტექსტი
 	Unstack Clips	კლიპების დასტის დაშლა
 	Upper First	ჯერ ზედა
 	VBR, 1 pass	VBR, 1 გავლა
@@ -3357,7 +3357,7 @@
 	Zoom Program Monitor to Fit	პროგრამის მონიტორში ჩატევა
 	Zoom Source Monitor to 100%	წყაროს მონიტორის მასშტაბი 100%
 	Zoom Source Monitor to Fit	წყაროს მონიტორში ჩატევა
-	Zoom Tool	მასშტაბის ხელსაწყო
+	Zoom Tool	მასშტაბირება
 	with:	ამით:
 	Interface Language	ინტერფეისის ენა
 	System Language	სისტემის ენა
