@@ -38,14 +38,15 @@ fn installed_font() -> Option<Arc<FontData>> {
         let by_weight = |f: &&Arc<filmcraft_text::fonts::Face>| f.info.weight.abs_diff(400);
         let preferred = PREFERRED.iter().find_map(|name| faces.iter().filter(|f| f.info.family.eq_ignore_ascii_case(name) && covers(f)).min_by_key(by_weight));
         let face = preferred.or_else(|| faces.iter().filter(|f| covers(f)).min_by_key(by_weight))?;
-        Some(Arc::new(FontData { font: std::borrow::Cow::Owned(face.data()?), index: face.info.index, tweak: Default::default() }))
+        Some(Arc::new(FontData::from_blob(Arc::new(face.data()?), face.info.index)))
     })
     .clone()
 }
 
-/// Whether [`install`] has a Georgian face to add. The Georgian interface needs one.
+/// Whether there is a Georgian face: craft-fonts `Geor` (added by `crate::rtl`) or one [`install`]
+/// adds. The Georgian interface needs one.
 pub(crate) fn available() -> bool {
-    system_font().is_some()
+    crate::rtl::craft_fonts().any(|f| f.scripts.contains(&"Geor")) || system_font().is_some()
 }
 
 /// Append the Georgian face as the last fallback of every font family.

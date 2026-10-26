@@ -415,9 +415,8 @@ pub fn font_families() -> Vec<FontFamily> {
 }
 
 /// Install the Latin UI fonts, Chinese fallback (craft-fonts or an installed face), Japanese
-/// craft-fonts, Arabic and Hebrew fallbacks (craft-fonts or installed faces, [`crate::rtl`]), the
-/// Georgian system fallback and egui visuals. Document names keep their glyphs in every interface
-/// language.
+/// craft-fonts, Arabic, Hebrew and Georgian fallbacks (craft-fonts or installed faces, `crate::rtl`,
+/// `crate::georgian`) and egui visuals. Document names keep their glyphs in every interface language.
 pub fn install(ctx: &egui::Context, t: &Tokens) {
     let mut fonts = FontDefinitions::default();
     fonts.font_data.insert("inter".into(), Arc::new(FontData::from_static(filmcraft_text::fonts::INTER_REGULAR)));
@@ -612,7 +611,7 @@ mod tests {
         filmcraft_text::fonts::scan_system();
         let available = filmcraft_text::fonts::all_faces()
             .iter()
-            .any(|f| matches!(f.info.origin, "system" | filmcraft_text::fonts::CRAFT_ORIGIN) && CHINESE.chars().all(|c| f.has_char(c)));
+            .any(|f| matches!(f.info.origin, "system" | filmcraft_text::fonts::CRAFT_ORIGIN) && f.covers_text(CHINESE));
         if !available {
             eprintln!("SKIPPED: no craft-fonts or installed Chinese font");
             return;
@@ -644,7 +643,8 @@ mod tests {
     fn korean_text_renders_with_an_installed_korean_font() {
         const KOREAN: &str = "한국어 입력 테스트";
         filmcraft_text::fonts::scan_system();
-        let available = filmcraft_text::fonts::all_faces().iter().any(|f| f.info.origin == "system" && KOREAN.chars().all(|c| f.has_char(c)));
+        // `covers_text`, not `has_char`: probing keeps no font file loaded (see `cjk::find_system_font`)
+        let available = filmcraft_text::fonts::all_faces().iter().any(|f| f.info.origin == "system" && f.covers_text(KOREAN));
         if !available {
             eprintln!("SKIPPED: no installed Korean font");
             return;
@@ -678,8 +678,9 @@ mod tests {
         ctx.fonts_mut(|fonts| {
             let defs = fonts.definitions().clone();
             for (family, stack) in &defs.families {
-                // installed right-to-left faces (Hebrew is not in craft-fonts) come after the craft run
-                let stack: Vec<&String> = stack.iter().filter(|n| !crate::rtl::is_system_face(n)).collect();
+                // installed faces come after the craft run: right-to-left ones (Hebrew is not in
+                // craft-fonts) and the Hangul face (none is in craft-fonts)
+                let stack: Vec<&String> = stack.iter().filter(|n| !crate::rtl::is_system_face(n) && n.as_str() != crate::cjk::KOREAN_FACE).collect();
                 let first = stack.iter().position(|n| n.starts_with("craft:")).unwrap_or(stack.len());
                 assert!(first > 0 && stack[first..].iter().all(|n| n.starts_with("craft:")), "{family:?}: {stack:?}");
                 let first_japanese = stack.iter().find(|n| n.starts_with("craft:BIZ") || n.starts_with("craft:Shippori"));
@@ -697,6 +698,31 @@ mod tests {
         let galley = ctx.fonts_mut(|f| f.layout_no_wrap(JAPANESE.into(), FontId::new(13.0, FontFamily::Proportional), Color32::WHITE));
         assert_eq!(galley.rows.iter().map(|r| r.glyphs.len()).sum::<usize>(), JAPANESE.chars().count());
         assert!(galley.size().x > 13.0 * 4.0, "{:?}", galley.size());
+    }
+
+    /// Built with a craft-fonts that has Noto Sans Georgian (`Geor`): it is in every font family
+    /// ([`crate::rtl`]), so Georgian text gets real glyphs.
+    #[test]
+    fn georgian_renders_with_craft_fonts() {
+        if !filmcraft_text::fonts::CRAFT_FONTS.iter().any(|f| f.scripts.contains(&"Geor")) {
+            eprintln!("SKIPPED: built without a craft-fonts Georgian face (set CRAFT_FONTS_DIR to a craft-fonts checkout that has one)");
+            return;
+        }
+        let ctx = installed();
+        ctx.fonts_mut(|fonts| {
+            let defs = fonts.definitions().clone();
+            for (family, stack) in &defs.families {
+                assert!(stack.iter().any(|n| n == "craft:Noto Sans Georgian Regular"), "{family:?}: {stack:?}");
+            }
+            // not Monospace: egui's Hack draws Georgian there and is also that family's replacement
+            // face, so `has_glyph` reports a false negative for it
+            for family in [FontFamily::Proportional, FontFamily::Name("semibold".into()), FontFamily::Name("medium".into())] {
+                let font = FontId::new(13.0, family);
+                for ch in "ქართული ფილმი".chars().filter(|c| !c.is_whitespace()) {
+                    assert!(fonts.has_glyph(&font, ch), "missing {ch} in {font:?}");
+                }
+            }
+        });
     }
 
     /// Latin text keeps its UI faces, with or without craft-fonts and system Chinese fonts.
