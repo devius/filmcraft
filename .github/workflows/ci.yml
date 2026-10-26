@@ -22,7 +22,7 @@ jobs:
     uses: storytold/craft-common-actions/.github/workflows/gate.yml@main
     with:
       # Same craft-fonts commit as release.yml.
-      craft-fonts-ref: bfcbf714e45a3ea8e98f88ab2b7971372a576414
+      craft-fonts-ref: b076417b5880bd4154bd22f00695b1d28c6bea83
       timeout-minutes: 120
       packages: >-
         pkg-config libxkbcommon-dev libwayland-dev libx11-dev libxcb1-dev libxcursor-dev
