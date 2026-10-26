@@ -161,6 +161,9 @@
 	Hide All Caption Tracks	სუბტიტრების ყველა ტრეკის დამალვა
 	High Quality Playback	მაღალი ხარისხის დაკვრა
 	History	ისტორია
+	Delete Redoable Actions	ხელახლა შესასრულებელი მოქმედებების წაშლა
+	Clear History	ისტორიის გასუფთავება
+	Delete the dimmed actions after the current state? They cannot be redone.	წაიშალოს მიმდინარე მდგომარეობის შემდეგი ჩამქრალი მოქმედებები? მათ ხელახლა ვეღარ შეასრულებთ.
 	Import From	იმპორტი:
 	Import Image Sequence…	გამოსახულებების თანმიმდევრობის იმპორტი…
 	Import from Media Browser	იმპორტი მედიის ბრაუზერიდან
@@ -311,6 +314,7 @@
 	Show Active Caption Tracks Only	მხოლოდ აქტიური სუბტიტრების ტრეკების ჩვენება
 	Show All Caption Tracks	სუბტიტრების ყველა ტრეკის ჩვენება
 	Show All Marker Colors	მარკერების ყველა ფერის ჩვენება
+	Show Duplicate Frame Markers	დუბლირებული კადრების მარკერების ჩვენება
 	Show Guides	დამხმარე ხაზების ჩვენება
 	Show Rulers	სახაზავების ჩვენება
 	Show Through Edits	გამჭოლი ჭრილების ჩვენება
@@ -336,6 +340,7 @@
 	Transcribe Sequence…	სეკვენციის ტრანსკრიფცია…
 	Transcribe…	ტრანსკრიფცია…
 	Transcript	ტრანსკრიპტი
+	Transparency Grid	გამჭვირვალობის ბადე
 	Transparent Video…	გამჭვირვალე ვიდეო…
 	Trim Edit	მოკვეთით მონტაჟი
 	Trim…	მოკვეთა…
@@ -500,6 +505,10 @@
 	Reveal Sequence in Project	სეკვენციის ჩვენება პროექტში
 	Video Thumbnails	ვიდეოს ესკიზები
 	Audio Waveforms	აუდიოს ტალღის ფორმები
+	Work Area Bar	სამუშაო არის ზოლი
+	Start: {tc}	დასაწყისი: {tc}
+	End: {tc}	დასასრული: {tc}
+	Duration: {tc}	ხანგრძლივობა: {tc}
 	Delete Preset	პრესეტის წაშლა
 	Export Preset…	პრესეტის ექსპორტი…
 	Import Presets…	პრესეტების იმპორტი…
@@ -3440,8 +3449,8 @@
 	Commits	კომიტები
 	% of all commits	ყველა კომიტის %
 	Lines +/−	სტრიქონები +/−
-	Audio output failed: playing without sound (check Settings ▸ Audio Hardware)	აუდიოს გამოტანა ვერ მოხერხდა: დაკვრა ხმის გარეშე (შეამოწმეთ პარამეტრები ▸ აუდიოაპარატურა)
-	Audio output is not responding: playing without sound (check Settings ▸ Audio Hardware)	აუდიოს გამოტანა არ პასუხობს: დაკვრა ხმის გარეშე (შეამოწმეთ პარამეტრები ▸ აუდიოაპარატურა)
+	Audio output failed: playing without sound (check Settings > Audio Hardware)	აუდიოს გამოტანა ვერ მოხერხდა: დაკვრა ხმის გარეშე (შეამოწმეთ პარამეტრები > აუდიოაპარატურა)
+	Audio output is not responding: playing without sound (check Settings > Audio Hardware)	აუდიოს გამოტანა არ პასუხობს: დაკვრა ხმის გარეშე (შეამოწმეთ პარამეტრები > აუდიოაპარატურა)
 	Clip Speed / Duration	კლიპის სიჩქარე / ხანგრძლივობა
 	Speed:	სიჩქარე:
 	Reverse Speed	უკუსვლით დაკვრა
@@ -3603,3 +3612,10 @@
 	Open a sequence to search its graphics	გრაფიკაში საძებნად გახსენით სეკვენცია
 	No text graphics in this sequence. Add text with the Type tool.	ამ სეკვენციაში ტექსტური გრაფიკა არ არის. ტექსტი დაამატეთ ტექსტის ხელსაწყოთი.
 	No matching text.	შესაბამისი ტექსტი არ არის.
+	H.265 (HEVC) needs a hardware encoder (NVENC on NVIDIA GPUs, VideoToolbox on macOS); none was found on this machine, and FilmCraft has no software H.265 encoder yet. Choose H.264 or ProRes instead.	H.265-ს (HEVC) აპარატული კოდერი სჭირდება (NVENC NVIDIA-ს GPU-ებზე, VideoToolbox macOS-ზე); ამ კომპიუტერზე ვერცერთი მოიძებნა, FilmCraft-ს კი პროგრამული H.265 კოდერი ჯერ არ აქვს. სანაცვლოდ აირჩიეთ H.264 ან ProRes.
+	AV1 needs a hardware encoder; none was found on this machine, and FilmCraft has no software AV1 encoder yet.	AV1-ს აპარატული კოდერი სჭირდება; ამ კომპიუტერზე ვერცერთი მოიძებნა, FilmCraft-ს კი პროგრამული AV1 კოდერი ჯერ არ აქვს.
+	Check for Updates…	განახლებების შემოწმება…
+	Checking for updates…	განახლებების შემოწმება…
+	Could not check for updates:\n{error}	განახლებების შემოწმება ვერ მოხერხდა:\n{error}
+	FilmCraft {version} is currently the newest version available.	FilmCraft {version} ამჟამად უახლესი ხელმისაწვდომი ვერსიაა.
+	Looks for a newer FilmCraft release and offers to update.	ეძებს FilmCraft-ის უფრო ახალ გამოშვებას და განახლებას გთავაზობთ.

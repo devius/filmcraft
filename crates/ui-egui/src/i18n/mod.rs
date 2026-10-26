@@ -1034,24 +1034,28 @@ mod tests {
     }
 
     /// Georgian is complete like Chinese (every menu label and `tl!` literal) and keeps no entry
-    /// without a Spanish one (the native macOS Settings item aside).
+    /// without a Spanish one or a source string (the native macOS Settings item aside).
     #[test]
     fn georgian_translates_everything_and_has_no_dead_entries() {
         let (entries, errors) = catalog::parse_entries(include_str!("ka.tsv"));
         assert!(errors.is_empty(), "{errors:?}");
+        let app = crate::FilmcraftApp::new(filmcraft_engine::Session::default());
+        let items = crate::menus::menu_items(&app);
+        let literals: Vec<String> = sources().into_iter().flat_map(|(_, text)| tl_literals(&text)).collect();
+        let source: Vec<&str> = crate::menus::MENUS
+            .into_iter()
+            .chain(items.iter().flat_map(|it| std::iter::once(it.label.as_str()).chain(it.path.iter().map(String::as_str))))
+            .chain(literals.iter().map(String::as_str))
+            .chain(["Settings"])
+            .collect();
         for (ctx, en, ka) in &entries {
-            assert!(ctx.is_empty() && (Language::Es.has(en) || en == "Settings"), "Georgian entry without a Spanish one: {ctx:?} {en:?}");
+            assert!(ctx.is_empty() && (Language::Es.has(en) || source.contains(&en.as_str())), "Georgian entry without a Spanish one: {ctx:?} {en:?}");
             // Mtavruli (Georgian capitals) is not used in interface text
             assert!(!ka.chars().any(|c| matches!(c, '\u{1C90}'..='\u{1CBF}' | '\u{10A0}'..='\u{10CF}')), "Mtavruli in {en:?} → {ka:?}");
         }
         let (spanish, _) = catalog::parse_entries(include_str!("es.tsv"));
         let mut missing: Vec<String> = spanish.iter().filter(|(c, en, _)| c.is_empty() && !Language::Ka.has(en)).map(|(_, en, _)| en.clone()).collect();
-        let app = crate::FilmcraftApp::new(filmcraft_engine::Session::default());
-        let items = crate::menus::menu_items(&app);
-        let menu =
-            crate::menus::MENUS.into_iter().chain(items.iter().flat_map(|it| std::iter::once(it.label.as_str()).chain(it.path.iter().map(String::as_str))));
-        let literals: Vec<String> = sources().into_iter().flat_map(|(_, text)| tl_literals(&text)).collect();
-        for text in menu.chain(literals.iter().map(String::as_str)).chain(["Settings"]) {
+        for text in source {
             if translatable(text) && !Language::Ka.has(text) && !missing.iter().any(|m| m == text) {
                 missing.push(text.to_string());
             }
