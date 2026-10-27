@@ -506,6 +506,8 @@
 	Video Thumbnails	ვიდეოს ესკიზები
 	Audio Waveforms	აუდიოს ტალღის ფორმები
 	Work Area Bar	სამუშაო არის ზოლი
+	Set Work Area Bar In Point	სამუშაო არის ზოლის შესვლის წერტილის დაყენება
+	Set Work Area Bar Out Point	სამუშაო არის ზოლის გამოსვლის წერტილის დაყენება
 	Start: {tc}	დასაწყისი: {tc}
 	End: {tc}	დასასრული: {tc}
 	Duration: {tc}	ხანგრძლივობა: {tc}
