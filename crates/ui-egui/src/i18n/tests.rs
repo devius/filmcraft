@@ -653,15 +653,8 @@ fn system_language_preference_uses_the_host_languages() {
 fn georgian_translates_everything_and_has_no_dead_entries() {
     let (entries, errors) = catalog::parse_entries(include_str!("ka.tsv"));
     assert!(errors.is_empty(), "{errors:?}");
-    let app = crate::FilmcraftApp::new(filmcraft_engine::Session::default());
-    let items = crate::menus::menu_items(&app);
-    let literals: Vec<String> = sources().into_iter().flat_map(|(_, text)| tl_literals(&text)).collect();
-    let source: Vec<&str> = crate::menus::MENUS
-        .into_iter()
-        .chain(items.iter().flat_map(|it| std::iter::once(it.label.as_str()).chain(it.path.iter().map(String::as_str))))
-        .chain(literals.iter().map(String::as_str))
-        .chain(["Settings"])
-        .collect();
+    let strings = interface_strings();
+    let source: Vec<&str> = strings.iter().map(String::as_str).chain(["Settings"]).collect();
     for (ctx, en, ka) in &entries {
         assert!(ctx.is_empty() && (Language::Es.has(en) || source.contains(&en.as_str())), "Georgian entry without a Spanish one: {ctx:?} {en:?}");
         // Mtavruli (Georgian capitals) is not used in interface text
