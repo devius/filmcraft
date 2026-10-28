@@ -707,6 +707,7 @@ mod tests {
             eprintln!("SKIPPED: built without a craft-fonts Georgian face (set CRAFT_FONTS_DIR to a craft-fonts checkout that has one)");
             return;
         }
+        assert!(crate::i18n::georgian_font_available(), "Edit > Language must let Georgian switch");
         let ctx = installed();
         ctx.fonts_mut(|fonts| {
             let defs = fonts.definitions().clone();

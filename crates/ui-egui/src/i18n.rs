@@ -49,6 +49,7 @@ pub enum Language {
     It,
     /// Korean; Hangul needs an installed system font ([`korean_font_available`]).
     Ko,
+    /// Georgian; Mkhedruli needs the craft-fonts `Geor` face or an installed one ([`georgian_font_available`]).
     Ka,
 }
 
@@ -362,6 +363,13 @@ pub fn chinese_font_available() -> bool {
 /// is bundled. False on systems (and the web) without one.
 pub fn korean_font_available() -> bool {
     crate::cjk::korean_available()
+}
+
+/// Whether the interface can show Georgian: `theme::install` adds the craft-fonts `Geor` face
+/// (built with `CRAFT_FONTS_DIR`), otherwise an installed face with Georgian letters (see
+/// `rtl.rs`). False on systems (and a web build) without either.
+pub fn georgian_font_available() -> bool {
+    crate::rtl::georgian_available()
 }
 
 #[cfg(test)]

@@ -523,12 +523,26 @@ fn language_commands_switch_and_persist_without_a_document() {
     set_current(Language::En);
 }
 
-/// Georgian switches, shows as checked in Edit > Language, and persists.
+/// Georgian switches, shows as checked in Edit > Language, and persists when a Georgian face is
+/// available (craft-fonts `Geor` or an installed one), and is refused (the interface stays as it
+/// was) without one.
 #[test]
-fn georgian_switches_and_persists() {
+fn georgian_switches_and_persists_or_is_refused_without_a_font() {
     let mut app = crate::FilmcraftApp::new(filmcraft_engine::Session::default());
     let ctx = egui::Context::default();
     let r = crate::menus::invoke(&mut app, &ctx, "app.language.georgian", serde_json::json!({}));
+    if !georgian_font_available() {
+        eprintln!("no Georgian face: checking that Georgian is refused");
+        assert!(r.is_err(), "{r:?}");
+        assert_eq!(app.ui.language, Language::En);
+        assert_eq!(app.session.prefs.general.interface_language, "system");
+        // a saved Georgian preference falls back to English at startup
+        app.session.execute("prefs.set", serde_json::json!({"key": "general.interfaceLanguage", "value": "ka"})).unwrap();
+        app.apply_prefs(&ctx);
+        assert_eq!(app.ui.language, Language::En);
+        set_current(Language::En);
+        return;
+    }
     assert_eq!(r.unwrap(), serde_json::json!("ka"));
     assert_eq!((app.ui.language, current()), (Language::Ka, Language::Ka));
     assert_eq!(app.session.prefs.general.interface_language, "ka");

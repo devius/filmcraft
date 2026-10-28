@@ -218,6 +218,10 @@ pub fn invoke(app: &mut FilmcraftApp, ctx: &egui::Context, id: &str, mut params:
         if id == "app.language.korean" && !crate::i18n::korean_font_available() {
             return Err("no Korean font is installed on this system (for example Malgun Gothic or Noto Sans CJK KR); the interface stays in English".into());
         }
+        // Georgian needs the craft-fonts Geor face or an installed one (see rtl.rs)
+        if id == "app.language.georgian" && !crate::i18n::georgian_font_available() {
+            return Err("no Georgian font is installed on this system (for example Noto Sans Georgian); the interface stays in English".into());
+        }
         let language = match id {
             "app.language.japanese" => crate::i18n::Language::Ja,
             "app.language.spanish" => crate::i18n::Language::Es,
