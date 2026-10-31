@@ -1041,6 +1041,7 @@
 	All Caps	მთავრული
 	Small Caps	პატარა მთავრული
 	Underline	ხაზგასმული
+	Strikethrough	გადახაზული
 	OpenType	OpenType
 	Kerning	კერნინგი
 	Ligatures	ლიგატურები
@@ -3621,3 +3622,15 @@
 	Could not check for updates:\n{error}	განახლებების შემოწმება ვერ მოხერხდა:\n{error}
 	FilmCraft {version} is currently the newest version available.	FilmCraft {version} ამჟამად უახლესი ხელმისაწვდომი ვერსიაა.
 	Looks for a newer FilmCraft release and offers to update.	ეძებს FilmCraft-ის უფრო ახალ გამოშვებას და განახლებას გთავაზობთ.
+
+# Control server: the status-bar notice when --control cannot serve.
+	The control server is disabled: FILMCRAFT_CONTROL_TOKEN must contain 64 random hex characters (see docs/control-protocol.md)	მართვის სერვერი გამორთულია: FILMCRAFT_CONTROL_TOKEN უნდა შეიცავდეს 64 შემთხვევით თექვსმეტობით სიმბოლოს (იხ. docs/control-protocol.md)
+
+# Export: range sizes, destination checks and the GIF alpha hint.
+	{frames} frames ({seconds} s)	კადრი: {frames} ({seconds} წმ)
+	1 frame ({seconds} s)	1 კადრი ({seconds} წმ)
+	Source In/Out is only 1 frame. Choose Entire Source to export the whole sequence.	წყაროს შესვლა/გამოსვლა მხოლოდ 1 კადრს მოიცავს. მთელი სეკვენციის ექსპორტისთვის აირჩიეთ „მთელი წყარო“.
+	{name} already exists, so nothing was exported. To replace it, choose it in the save dialog.	{name} უკვე არსებობს, ამიტომ ექსპორტი არ შესრულდა. მის ჩასანაცვლებლად აირჩიეთ ის შენახვის დიალოგში.
+	Exported {path} as {format}, from its file extension	ექსპორტირებულია: {path}, ფორმატით {format} (ფაილის გაფართოების მიხედვით)
+	Caption Export Settings	სუბტიტრების ექსპორტის პარამეტრები
+	When enabled, GIF transparency is on/off: alpha below 128 is transparent; 128 and above is opaque.	ჩართვისას GIF-ის გამჭვირვალობა ორმნიშვნელიანია: 128-ზე ნაკლები ალფა გამჭვირვალეა, 128 და მეტი — გაუმჭვირვალე.
