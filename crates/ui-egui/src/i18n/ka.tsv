@@ -3748,3 +3748,12 @@
 	Highlight Level	ღია ტონების დონე
 	Highlight Softness	ღია ტონების სირბილე
 	Key Out Brights	ღია ტონების ამოკვეთა
+# Strings added upstream with the ru/zh-cn missing-translations reports.
+	1/2	1/2
+	Audio output failed: playing without sound (check Settings ▸ Audio Hardware)	აუდიოს გამოტანა ვერ მოხერხდა: დაკვრა ხმის გარეშე (შეამოწმეთ პარამეტრები ▸ აუდიოაპარატურა)
+	Audio output is not responding: playing without sound (check Settings ▸ Audio Hardware)	აუდიოს გამოტანა არ პასუხობს: დაკვრა ხმის გარეშე (შეამოწმეთ პარამეტრები ▸ აუდიოაპარატურა)
+	Checking for updates…	განახლებების შემოწმება…
+	Could not check for updates:\n{error}	განახლებების შემოწმება ვერ მოხერხდა:\n{error}
+	Duration (frames):	ხანგრძლივობა (კადრებში):
+	FilmCraft Updates	FilmCraft-ის განახლებები
+	FilmCraft {version} is currently the newest version available.	FilmCraft {version} ამჟამად უახლესი ხელმისაწვდომი ვერსიაა.
