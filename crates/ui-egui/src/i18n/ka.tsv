@@ -3748,7 +3748,3 @@
 	Highlight Level	ღია ტონების დონე
 	Highlight Softness	ღია ტონების სირბილე
 	Key Out Brights	ღია ტონების ამოკვეთა
-# Strings added upstream with the ru/zh-cn missing-translations reports.
-	Audio output failed: playing without sound (check Settings > Audio Hardware)	აუდიოს გამოტანა ვერ მოხერხდა: დაკვრა ხმის გარეშე (შეამოწმეთ პარამეტრები ▸ აუდიოაპარატურა)
-	Audio output is not responding: playing without sound (check Settings > Audio Hardware)	აუდიოს გამოტანა არ პასუხობს: დაკვრა ხმის გარეშე (შეამოწმეთ პარამეტრები ▸ აუდიოაპარატურა)
-	FilmCraft Updates	FilmCraft-ის განახლებები
