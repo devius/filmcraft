@@ -3749,11 +3749,7 @@
 	Highlight Level	ღია ტონების დონე
 	Highlight Softness	ღია ტონების სირბილე
 	Key Out Brights	ღია ტონების ამოკვეთა
-# Updates dialog, effect preset library, Maintain Audio Pitch and H.264 High 10 / all-intra export (sync 2026-11-07).
-	Checking for updates…	განახლებების შემოწმება…
-	Could not check for updates:\n{error}	განახლებების შემოწმება ვერ მოხერხდა:\n{error}
-	FilmCraft Updates	FilmCraft-ის განახლებები
-	FilmCraft {version} is currently the newest version available.	FilmCraft {version} ამჟამად უახლესი ხელმისაწვდომი ვერსიაა.
+# Effect preset library, Maintain Audio Pitch and H.264 High 10 / all-intra export (sync 2026-11-07).
 	Maintain Audio Pitch	აუდიოს ტონის სიმაღლის შენარჩუნება
 	Open Presets Folder	პრესეტების საქაღალდის გახსნა
 	Scan Presets Folder	პრესეტების საქაღალდის სკანირება
@@ -3775,4 +3771,4 @@
 	H.264 High 10 Intra	H.264 High 10 Intra
 	H.264 High 10 (10-bit 4:2:0) at the sequence's size, constant quality CRF 16, AAC 320 kbps; a 10-bit master	H.264 High 10 (10-bit 4:2:0) სეკვენციის ზომით, მუდმივი ხარისხი CRF 16, AAC 320 kbps; 10-ბიტიანი მასტერი
 	H.264 High 10 Intra (10-bit 4:2:0, every frame a keyframe), CRF 12, AAC 320 kbps; an edit-friendly intermediate	H.264 High 10 Intra (10-bit 4:2:0, ყოველი კადრი საკვანძოა), CRF 12, AAC 320 kbps; მონტაჟისთვის მოსახერხებელი შუალედური ფორმატი
-	Hardware decoding: Auto uses the system's video decoder (VideoToolbox on macOS, Media Foundation on Windows, VA-API for H.264 and HEVC on Linux) for the streams it supports, and FilmCraft's own decoder for everything else or if the hardware fails. Media that is already open keeps its decoder until it is reopened.	აპარატული დეკოდირება: „ავტომატური“ რეჟიმი იყენებს სისტემის ვიდეოდეკოდერს (VideoToolbox macOS-ზე, Media Foundation Windows-ზე, VA-API H.264-ისა და HEVC-ისთვის Linux-ზე) მის მიერ მხარდაჭერილი ნაკადებისთვის, ხოლო FilmCraft-ის საკუთარ დეკოდერს — დანარჩენი ყველაფრისთვის ან აპარატურის შეფერხებისას. უკვე გახსნილი მედია ინარჩუნებს თავის დეკოდერს, სანამ ხელახლა არ გაიხსნება.
+	Full Screen Program Monitor	პროგრამის მონიტორი სრულ ეკრანზე
