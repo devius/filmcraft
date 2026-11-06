@@ -447,7 +447,7 @@
 	Are you sure you want to discard your changes to '{file}'?	ნამდვილად გსურთ „{file}“-ის ცვლილებების უარყოფა?
 	Yes	დიახ
 	No	არა
-	Add media to your project. Drop files anywhere in the window, or choose a source below.	დაამატეთ მედია პროექტში. ჩააგდეთ ფაილები ფანჯრის ნებისმიერ ადგილას ან აირჩიეთ წყარო ქვემოთ.
+	Add media to your project. Drop files or folders anywhere in the window, or choose a source below.	დაამატეთ მედია პროექტში. ჩააგდეთ ფაილები ან საქაღალდეები ფანჯრის ნებისმიერ ადგილას, ან აირჩიეთ წყარო ქვემოთ.
 	Browse files…	ფაილების არჩევა…
 	Movies, audio and stills from disk	ფილმები, აუდიო და კადრები დისკიდან
 	Demo footage	სადემონსტრაციო ვიდეომასალა
@@ -3749,3 +3749,30 @@
 	Highlight Level	ღია ტონების დონე
 	Highlight Softness	ღია ტონების სირბილე
 	Key Out Brights	ღია ტონების ამოკვეთა
+# Updates dialog, effect preset library, Maintain Audio Pitch and H.264 High 10 / all-intra export (sync 2026-11-07).
+	Checking for updates…	განახლებების შემოწმება…
+	Could not check for updates:\n{error}	განახლებების შემოწმება ვერ მოხერხდა:\n{error}
+	FilmCraft Updates	FilmCraft-ის განახლებები
+	FilmCraft {version} is currently the newest version available.	FilmCraft {version} ამჟამად უახლესი ხელმისაწვდომი ვერსიაა.
+	Maintain Audio Pitch	აუდიოს ტონის სიმაღლის შენარჩუნება
+	Open Presets Folder	პრესეტების საქაღალდის გახსნა
+	Scan Presets Folder	პრესეტების საქაღალდის სკანირება
+	From preset file:	პრესეტის ფაილიდან:
+	No presets folder: the app has no data directory	პრესეტების საქაღალდე არ არის: აპლიკაციას მონაცემთა საქაღალდე არ აქვს
+	Imported {n} preset(s)	იმპორტირებული პრესეტი: {n}
+	Imported {n} preset(s); {skipped} skipped	იმპორტირებული პრესეტი: {n}; გამოტოვებული: {skipped}
+	Imported {n} preset(s); {warnings} with unsupported parameters	იმპორტირებული პრესეტი: {n}; მხარდაუჭერელი პარამეტრებით: {warnings}
+	Imported {n} preset(s); {skipped} skipped, {warnings} with unsupported parameters	იმპორტირებული პრესეტი: {n}; გამოტოვებული: {skipped}, მხარდაუჭერელი პარამეტრებით: {warnings}
+	Imported {n} preset(s); not imported: {error}	იმპორტირებული პრესეტი: {n}; ვერ დაიმპორტდა: {error}
+	Preset library updated: {imported} loaded, {removed} removed	პრესეტების ბიბლიოთეკა განახლდა: ჩატვირთული: {imported}, წაშლილი: {removed}
+	Preset library updated	პრესეტების ბიბლიოთეკა განახლდა
+	Preset library is up to date	პრესეტების ბიბლიოთეკა განახლებულია
+	High 10	High 10
+	10-bit color	10-ბიტიანი ფერი
+	All Intra	სრული ინტრა
+	Every frame a keyframe (edit-friendly, larger files)	ყოველი კადრი საკვანძოა (მონტაჟისთვის მოსახერხებელი, უფრო დიდი ფაილები)
+	H.264 High 10 Master	H.264 High 10 მასტერი
+	H.264 High 10 Intra	H.264 High 10 Intra
+	H.264 High 10 (10-bit 4:2:0) at the sequence's size, constant quality CRF 16, AAC 320 kbps; a 10-bit master	H.264 High 10 (10-bit 4:2:0) სეკვენციის ზომით, მუდმივი ხარისხი CRF 16, AAC 320 kbps; 10-ბიტიანი მასტერი
+	H.264 High 10 Intra (10-bit 4:2:0, every frame a keyframe), CRF 12, AAC 320 kbps; an edit-friendly intermediate	H.264 High 10 Intra (10-bit 4:2:0, ყოველი კადრი საკვანძოა), CRF 12, AAC 320 kbps; მონტაჟისთვის მოსახერხებელი შუალედური ფორმატი
+	Hardware decoding: Auto uses the system's video decoder (VideoToolbox on macOS, Media Foundation on Windows, VA-API for H.264 and HEVC on Linux) for the streams it supports, and FilmCraft's own decoder for everything else or if the hardware fails. Media that is already open keeps its decoder until it is reopened.	აპარატული დეკოდირება: „ავტომატური“ რეჟიმი იყენებს სისტემის ვიდეოდეკოდერს (VideoToolbox macOS-ზე, Media Foundation Windows-ზე, VA-API H.264-ისა და HEVC-ისთვის Linux-ზე) მის მიერ მხარდაჭერილი ნაკადებისთვის, ხოლო FilmCraft-ის საკუთარ დეკოდერს — დანარჩენი ყველაფრისთვის ან აპარატურის შეფერხებისას. უკვე გახსნილი მედია ინარჩუნებს თავის დეკოდერს, სანამ ხელახლა არ გაიხსნება.
