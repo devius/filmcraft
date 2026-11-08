@@ -117,7 +117,7 @@
 	Essential Graphics	ძირითადი გრაფიკა
 	Essential Sound	ძირითადი ხმა
 	Events	მოვლენები
-	Export	ექსპორტი
+	Export	ექსპორტირება
 	Export As Motion Graphics Template…	ექსპორტი მოძრავი გრაფიკის შაბლონად…
 	Extract	ამოღება
 	Extract Audio	აუდიოს ამოღება
@@ -1691,7 +1691,7 @@
 	Exponential Fade	ექსპონენციალური მიქრობა
 	Extended Dynamic Range Monitoring	გაფართოებული დინამიკური დიაპაზონის მონიტორინგი
 	FFT Filter	FFT ფილტრი
-	Fade	მიქრობა
+	Fade	მილევა
 	Fade Out	ჩაქრობა
 	Faded Matte	გაცრეცილი მატი
 	Falloff	მილევა
@@ -2851,7 +2851,7 @@
 	Loaded “{name}”	ჩატვირთულია „{name}“
 	My Shortcuts	ჩემი მალსახმობები
 	Deleted preset “{active}”	წაიშალა პრესეტი „{active}“
-	Export…	ექსპორტი…
+	Export…	ექსპორტირება…
 	Exported to {path}	ექსპორტირებულია: {path}
 	Export: no file chosen (agents: shortcuts.export {path})	ექსპორტი: ფაილი არ არის არჩეული (აგენტებისთვის: shortcuts.export {path})
 	Imported “{name}”	იმპორტირებულია „{name}“
