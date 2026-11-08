@@ -3772,3 +3772,6 @@
 	H.264 High 10 (10-bit 4:2:0) at the sequence's size, constant quality CRF 16, AAC 320 kbps; a 10-bit master	H.264 High 10 (10-bit 4:2:0) სეკვენციის ზომით, მუდმივი ხარისხი CRF 16, AAC 320 kbps; 10-ბიტიანი მასტერი
 	H.264 High 10 Intra (10-bit 4:2:0, every frame a keyframe), CRF 12, AAC 320 kbps; an edit-friendly intermediate	H.264 High 10 Intra (10-bit 4:2:0, ყოველი კადრი საკვანძოა), CRF 12, AAC 320 kbps; მონტაჟისთვის მოსახერხებელი შუალედური ფორმატი
 	Full Screen Program Monitor	პროგრამის მონიტორი სრულ ეკრანზე
+
+# Strings added upstream (sync 2026-11-08)
+	Caption Track	სუბტიტრების ტრეკი
