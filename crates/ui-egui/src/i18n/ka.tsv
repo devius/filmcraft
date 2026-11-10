@@ -3775,3 +3775,16 @@
 
 # Strings added upstream (sync 2026-11-08)
 	Caption Track	სუბტიტრების ტრეკი
+	Color Grading	ფერის კორექცია
+	Video Scopes	ვიდეოს სკოპები
+	Add Color Grading to clip	კლიპზე ფერის კორექციის დამატება
+	Enable External Video Output	გარე ვიდეოგამოსავლის ჩართვა
+	For color management parameters, go to the Settings tab in the Color Grading panel.	ფერების მართვის პარამეტრებისთვის გადადით ფერის კორექციის პანელის ჩანართზე „პარამეტრები“.
+	Color Grading Presets	ფერის კორექციის პრესეტები
+	integrated GPU	ინტეგრირებული GPU
+	List Color Grading Presets	ფერის კორექციის პრესეტების ჩამოთვლა
+	Apply Color Grading Preset	ფერის კორექციის პრესეტის გამოყენება
+	Color Grading Preset Thumbnails	ფერის კორექციის პრესეტების ესკიზები
+	Toggle Color Grading Section	ფერის კორექციის განყოფილების გადართვა
+	Color Grading Section	ფერის კორექციის განყოფილება
+	Read Video Scopes	ვიდეოს სკოპების წაკითხვა
