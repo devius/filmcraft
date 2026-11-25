@@ -3794,7 +3794,3 @@
 	MPEG audio (.mp3), joint stereo 48 kHz at 320 kbps	MPEG აუდიო (.mp3), ერთობლივი სტერეო 48 kHz, 320 kbps
 	This preference is not available yet.	ეს პარამეტრი ჯერ მიუწვდომელია.
 	Time Format	დროის ფორმატი
-	Checking for updates…	განახლებების შემოწმება…
-	Could not check for updates:\n{error}	განახლებების შემოწმება ვერ მოხერხდა:\n{error}
-	FilmCraft Updates	FilmCraft-ის განახლებები
-	FilmCraft {version} is currently the newest version available.	FilmCraft {version} ამჟამად უახლესი ხელმისაწვდომი ვერსიაა.
