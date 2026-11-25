@@ -433,7 +433,7 @@ pub fn install(ctx: &egui::Context, t: &Tokens) {
     crate::cjk::install(&mut fonts);
     crate::rtl::install(&mut fonts);
     crate::georgian::install(&mut fonts);
-    ctx.set_fonts(fonts);
+    craft_ui::fonts::load(ctx, fonts);
     apply_visuals(ctx, t);
 }
 
