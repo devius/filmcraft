@@ -5,6 +5,38 @@
 # No proprietary localisation resource was used. Commands are verbal nouns (შენახვა, გახსნა); counts
 # are count-neutral (კლიპი: {n}); Georgian has no capitals, so no Mtavruli. Product, codec and
 # format names (FilmCraft, Lumetri, ProRes, H.264…) keep their spelling. Covers every Spanish entry.
+	FilmCraft Updates	FilmCraft-ის განახლებები
+	Update check is not supported in the web browser.	ბრაუზერში განახლებების შემოწმება არ არის მხარდაჭერილი.
+	Update available	ხელმისაწვდომია განახლება
+	{app} {version} is available. You have {running}.	ხელმისაწვდომია {app} {version}. თქვენ გაქვთ {running}.
+	Update and Restart	განახლება და გადატვირთვა
+	Restart to Update	გადატვირთვა განახლებისთვის
+	Save and Update	შენახვა და განახლება
+	Saving your work…	სამუშაოს შენახვა…
+	Download	ჩამოტვირთვა
+	Later	მოგვიანებით
+	What's New	რა არის ახალი
+	All releases are listed at	ყველა გამოშვების სია იხილეთ მისამართზე
+	v{running} - {version}	v{running} - {version}
+	by {developer}	ავტორი: {developer}
+	Installing…	ინსტალაცია…
+	Check for Updates	განახლებების შემოწმება
+	Checking for updates…	განახლებების შემოწმება…
+	{app} {running} is the newest version.	{app} {running} უახლესი ვერსიაა.
+	The update check failed.	განახლებების შემოწმება ვერ მოხერხდა.
+	GitHub's request limit was reached. Try again later.	GitHub-ის მოთხოვნების ლიმიტი ამოიწურა. სცადეთ მოგვიანებით.
+	Check Again	ხელახლა შემოწმება
+	Check Now	ახლავე შემოწმება
+	Updates have not been checked yet.	განახლებები ჯერ არ შემოწმებულა.
+	Cannot auto-update this installation type. Please download manually.	ინსტალაციის ამ ტიპის ავტომატური განახლება შეუძლებელია. ჩამოტვირთეთ ხელით.
+	Release Notes	გამოშვების შენიშვნები
+	Update ready. Close {app} to install it.	განახლება მზადაა. დასაყენებლად დახურეთ {app}.
+	The update is installed. Close {app} to finish; it restarts by itself.	განახლება დაყენებულია. დასასრულებლად დახურეთ {app}; ის თავად გაეშვება ხელახლა.
+	{app} {running} follows the version chosen in the launcher, so it does not update itself.	{app} {running} გამშვებში არჩეულ ვერსიას მიჰყვება, ამიტომ თავად არ ახლდება.
+	{app} updated to {version}.	{app} განახლდა {version} ვერსიამდე.
+	The update could not be installed: {reason}	განახლების დაყენება ვერ მოხერხდა: {reason}
+	Couldn't start the update ({error})	განახლების დაწყება ვერ მოხერხდა ({error})
+	Save or close your open work first; the update restarts the app.	ჯერ შეინახეთ ან დახურეთ ღია სამუშაო; განახლება აპლიკაციას გადატვირთავს.
 
 	About FilmCraft	FilmCraft-ის შესახებ
 	Add Audio Submix Track	აუდიოს ქვემიქსის ტრეკის დამატება
